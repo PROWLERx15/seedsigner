@@ -399,7 +399,8 @@ class SettingsConstants:
     custom_extension = _mft("Custom Extension")
     LABEL__CUSTOM_EXTENSION = custom_extension
 
-
+    # BIP-85 constants
+    BIP85_APPLICATION_NUM = 39  # Application number for BIP-39 mnemonic derivation
 
 @dataclass
 class SettingsEntry:

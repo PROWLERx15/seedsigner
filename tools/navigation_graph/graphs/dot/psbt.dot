@@ -1,0 +1,73 @@
+digraph PSBTModule {
+    rankdir=TB;
+    splines=spline;
+    nodesep=0.55;
+    ranksep=0.95;
+    bgcolor="white";
+    fontname="Helvetica";
+    labelloc="t"; fontsize=20;
+    label="PSBT";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, margin="0.18,0.10", color="#FB8C00", fillcolor="#FFF3E0"];
+    edge [fontname="Helvetica", fontsize=8.5, color="#78909C", arrowsize=0.7, labeldistance=1.2];
+
+    // External boundary nodes
+    "LoadMultisigWalletDescriptorView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#757575", fontcolor="#757575"];
+    "MainMenuView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+    "MultisigWalletDescriptorView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#757575", fontcolor="#757575"];
+    "NotYetImplementedView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+    "ScanSeedQRView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#1E88E5", fontcolor="#1E88E5"];
+    "ScanView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#1E88E5", fontcolor="#1E88E5"];
+    "SeedElectrumMnemonicStartView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedMnemonicEntryView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedOptionsView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "[BACK]" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+
+    // Internal transitions
+    "PSBTSelectSeedView" -> "PSBTOverviewView" [label="controller.psbt_seed  AND\nPSBTParser.has_matching_input_fingerprint(psbt=controller.psbt,\nseed=controller.psbt_seed,\nnetwork=settings.get_value(SETTING__NETWORK))"];
+    "PSBTSelectSeedView" -> "PSBTOverviewView" [label="len(seeds) > 0 and selected_menu_num <\nlen(seeds)"];
+    "PSBTOverviewView" -> "PSBTUnsupportedScriptTypeWarningView" [label="psbt_parser.policy == None"];
+    "PSBTOverviewView" -> "PSBTNoChangeWarningView" [label="NOT (psbt_parser.policy == None)  AND\npsbt_parser.change_amount == 0"];
+    "PSBTOverviewView" -> "PSBTMathView" [label="NOT (psbt_parser.policy == None)  AND  NOT\n(psbt_parser.change_amount == 0)"];
+    "PSBTUnsupportedScriptTypeWarningView" -> "PSBTAddressDetailsView" [];
+    "PSBTNoChangeWarningView" -> "PSBTMathView" [];
+    "PSBTMathView" -> "PSBTAddressDetailsView" [label="len(psbt_parser.destination_addresses) > 0"];
+    "PSBTMathView" -> "PSBTChangeDetailsView" [label="NOT (len(psbt_parser.destination_addresses) >\n0)"];
+    "PSBTAddressDetailsView" -> "PSBTAddressDetailsView" [label="address_num <\nlen(psbt_parser.destination_addresses) - 1", style=dashed, color="#B0BEC5"];
+    "PSBTAddressDetailsView" -> "PSBTChangeDetailsView" [label="NOT (address_num <\nlen(psbt_parser.destination_addresses) - 1)\nAND  psbt_parser.change_amount > 0"];
+    "PSBTAddressDetailsView" -> "PSBTOpReturnView" [label="NOT (address_num <\nlen(psbt_parser.destination_addresses) - 1)\nAND  NOT (psbt_parser.change_amount > 0)  AND\npsbt_parser.op_return_data"];
+    "PSBTAddressDetailsView" -> "PSBTFinalizeView" [label="NOT (address_num <\nlen(psbt_parser.destination_addresses) - 1)\nAND  NOT (psbt_parser.change_amount > 0)  AND\nNOT (psbt_parser.op_return_data)"];
+    "PSBTChangeDetailsView" -> "PSBTAddressVerificationFailedView" [label="is_change_addr_verified == False and (not\npsbt_parser.is_multisig or\ncontroller.multisig_wallet_descriptor is not\nNone)"];
+    "PSBTChangeDetailsView" -> "PSBTChangeDetailsView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == NEXT or\nbutton_data[selected_menu_num] ==\nSKIP_VERIFICATION  AND  change_address_num <\npsbt_parser.num_change_outputs - 1", style=dashed, color="#B0BEC5"];
+    "PSBTChangeDetailsView" -> "PSBTOpReturnView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == NEXT or\nbutton_data[selected_menu_num] ==\nSKIP_VERIFICATION  AND  NOT\n(change_address_num <\npsbt_parser.num_change_outputs - 1)  AND\npsbt_parser.op_return_data"];
+    "PSBTChangeDetailsView" -> "PSBTFinalizeView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == NEXT or\nbutton_data[selected_menu_num] ==\nSKIP_VERIFICATION  AND  NOT\n(change_address_num <\npsbt_parser.num_change_outputs - 1)  AND  NOT\n(psbt_parser.op_return_data)"];
+    "PSBTOpReturnView" -> "PSBTFinalizeView" [];
+    "PSBTFinalizeView" -> "PSBTSigningErrorView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  sig_cnt ==\nPSBTParser.sig_count(trimmed_psbt)"];
+    "PSBTFinalizeView" -> "PSBTSignedQRDisplayView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT (sig_cnt ==\nPSBTParser.sig_count(trimmed_psbt))"];
+    "PSBTSigningErrorView" -> "PSBTSelectSeedView" [label="selected_menu_num == 0"];
+
+    // Boundary transitions
+    "ScanView" -> "PSBTSelectSeedView" [style=dashed, color="#B0BEC5", label="decoder.is_complete  AND  NOT\n(decoder.is_seed)  AND  decoder.is_psbt"];
+    "PSBTSelectSeedView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTSelectSeedView" -> "ScanSeedQRView" [style=dashed, color="#B0BEC5", label="button_data[selected_menu_num] == SCAN_SEED"];
+    "PSBTSelectSeedView" -> "SeedMnemonicEntryView" [style=dashed, color="#B0BEC5", label="NOT (button_data[selected_menu_num] ==\nSCAN_SEED)  AND\nbutton_data[selected_menu_num] in\n[TYPE_12WORD, TYPE_24WORD]"];
+    "PSBTSelectSeedView" -> "SeedElectrumMnemonicStartView" [style=dashed, color="#B0BEC5", label="NOT (button_data[selected_menu_num] ==\nSCAN_SEED)  AND  NOT\n(button_data[selected_menu_num] in\n[TYPE_12WORD, TYPE_24WORD])  AND\nbutton_data[selected_menu_num] ==\nTYPE_ELECTRUM"];
+    "PSBTOverviewView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTUnsupportedScriptTypeWarningView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTNoChangeWarningView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTMathView" -> "MainMenuView" [style=dashed, color="#B0BEC5", label="not psbt_parser"];
+    "PSBTMathView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTAddressDetailsView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTChangeDetailsView" -> "MainMenuView" [style=dashed, color="#B0BEC5", label="not psbt_parser"];
+    "PSBTChangeDetailsView" -> "NotYetImplementedView" [style=dashed, color="#B0BEC5", label="seed_fingerprint not in\nchange_data.get('fingerprint')"];
+    "PSBTChangeDetailsView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTChangeDetailsView" -> "LoadMultisigWalletDescriptorView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == NEXT or\nbutton_data[selected_menu_num] ==\nSKIP_VERIFICATION)  AND\nbutton_data[selected_menu_num] ==\nVERIFY_MULTISIG"];
+    "PSBTAddressVerificationFailedView" -> "MainMenuView" [style=dashed, color="#B0BEC5"];
+    "PSBTOpReturnView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTFinalizeView" -> "MainMenuView" [style=dashed, color="#B0BEC5", label="not psbt_parser"];
+    "PSBTFinalizeView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PSBTSignedQRDisplayView" -> "MainMenuView" [style=dashed, color="#B0BEC5"];
+    "PSBTSigningErrorView" -> "MainMenuView" [style=dashed, color="#B0BEC5", label="not psbt_parser"];
+    "PSBTSigningErrorView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "SeedOptionsView" -> "PSBTOverviewView" [style=dashed, color="#B0BEC5", label="controller.psbt  AND\nPSBTParser.has_matching_input_fingerprint(controller.psbt,\nseed,\nnetwork=settings.get_value(SETTING__NETWORK))\nAND  controller.resume_main_flow and\ncontroller.resume_main_flow ==\nController.FLOW__PSBT"];
+    "MultisigWalletDescriptorView" -> "PSBTChangeDetailsView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == RETURN"];
+}

@@ -1,0 +1,82 @@
+digraph ToolsModule {
+    rankdir=TB;
+    splines=spline;
+    nodesep=0.55;
+    ranksep=0.95;
+    bgcolor="white";
+    fontname="Helvetica";
+    labelloc="t"; fontsize=20;
+    label="Tools";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, margin="0.18,0.10", color="#00ACC1", fillcolor="#E0F7FA"];
+    edge [fontname="Helvetica", fontsize=8.5, color="#78909C", arrowsize=0.7, labeldistance=1.2];
+
+    // External boundary nodes
+    "LoadSeedView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#757575", fontcolor="#757575"];
+    "MainMenuView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+    "MultisigWalletDescriptorView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#757575", fontcolor="#757575"];
+    "ScanAddressView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#1E88E5", fontcolor="#1E88E5"];
+    "ScanSeedQRView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#1E88E5", fontcolor="#1E88E5"];
+    "ScanWalletDescriptorView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#1E88E5", fontcolor="#1E88E5"];
+    "SeedDiscardView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedElectrumMnemonicStartView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedExportXpubCustomDerivationView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedExportXpubScriptTypeView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedFinalizeView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedMnemonicEntryView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "SeedWordsWarningView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#43A047", fontcolor="#43A047"];
+    "[BACK]" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+
+    // Internal transitions
+    "ToolsMenuView" -> "ToolsImageEntropyLivePreviewView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == IMAGE"];
+    "ToolsMenuView" -> "ToolsDiceEntropyMnemonicLengthView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == IMAGE)  AND\nbutton_data[selected_menu_num] == DICE"];
+    "ToolsMenuView" -> "ToolsCalcFinalWordNumWordsView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == IMAGE)  AND\nNOT (button_data[selected_menu_num] == DICE)\nAND  button_data[selected_menu_num] ==\nKEYBOARD"];
+    "ToolsMenuView" -> "ToolsAddressExplorerSelectSourceView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == IMAGE)  AND\nNOT (button_data[selected_menu_num] == DICE)\nAND  NOT (button_data[selected_menu_num] ==\nKEYBOARD)  AND  button_data[selected_menu_num]\n== ADDRESS_EXPLORER"];
+    "ToolsImageEntropyLivePreviewView" -> "ToolsImageEntropyFinalImageView" [];
+    "ToolsImageEntropyFinalImageView" -> "ToolsImageEntropyMnemonicLengthView" [];
+    "ToolsDiceEntropyMnemonicLengthView" -> "ToolsDiceEntropyEntryView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == TWELVE"];
+    "ToolsDiceEntropyMnemonicLengthView" -> "ToolsDiceEntropyEntryView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == TWELVE)\nAND  button_data[selected_menu_num] ==\nTWENTY_FOUR"];
+    "ToolsCalcFinalWordFinalizePromptView" -> "ToolsCalcFinalWordCoinFlipsView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == COIN_FLIPS"];
+    "ToolsCalcFinalWordFinalizePromptView" -> "ToolsCalcFinalWordShowFinalWordView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == COIN_FLIPS)\nAND  NOT (button_data[selected_menu_num] ==\nSELECT_WORD)  AND\nbutton_data[selected_menu_num] == ZEROS"];
+    "ToolsCalcFinalWordCoinFlipsView" -> "ToolsCalcFinalWordShowFinalWordView" [label="NOT (ret_val == RET_CODE__BACK_BUTTON)"];
+    "ToolsCalcFinalWordShowFinalWordView" -> "ToolsCalcFinalWordDoneView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == NEXT"];
+    "ToolsAddressExplorerAddressTypeView" -> "ToolsAddressExplorerAddressListView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] in [RECEIVE,\nCHANGE]"];
+    "ToolsAddressExplorerAddressListView" -> "ToolsAddressExplorerAddressListView" [label="selected_menu_num == len(addresses)", style=dashed, color="#B0BEC5"];
+    "ToolsAddressExplorerAddressListView" -> "ToolsAddressExplorerAddressView" [];
+    "ToolsAddressExplorerAddressView" -> "ToolsAddressExplorerAddressListView" [];
+
+    // Boundary transitions
+    "ToolsMenuView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsMenuView" -> "ScanAddressView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == IMAGE)  AND\nNOT (button_data[selected_menu_num] == DICE)\nAND  NOT (button_data[selected_menu_num] ==\nKEYBOARD)  AND  NOT\n(button_data[selected_menu_num] ==\nADDRESS_EXPLORER)  AND\nbutton_data[selected_menu_num] ==\nVERIFY_ADDRESS"];
+    "ToolsImageEntropyLivePreviewView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="ret == RET_CODE__BACK_BUTTON"];
+    "ToolsImageEntropyFinalImageView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="ret == RET_CODE__BACK_BUTTON"];
+    "ToolsImageEntropyMnemonicLengthView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsImageEntropyMnemonicLengthView" -> "SeedWordsWarningView" [style=dashed, color="#B0BEC5"];
+    "ToolsDiceEntropyMnemonicLengthView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsDiceEntropyEntryView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="ret == RET_CODE__BACK_BUTTON"];
+    "ToolsDiceEntropyEntryView" -> "SeedWordsWarningView" [style=dashed, color="#B0BEC5"];
+    "ToolsCalcFinalWordNumWordsView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsCalcFinalWordNumWordsView" -> "SeedMnemonicEntryView" [style=dashed, color="#B0BEC5"];
+    "ToolsCalcFinalWordFinalizePromptView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsCalcFinalWordFinalizePromptView" -> "SeedMnemonicEntryView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == COIN_FLIPS)\nAND  button_data[selected_menu_num] ==\nSELECT_WORD"];
+    "ToolsCalcFinalWordCoinFlipsView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="ret_val == RET_CODE__BACK_BUTTON"];
+    "ToolsCalcFinalWordShowFinalWordView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsCalcFinalWordDoneView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsCalcFinalWordDoneView" -> "SeedFinalizeView" [style=dashed, color="#B0BEC5", label="button_data[selected_menu_num] == LOAD"];
+    "ToolsCalcFinalWordDoneView" -> "SeedDiscardView" [style=dashed, color="#B0BEC5", label="NOT (button_data[selected_menu_num] == LOAD)\nAND  button_data[selected_menu_num] == DISCARD"];
+    "ToolsAddressExplorerSelectSourceView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsAddressExplorerSelectSourceView" -> "SeedExportXpubScriptTypeView" [style=dashed, color="#B0BEC5", label="len(seeds) > 0 and selected_menu_num <\nlen(seeds)"];
+    "ToolsAddressExplorerSelectSourceView" -> "ScanSeedQRView" [style=dashed, color="#B0BEC5", label="NOT (len(seeds) > 0 and selected_menu_num <\nlen(seeds))  AND\nbutton_data[selected_menu_num] == SCAN_SEED"];
+    "ToolsAddressExplorerSelectSourceView" -> "ScanWalletDescriptorView" [style=dashed, color="#B0BEC5", label="NOT (len(seeds) > 0 and selected_menu_num <\nlen(seeds))  AND  NOT\n(button_data[selected_menu_num] == SCAN_SEED)\nAND  button_data[selected_menu_num] ==\nSCAN_DESCRIPTOR"];
+    "ToolsAddressExplorerSelectSourceView" -> "SeedMnemonicEntryView" [style=dashed, color="#B0BEC5", label="NOT (len(seeds) > 0 and selected_menu_num <\nlen(seeds))  AND  NOT\n(button_data[selected_menu_num] == SCAN_SEED)\nAND  NOT (button_data[selected_menu_num] ==\nSCAN_DESCRIPTOR)  AND\nbutton_data[selected_menu_num] in\n[TYPE_12WORD, TYPE_24WORD]"];
+    "ToolsAddressExplorerSelectSourceView" -> "SeedElectrumMnemonicStartView" [style=dashed, color="#B0BEC5", label="NOT (len(seeds) > 0 and selected_menu_num <\nlen(seeds))  AND  NOT\n(button_data[selected_menu_num] == SCAN_SEED)\nAND  NOT (button_data[selected_menu_num] ==\nSCAN_DESCRIPTOR)  AND  NOT\n(button_data[selected_menu_num] in\n[TYPE_12WORD, TYPE_24WORD])  AND\nbutton_data[selected_menu_num] ==\nTYPE_ELECTRUM"];
+    "ToolsAddressExplorerAddressTypeView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "ToolsAddressExplorerAddressListView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "MainMenuView" -> "ToolsMenuView" [style=dashed, color="#B0BEC5", label="NOT (button_data[selected_menu_num] == SCAN)\nAND  NOT (button_data[selected_menu_num] ==\nSEEDS)  AND  button_data[selected_menu_num] ==\nTOOLS"];
+    "LoadSeedView" -> "ToolsMenuView" [style=dashed, color="#B0BEC5", label="NOT (button_data[selected_menu_num] ==\nSEED_QR)  AND  NOT\n(button_data[selected_menu_num] ==\nTYPE_12WORD)  AND  NOT\n(button_data[selected_menu_num] ==\nTYPE_24WORD)  AND  NOT\n(button_data[selected_menu_num] ==\nTYPE_ELECTRUM)  AND\nbutton_data[selected_menu_num] == CREATE"];
+    "SeedMnemonicEntryView" -> "ToolsCalcFinalWordFinalizePromptView" [style=dashed, color="#B0BEC5", label="is_calc_final_word and cur_word_index ==\ncontroller.storage.pending_mnemonic_length - 2"];
+    "SeedMnemonicEntryView" -> "ToolsCalcFinalWordShowFinalWordView" [style=dashed, color="#B0BEC5", label="is_calc_final_word and cur_word_index ==\ncontroller.storage.pending_mnemonic_length - 1"];
+    "SeedExportXpubScriptTypeView" -> "ToolsAddressExplorerAddressTypeView" [style=dashed, color="#B0BEC5", label="len(script_types) == 1  AND\ncontroller.resume_main_flow ==\nController.FLOW__ADDRESS_EXPLORER"];
+    "SeedExportXpubScriptTypeView" -> "ToolsAddressExplorerAddressTypeView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\ncontroller.resume_main_flow ==\nController.FLOW__ADDRESS_EXPLORER"];
+    "SeedExportXpubCustomDerivationView" -> "ToolsAddressExplorerAddressTypeView" [style=dashed, color="#B0BEC5", label="controller.resume_main_flow ==\nController.FLOW__ADDRESS_EXPLORER"];
+    "MultisigWalletDescriptorView" -> "ToolsAddressExplorerAddressTypeView" [style=dashed, color="#B0BEC5", label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == RETURN)\nAND  NOT\n(button_data[selected_menu_num].button_label.startswith(_(VERIFY_ADDR.button_label)))\nAND  button_data[selected_menu_num] ==\nADDRESS_EXPLORER"];
+}

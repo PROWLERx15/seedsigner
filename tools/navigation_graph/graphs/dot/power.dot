@@ -1,0 +1,25 @@
+digraph PowerModule {
+    rankdir=TB;
+    splines=spline;
+    nodesep=0.55;
+    ranksep=0.95;
+    bgcolor="white";
+    fontname="Helvetica";
+    labelloc="t"; fontsize=20;
+    label="Power";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, margin="0.18,0.10", color="#546E7A", fillcolor="#ECEFF1"];
+    edge [fontname="Helvetica", fontsize=8.5, color="#78909C", arrowsize=0.7, labeldistance=1.2];
+
+    // External boundary nodes
+    "MainMenuView" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+    "[BACK]" [style="rounded,filled,dashed", fillcolor="#FAFAFA", color="#F9A825", fontcolor="#F9A825"];
+
+    // Internal transitions
+    "PowerOptionsView" -> "RestartView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND\nbutton_data[selected_menu_num] == RESET"];
+    "PowerOptionsView" -> "PowerOffView" [label="NOT (selected_menu_num ==\nRET_CODE__BACK_BUTTON)  AND  NOT\n(button_data[selected_menu_num] == RESET)  AND\nbutton_data[selected_menu_num] == POWER_OFF"];
+
+    // Boundary transitions
+    "MainMenuView" -> "PowerOptionsView" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__POWER_BUTTON"];
+    "PowerOptionsView" -> "[BACK]" [style=dashed, color="#B0BEC5", label="selected_menu_num == RET_CODE__BACK_BUTTON"];
+    "PowerOffView" -> "[BACK]" [style=dashed, color="#B0BEC5"];
+}

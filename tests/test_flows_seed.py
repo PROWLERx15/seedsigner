@@ -6,7 +6,7 @@ import pytest
 from base import BaseTest, FlowTest, FlowStep
 from base import FlowTestInvalidButtonDataSelectionException
 
-from seedsigner.gui.screens.screen import RET_CODE__BACK_BUTTON, ButtonOption
+from seedsigner.gui.screens.screen import RET_CODE__BACK_BUTTON, ButtonOption, ButtonOptionWithoutTranslation
 from seedsigner.models.settings import Settings, SettingsConstants
 from seedsigner.models.seed import ElectrumSeed, Seed
 from seedsigner.views.view import MainMenuView, OptionDisabledView, View, NetworkMismatchErrorView
@@ -188,7 +188,7 @@ class TestSeedFlows(FlowTest):
             else:
                 sig_selection = seed_views.SeedExportXpubSigTypeView.MULTISIG
             self.run_sequence(
-                initial_destination_view_args=dict(seed_num=0),
+                initial_destination_view_args=dict(seed=seed),
                 sequence=[
                     FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                     FlowStep(seed_views.SeedExportXpubSigTypeView, button_data_selection=sig_selection),
@@ -202,8 +202,8 @@ class TestSeedFlows(FlowTest):
         )
             
         # Load a finalized Seed into the Controller
-        mnemonic = "blush twice taste dawn feed second opinion lazy thumb play neglect impact".split()
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic="blush twice taste dawn feed second opinion lazy thumb play neglect impact".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         # these are lists of (constant_value, display_name) tuples
@@ -236,8 +236,8 @@ class TestSeedFlows(FlowTest):
             If sig_type/script_type/xpub_qr_format disabled, then these options are not available
         """
         # Load a finalized Seed into the Controller
-        mnemonic = "blush twice taste dawn feed second opinion lazy thumb play neglect impact".split()
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic="blush twice taste dawn feed second opinion lazy thumb play neglect impact".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         # these are lists of (constant_value, display_name) tuples
@@ -257,7 +257,7 @@ class TestSeedFlows(FlowTest):
 
         # If multisig isn't an option, then the sig type selection is skipped altogether
         self.run_sequence(
-            initial_destination_view_args=dict(seed_num=0),
+            initial_destination_view_args=dict(seed=seed),
             sequence=[
                 FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                 FlowStep(seed_views.SeedExportXpubSigTypeView, is_redirect=True),
@@ -268,7 +268,7 @@ class TestSeedFlows(FlowTest):
         # test that taproot is not an option via exception raised when choice is taproot
         with pytest.raises(FlowTestInvalidButtonDataSelectionException) as e:
             self.run_sequence(
-                initial_destination_view_args=dict(seed_num=0),
+                initial_destination_view_args=dict(seed=seed),
                 sequence=[
                     FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                     FlowStep(seed_views.SeedExportXpubSigTypeView, is_redirect=True),
@@ -279,7 +279,7 @@ class TestSeedFlows(FlowTest):
         # test that nunchuk is not an option via exception raised when choice is nunchuk
         with pytest.raises(FlowTestInvalidButtonDataSelectionException) as e:
             self.run_sequence(
-                initial_destination_view_args=dict(seed_num=0),
+                initial_destination_view_args=dict(seed=seed),
                 sequence=[
                     FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                     FlowStep(seed_views.SeedExportXpubSigTypeView, is_redirect=True),
@@ -294,8 +294,8 @@ class TestSeedFlows(FlowTest):
             Export XPUB flow for custom derivation finishes at MainMenuView
         """
         # Load a finalized Seed into the Controller
-        mnemonic = "blush twice taste dawn feed second opinion lazy thumb play neglect impact".split()
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic="blush twice taste dawn feed second opinion lazy thumb play neglect impact".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         # enable custom derivation script_type setting (plus at least one more for a choice)
@@ -319,7 +319,7 @@ class TestSeedFlows(FlowTest):
         xpub_qr_format = ButtonOption(self.settings.get_multiselect_value_display_names(SettingsConstants.SETTING__XPUB_QR_FORMAT)[2], return_data=specter_legacy)
 
         self.run_sequence(
-            initial_destination_view_args=dict(seed_num=0),
+            initial_destination_view_args=dict(seed=seed),
             sequence=[
                 FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                 FlowStep(seed_views.SeedExportXpubSigTypeView, button_data_selection=sig_type),
@@ -339,8 +339,8 @@ class TestSeedFlows(FlowTest):
             Export XPUB flows w/o user choices when no other options for sig_types, script_types, and/or xpub_qr_formats
         """
         # Load a finalized Seed into the Controller
-        mnemonic = "blush twice taste dawn feed second opinion lazy thumb play neglect impact".split()
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic="blush twice taste dawn feed second opinion lazy thumb play neglect impact".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         # exclusively set only one choice for each of sig_types, script_types and xpub_qr_formats
@@ -351,7 +351,7 @@ class TestSeedFlows(FlowTest):
         })
 
         self.run_sequence(
-            initial_destination_view_args=dict(seed_num=0),
+            initial_destination_view_args=dict(seed=seed),
             sequence=[
                 FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                 FlowStep(seed_views.SeedExportXpubSigTypeView, is_redirect=True),
@@ -371,7 +371,8 @@ class TestSeedFlows(FlowTest):
         """            
         # Load a finalized Seed into the Controller
         self.controller.storage.init_pending_mnemonic(num_words=12, is_electrum=True)
-        self.controller.storage.set_pending_seed(ElectrumSeed("regular reject rare profit once math fringe chase until ketchup century escape".split()))
+        seed = ElectrumSeed(mnemonic="regular reject rare profit once math fringe chase until ketchup century escape".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         # Make sure all options are enabled
@@ -380,7 +381,7 @@ class TestSeedFlows(FlowTest):
         self.settings.set_value(SettingsConstants.SETTING__XPUB_QR_FORMAT, [x for x,y in SettingsConstants.ALL_XPUB_QR_FORMATS])
 
         self.run_sequence(
-            initial_destination_view_args=dict(seed_num=0),
+            initial_destination_view_args=dict(seed=seed),
             sequence=[
                 FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.EXPORT_XPUB),
                 FlowStep(seed_views.SeedExportXpubSigTypeView, button_data_selection=seed_views.SeedExportXpubSigTypeView.SINGLE_SIG),
@@ -394,7 +395,285 @@ class TestSeedFlows(FlowTest):
                 FlowStep(MainMenuView),
             ]
         )
+    
+    def verify_word_index(self, index: int, mnemonic: list[str]):
+        """Helper to target a specific word index during SeedWordsBackupTestView"""
 
+        def before_run(view: seed_views.SeedWordsBackupTestView):
+            view.cur_index = index
+
+        target_word = ButtonOptionWithoutTranslation(mnemonic[index])
+        return before_run, target_word
+
+    def select_wrong_word(self):
+        """Helper to force selecting a wrong decoy word during SeedWordsBackupTestView"""
+
+        def before_run(view: seed_views.SeedWordsBackupTestView):
+            view.cur_index = 0
+            view.rand_seed = 6102  # Guarantees "tornado" is generated as a decoy word
+
+        wrong_word = ButtonOptionWithoutTranslation("tornado")
+        return before_run, wrong_word
+
+    def test_backup_verification_success_loaded_seed_flow(self):
+        """Verify end-to-end backup viewing and verification for loaded 12-word and 24-word seeds."""
+
+        mnemonic_12 = ["abandon"] * 11 + ["about"]
+        mnemonic_24 = ["abandon"] * 23 + ["art"]
+
+        for mnemonic in [mnemonic_12, mnemonic_24]:
+            seed = Seed(mnemonic=mnemonic)
+            self.controller.storage.set_pending_seed(seed)
+            self.controller.storage.finalize_pending_seed()
+
+            # Start flow from SeedOptionsView -> SeedBackupView -> Warning
+            sequence = [
+                FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.BACKUP),
+                FlowStep(seed_views.SeedBackupView, button_data_selection=seed_views.SeedBackupView.VIEW_WORDS),
+                FlowStep(seed_views.SeedWordsWarningView, screen_return_value=0),
+            ]
+
+            # Add SeedWordsView pages dynamically (4 words per page) to the sequence
+            num_pages = len(mnemonic) // 4
+            for _ in range(num_pages - 1):
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.NEXT)
+                )
+            sequence.append(
+                FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.DONE)
+            )
+
+            sequence.append(
+                FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.VERIFY)
+            )
+
+            # Verify all words sequentially (12 or 24 steps)
+            for i in range(len(mnemonic)):
+                before_run_fn, target_word_option = self.verify_word_index(i, mnemonic)
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsBackupTestView, before_run=before_run_fn, button_data_selection=target_word_option)
+                )
+
+            # Success screen -> Returns to SeedOptionsView
+            sequence += [
+                FlowStep(seed_views.SeedWordsBackupTestSuccessView, screen_return_value=0),
+                FlowStep(seed_views.SeedOptionsView),
+            ]
+
+            self.run_sequence(sequence, initial_destination_view_args=dict(seed=seed))
+            self.setup_method()
+
+    def test_backup_verification_success_pending_seed_flow(self):
+        """Verify end-to-end backup viewing and verification for pending 12-word and 24-word seeds (routes to SeedFinalizeView)."""
+
+        mnemonic_12 = ["abandon"] * 11 + ["about"]
+        mnemonic_24 = ["abandon"] * 23 + ["art"]
+
+        for mnemonic in [mnemonic_12, mnemonic_24]:
+            seed = Seed(mnemonic=mnemonic)
+            self.controller.storage.set_pending_seed(seed)
+            sequence = []
+
+            # Start flow from SeedWordsView
+            num_pages = len(mnemonic) // 4
+            for _ in range(num_pages):
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.NEXT)
+                )
+
+            sequence.append(
+                FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.VERIFY)
+            )
+
+            # Verify all words sequentially (12 or 24 steps)
+            for i in range(len(mnemonic)):
+                before_run_fn, target_word_option = self.verify_word_index(i, mnemonic)
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsBackupTestView, before_run=before_run_fn, button_data_selection=target_word_option)
+                )
+
+            # Success screen -> Returns to SeedFinalizeView
+            sequence += [
+                FlowStep(seed_views.SeedWordsBackupTestSuccessView, screen_return_value=0),
+                FlowStep(seed_views.SeedFinalizeView),
+            ]
+
+            self.run_sequence(
+                sequence,
+                initial_destination_view_args=dict(seed=None, page_index=0),
+            )
+            self.setup_method()
+
+    def test_backup_verification_skip_loaded_seed_flow(self):
+        """Verify clicking SKIP for a loaded seed -> returns to SeedOptionsView"""
+        mnemonic_12 = ["abandon"] * 11 + ["about"]
+        mnemonic_24 = ["abandon"] * 23 + ["art"]
+
+        for mnemonic in [mnemonic_12, mnemonic_24]:
+            seed = Seed(mnemonic=mnemonic)
+            self.controller.storage.set_pending_seed(seed)
+            self.controller.storage.finalize_pending_seed()
+
+            # Start flow from SeedOptionsView -> SeedBackupView -> Warning
+            sequence = [
+                FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.BACKUP),
+                FlowStep(seed_views.SeedBackupView, button_data_selection=seed_views.SeedBackupView.VIEW_WORDS),
+                FlowStep(seed_views.SeedWordsWarningView, screen_return_value=0),
+            ]
+
+            # Add SeedWordsView pages dynamically (4 words per page) to the sequence
+            num_pages = len(mnemonic) // 4
+            for _ in range(num_pages - 1):
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.NEXT)
+                )
+            sequence.append(
+                FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.DONE)
+            )
+
+            sequence += [
+                FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.SKIP),
+                FlowStep(seed_views.SeedOptionsView),
+            ]
+
+            self.run_sequence(sequence, initial_destination_view_args=dict(seed=seed))
+            self.setup_method()
+
+    def test_backup_verification_skip_pending_seed_flow(self):
+        """Verify clicking SKIP for a pending seed -> returns to SeedFinalizeView"""
+        mnemonic_12 = ["abandon"] * 11 + ["about"]
+        mnemonic_24 = ["abandon"] * 23 + ["art"]
+
+        for mnemonic in [mnemonic_12, mnemonic_24]:
+            seed = Seed(mnemonic=mnemonic)
+            self.controller.storage.set_pending_seed(seed)
+            sequence = []
+
+            # Start flow from SeedWordsView
+            for _ in range(len(mnemonic) // 4):
+                sequence.append(
+                    FlowStep(seed_views.SeedWordsView, button_data_selection=seed_views.SeedWordsView.NEXT)
+                )
+
+            sequence += [
+                FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.SKIP),
+                FlowStep(seed_views.SeedFinalizeView),
+            ]
+
+            self.run_sequence(sequence, initial_destination_view_args=dict(seed=None, page_index=0))
+            self.setup_method()
+
+    def test_backup_verification_retry_flow(self):
+        """Verify selecting a wrong word in SeedWordsBackupTestView and selecting RETRY -> returns to SeedWordsBackupTestView."""
+
+        mnemonic = ["abandon"] * 11 + ["about"]
+
+        seed = Seed(mnemonic=mnemonic)
+        self.controller.storage.set_pending_seed(seed)
+        self.controller.storage.finalize_pending_seed()
+        before_run_fn, wrong_word = self.select_wrong_word()
+
+        # Start flow from SeedWordsBackupTestPromptView -> Select Wrong Word -> RETRY -> Back to Verification
+        sequence = [
+            FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.VERIFY),
+            FlowStep(seed_views.SeedWordsBackupTestView, before_run=before_run_fn, button_data_selection=wrong_word),
+            FlowStep(seed_views.SeedWordsBackupTestMistakeView, button_data_selection=seed_views.SeedWordsBackupTestMistakeView.RETRY),
+            FlowStep(seed_views.SeedWordsBackupTestView),
+        ]
+
+        self.run_sequence(sequence, initial_destination_view_args=dict(seed=seed))
+
+    def test_backup_verification_mistake_review_flow(self):
+        """Verify selecting a wrong word in SeedWordsBackupTestView and selecting REVIEW -> returns to SeedWordsView."""
+
+        mnemonic = ["abandon"] * 11 + ["about"]
+
+        seed = Seed(mnemonic=mnemonic)
+        self.controller.storage.set_pending_seed(seed)
+        self.controller.storage.finalize_pending_seed()
+        before_run_fn, wrong_word = self.select_wrong_word()
+
+        # Start flow from SeedWordsBackupTestPromptView -> Select Wrong Word -> REVIEW -> Back to Words View
+        sequence = [
+            FlowStep(seed_views.SeedWordsBackupTestPromptView, button_data_selection=seed_views.SeedWordsBackupTestPromptView.VERIFY),
+            FlowStep(seed_views.SeedWordsBackupTestView, before_run=before_run_fn, button_data_selection=wrong_word),
+            FlowStep(seed_views.SeedWordsBackupTestMistakeView, button_data_selection=seed_views.SeedWordsBackupTestMistakeView.REVIEW),
+            FlowStep(seed_views.SeedWordsView),
+        ]
+
+        self.run_sequence(sequence, initial_destination_view_args=dict(seed=seed))
+
+    def test_keep_seed_flow(self):
+        """Verify clicking KEEP on SeedDiscardView returns to the correct view."""
+
+        from seedsigner.views import tools_views
+        mnemonic = ["abandon"] * 11 + ["about"]
+
+        # Flow 1: Pending Seed -> Keep -> SeedFinalizeView
+        # The only way to reach SeedDiscardView with a pending seed is from ToolsCalcFinalWordDoneView
+        self.controller.storage.init_pending_mnemonic(len(mnemonic))
+        for i, word in enumerate(mnemonic):
+            self.controller.storage.update_pending_mnemonic(word, i)
+
+        self.run_sequence(
+            sequence=[
+                FlowStep(tools_views.ToolsCalcFinalWordDoneView, button_data_selection=tools_views.ToolsCalcFinalWordDoneView.DISCARD),
+                FlowStep(seed_views.SeedDiscardView, button_data_selection=seed_views.SeedDiscardView.KEEP),
+                FlowStep(seed_views.SeedFinalizeView),
+            ]
+        )
+        self.setup_method()
+
+        # Flow 2: Finalized Seed -> Keep -> SeedOptionsView
+        seed = Seed(mnemonic=mnemonic)
+        self.controller.storage.set_pending_seed(seed)
+        self.controller.storage.finalize_pending_seed()
+
+        self.run_sequence(
+            initial_destination_view_args=dict(seed=seed),
+            sequence=[
+                FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.DISCARD),
+                FlowStep(seed_views.SeedDiscardView, button_data_selection=seed_views.SeedDiscardView.KEEP),
+                FlowStep(seed_views.SeedOptionsView),
+            ]
+        )
+        self.setup_method()
+    
+    def test_keep_seed_flow(self):
+        """Verify clicking KEEP on SeedDiscardView returns to the correct view."""
+
+        from seedsigner.views import tools_views
+        mnemonic = ["abandon"] * 11 + ["about"]
+
+        # Flow 1: Pending Seed -> Keep -> SeedFinalizeView
+        # The only way to reach SeedDiscardView with a pending seed is from ToolsCalcFinalWordDoneView
+        self.controller.storage.init_pending_mnemonic(len(mnemonic))
+        for i, word in enumerate(mnemonic):
+            self.controller.storage.update_pending_mnemonic(word, i)
+
+        self.run_sequence(
+            sequence=[
+                FlowStep(tools_views.ToolsCalcFinalWordDoneView, button_data_selection=tools_views.ToolsCalcFinalWordDoneView.DISCARD),
+                FlowStep(seed_views.SeedDiscardView, button_data_selection=seed_views.SeedDiscardView.KEEP),
+                FlowStep(seed_views.SeedFinalizeView),
+            ]
+        )
+        self.setup_method()
+
+        # Flow 2: Finalized Seed -> Keep -> SeedOptionsView
+        seed = Seed(mnemonic=mnemonic)
+        self.controller.storage.set_pending_seed(seed)
+        self.controller.storage.finalize_pending_seed()
+
+        self.run_sequence(
+            initial_destination_view_args=dict(seed=seed),
+            sequence=[
+                FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.DISCARD),
+                FlowStep(seed_views.SeedDiscardView, button_data_selection=seed_views.SeedDiscardView.KEEP),
+                FlowStep(seed_views.SeedOptionsView),
+            ]
+        )
+        self.setup_method()
 
     def test_discard_seed_flow(self):
         """
@@ -402,12 +681,12 @@ class TestSeedFlows(FlowTest):
             remove the in-memory seed from the Controller.
         """
         # Load a finalized Seed into the Controller
-        mnemonic = "blush twice taste dawn feed second opinion lazy thumb play neglect impact".split()
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic="blush twice taste dawn feed second opinion lazy thumb play neglect impact".split())
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         self.run_sequence(
-            initial_destination_view_args=dict(seed_num=0),
+            initial_destination_view_args=dict(seed=seed),
             sequence=[
                 FlowStep(seed_views.SeedOptionsView, button_data_selection=seed_views.SeedOptionsView.DISCARD),
                 FlowStep(seed_views.SeedDiscardView, button_data_selection=seed_views.SeedDiscardView.DISCARD),
@@ -481,17 +760,91 @@ class TestSeedFlows(FlowTest):
         """
         # Load a finalized Seed into the Controller
         mnemonic = ["abandon"] * 11 + ["about"]
-        self.controller.storage.set_pending_seed(Seed(mnemonic=mnemonic))
+        seed = Seed(mnemonic=mnemonic)
+        self.controller.storage.set_pending_seed(seed)
         self.controller.storage.finalize_pending_seed()
 
         self.run_sequence(
-            initial_destination_view_args={'num_modules': 21, 'seed_num': 0, 'seedqr_format': 'seed__seedqr'},
+            initial_destination_view_args={'num_modules': 21, 'seed': seed, 'seedqr_format': 'seed__seedqr'},
             sequence=[
                 FlowStep(seed_views.SeedTranscribeSeedQRWholeQRView),
                 FlowStep(seed_views.SeedTranscribeSeedQRZoomedInView, is_redirect=True),  # Live interactive screens are a bit weird; not sure why `is_redirect` is necessary here
         ])
 
         assert self.controller.is_screensaver_start_allowed == False
+
+
+
+class TestSeedEntryBackFlows(FlowTest):
+    """
+    Tests for every BACK exit scenario from SeedMnemonicEntryView and related views.
+    
+    A naive BackStackView swap can leave resume_main_flow dangling, causing
+    auto-redirects on stale flow state. These tests verify that BACK navigation
+    returns to the correct parent view AND that no flow state leaks.
+    """
+
+    def test_back_from_seed_entry_first_word(self):
+        """
+        Pressing BACK on the first word of mnemonic entry should return to
+        the View that initiated the mnemonic entry process.
+        """
+        for seed_type in [seed_views.LoadSeedView.TYPE_12WORD, seed_views.LoadSeedView.TYPE_24WORD]:
+            self.run_sequence([
+                FlowStep(MainMenuView, button_data_selection=MainMenuView.SEEDS),
+                FlowStep(seed_views.SeedsMenuView, is_redirect=True),  # No seeds loaded; auto-redirects to LoadSeedView
+                FlowStep(seed_views.LoadSeedView, button_data_selection=seed_type),
+                FlowStep(seed_views.SeedMnemonicEntryView, screen_return_value=RET_CODE__BACK_BUTTON),
+                FlowStep(seed_views.LoadSeedView),  # Should land here, NOT MainMenuView
+            ])
+            BaseTest.reset_controller()
+
+
+    def test_back_from_seed_entry_mid_word(self):
+        """
+        Pressing BACK from a middle word (eg. word #2) should return to the
+        previous SeedMnemonicEntryView (eg. word #1) via the back stack.
+        """
+        self.run_sequence([
+            FlowStep(MainMenuView, button_data_selection=MainMenuView.SEEDS),
+            FlowStep(seed_views.SeedsMenuView, is_redirect=True),
+            FlowStep(seed_views.LoadSeedView, button_data_selection=seed_views.LoadSeedView.TYPE_12WORD),
+            FlowStep(seed_views.SeedMnemonicEntryView, screen_return_value="abandon"),  # word #1
+            FlowStep(seed_views.SeedMnemonicEntryView, screen_return_value=RET_CODE__BACK_BUTTON),  # BACK from word #2
+            FlowStep(seed_views.SeedMnemonicEntryView),  # Returns to word #1
+        ])
+
+        # Verify we're back on word #1: word at index 0 should still be set
+        # from the previous entry, while word at index 1 should be unset.
+        assert self.controller.storage.get_pending_mnemonic_word(0) == "abandon"
+        assert self.controller.storage.get_pending_mnemonic_word(1) is None
+
+
+    def test_back_from_seed_entry_via_seed_select(self):
+        """
+        Backing out of mnemonic entry during an active flow must preserve
+        `resume_main_flow` so the user remains within that flow.
+        """
+        from seedsigner.controller import Controller
+        from seedsigner.models.settings import SettingsConstants
+
+        self.settings.set_value(SettingsConstants.SETTING__MESSAGE_SIGNING, SettingsConstants.OPTION__ENABLED)
+
+        def load_signmessage_into_decoder(view):
+            view.decoder.add_data("signmessage m/84h/0h/0h/0/0 ascii:test message")
+
+        self.run_sequence([
+            FlowStep(MainMenuView, button_data_selection=MainMenuView.SCAN),
+            FlowStep(scan_views.ScanView, before_run=load_signmessage_into_decoder),
+            FlowStep(seed_views.SeedSignMessageStartView, is_redirect=True),
+            FlowStep(seed_views.SeedSelectSeedView, button_data_selection=seed_views.SeedSelectSeedView.TYPE_12WORD),
+            FlowStep(seed_views.SeedMnemonicEntryView, screen_return_value=RET_CODE__BACK_BUTTON),  # BACK on first word
+            FlowStep(seed_views.SeedSelectSeedView),  # Should return here, in the sign message flow
+        ])
+
+        # Verify resume_main_flow is still set — user is still in the sign message flow
+        assert self.controller.resume_main_flow == Controller.FLOW__SIGN_MESSAGE
+
 
 
 
@@ -573,7 +926,7 @@ class TestMessageSigningFlows(FlowTest):
         ])
 
         # Scenario 2: Scan the seed first, then select Sign Message
-        self.controller.discard_seed(0)
+        self.controller.discard_seed(self.controller.storage.seeds[0])
         self.run_sequence([
             FlowStep(MainMenuView, button_data_selection=MainMenuView.SCAN),
             FlowStep(scan_views.ScanView, before_run=self.load_seed_into_decoder),  # simulate read SeedQR; ret val is ignored
@@ -621,7 +974,7 @@ class TestMessageSigningFlows(FlowTest):
         ])
 
         # Scenario 4: Load a long message without whitespace
-        self.controller.discard_seed(0)
+        self.controller.discard_seed(self.controller.storage.seeds[0])
         self.run_sequence([
             FlowStep(MainMenuView, button_data_selection=MainMenuView.SCAN),
             FlowStep(scan_views.ScanView, before_run=self.load_seed_into_decoder),  # simulate read SeedQR; ret val is ignored

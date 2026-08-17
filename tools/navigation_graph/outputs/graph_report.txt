@@ -1,0 +1,1086 @@
+Navigation Graph Report (Total Edges: 293)
+============================================================
+
+AddressVerificationSigTypeView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1800 in run)
+  └──> SeedSelectSeedView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.SINGLE_SIG
+       (Line 1804 in run)
+  └──> SeedAddressVerificationView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.SINGLE_SIG) AND button_data[selected_menu_num] == self.MULTISIG AND self.controller.multisig_wallet_descriptor
+       (Line 1809 in run)
+  └──> LoadMultisigWalletDescriptorView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.SINGLE_SIG) AND button_data[selected_menu_num] == self.MULTISIG AND NOT (self.controller.multisig_wallet_descriptor)
+       (Line 1812 in run)
+
+AddressVerificationStartView
+  └──> SeedSelectSeedView
+       Condition: self.controller.unverified_address['script_type'] == SettingsConstants.LEGACY_P2PKH
+       Metadata:  skip_current=True
+       (Line 1744 in run)
+  └──> AddressVerificationSigTypeView
+       Condition: self.controller.unverified_address['script_type'] == SettingsConstants.NESTED_SEGWIT
+       Metadata:  skip_current=True
+       (Line 1748 in run)
+  └──> SeedAddressVerificationView
+       Condition: self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND len(self.controller.unverified_address['address']) >= 62 AND self.controller.multisig_wallet_descriptor
+       Metadata:  skip_current=True
+       (Line 1756 in run)
+  └──> LoadMultisigWalletDescriptorView
+       Condition: self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND len(self.controller.unverified_address['address']) >= 62 AND NOT (self.controller.multisig_wallet_descriptor)
+       Metadata:  skip_current=True
+       (Line 1759 in run)
+  └──> SeedSelectSeedView
+       Condition: self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND NOT (len(self.controller.unverified_address['address']) >= 62)
+       Metadata:  skip_current=True
+       (Line 1763 in run)
+  └──> SeedSelectSeedView
+       Condition: NOT (self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT) AND self.controller.unverified_address['script_type'] == SettingsConstants.TAPROOT
+       Metadata:  skip_current=True
+       (Line 1767 in run)
+
+CameraConnectionErrorView
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Metadata:  clear_history=True
+       (Line 406 in run)
+
+DonateView
+  └──> SettingsMenuView
+       (Line 355 in run)
+
+ErrorView
+  └──> MainMenuView
+       Metadata:  clear_history=True
+       (Line 332 in run)
+
+IOTestView
+  └──> SettingsMenuView
+       (Line 347 in run)
+
+LoadMultisigWalletDescriptorView
+  └──> ScanWalletDescriptorView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.SCAN
+       (Line 2046 in run)
+  └──> [BACK] ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.CANCEL AND self.controller.resume_main_flow == Controller.FLOW__PSBT
+       (Line 2051 in run)
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.CANCEL AND NOT (self.controller.resume_main_flow == Controller.FLOW__PSBT)
+       (Line 2053 in run)
+
+LoadSeedView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 188 in run)
+  └──> ScanSeedQRView
+       Condition: button_data[selected_menu_num] == self.SEED_QR
+       (Line 192 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (button_data[selected_menu_num] == self.SEED_QR) AND button_data[selected_menu_num] == self.TYPE_12WORD
+       (Line 196 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND button_data[selected_menu_num] == self.TYPE_24WORD
+       (Line 200 in run)
+  └──> SeedElectrumMnemonicStartView
+       Condition: NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_24WORD) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM
+       (Line 203 in run)
+  └──> ToolsMenuView
+       Condition: NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_24WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_ELECTRUM) AND button_data[selected_menu_num] == self.CREATE
+       (Line 207 in run)
+
+LocaleSelectionView
+  └──> SettingsMenuView
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 139 in run)
+  └──> SettingsMenuView
+       (Line 144 in run)
+
+MainMenuView
+  └──> PowerOptionsView
+       Condition: selected_menu_num == RET_CODE__POWER_BUTTON
+       (Line 207 in run)
+  └──> ScanView
+       Condition: button_data[selected_menu_num] == self.SCAN
+       (Line 211 in run)
+  └──> SeedsMenuView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.SEEDS
+       (Line 215 in run)
+  └──> ToolsMenuView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN) AND NOT (button_data[selected_menu_num] == self.SEEDS) AND button_data[selected_menu_num] == self.TOOLS
+       (Line 219 in run)
+  └──> SettingsMenuView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN) AND NOT (button_data[selected_menu_num] == self.SEEDS) AND NOT (button_data[selected_menu_num] == self.TOOLS) AND button_data[selected_menu_num] == self.SETTINGS
+       (Line 223 in run)
+
+MultisigWalletDescriptorView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 2096 in run)
+  └──> PSBTChangeDetailsView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.RETURN
+       (Line 2102 in run)
+  └──> SeedAddressVerificationView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RETURN) AND button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label))
+       (Line 2106 in run)
+  └──> ToolsAddressExplorerAddressTypeView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RETURN) AND NOT (button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label))) AND button_data[selected_menu_num] == self.ADDRESS_EXPLORER
+       (Line 2111 in run)
+  └──> MainMenuView
+       (Line 2113 in run)
+
+NetworkMismatchErrorView
+  └──> SettingsEntryUpdateSelectionView
+       Metadata:  clear_history=True
+       (Line 350 in __post_init__)
+
+NotYetImplementedView
+  └──> MainMenuView
+       (Line 308 in run)
+
+OptionDisabledView
+  └──> SettingsEntryUpdateSelectionView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.UPDATE_SETTING
+       Metadata:  clear_history=True
+       (Line 438 in run)
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.UPDATE_SETTING)
+       Metadata:  clear_history=True
+       (Line 440 in run)
+
+PSBTAddressDetailsView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 284 in run)
+  └──> PSBTAddressDetailsView
+       Condition: self.address_num < len(psbt_parser.destination_addresses) - 1
+       (Line 288 in run)
+  └──> PSBTChangeDetailsView
+       Condition: NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND psbt_parser.change_amount > 0
+       (Line 292 in run)
+  └──> PSBTOpReturnView
+       Condition: NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND NOT (psbt_parser.change_amount > 0) AND psbt_parser.op_return_data
+       (Line 295 in run)
+  └──> PSBTFinalizeView
+       Condition: NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND NOT (psbt_parser.change_amount > 0) AND NOT (psbt_parser.op_return_data)
+       (Line 299 in run)
+
+PSBTAddressVerificationFailedView
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Metadata:  clear_history=True
+       (Line 482 in run)
+
+PSBTChangeDetailsView
+  └──> MainMenuView
+       Condition: not psbt_parser
+       (Line 319 in run)
+  └──> NotYetImplementedView
+       Condition: seed_fingerprint not in change_data.get('fingerprint')
+       (Line 339 in run)
+  └──> PSBTAddressVerificationFailedView
+       Condition: is_change_addr_verified == False and (not psbt_parser.is_multisig or self.controller.multisig_wallet_descriptor is not None)
+       Metadata:  clear_history=True
+       (Line 418 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 435 in run)
+  └──> PSBTChangeDetailsView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND self.change_address_num < psbt_parser.num_change_outputs - 1
+       (Line 439 in run)
+  └──> PSBTOpReturnView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND NOT (self.change_address_num < psbt_parser.num_change_outputs - 1) AND psbt_parser.op_return_data
+       (Line 442 in run)
+  └──> PSBTFinalizeView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND NOT (self.change_address_num < psbt_parser.num_change_outputs - 1) AND NOT (psbt_parser.op_return_data)
+       (Line 446 in run)
+  └──> LoadMultisigWalletDescriptorView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION) AND button_data[selected_menu_num] == self.VERIFY_MULTISIG
+       (Line 452 in run)
+
+PSBTFinalizeView
+  └──> MainMenuView
+       Condition: not psbt_parser
+       (Line 530 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 538 in run)
+  └──> PSBTSigningErrorView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND sig_cnt == PSBTParser.sig_count(trimmed_psbt)
+       (Line 550 in run)
+  └──> PSBTSignedQRDisplayView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (sig_cnt == PSBTParser.sig_count(trimmed_psbt))
+       (Line 554 in run)
+
+PSBTMathView
+  └──> MainMenuView
+       Condition: not psbt_parser
+       (Line 223 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 236 in run)
+  └──> PSBTAddressDetailsView
+       Condition: len(psbt_parser.destination_addresses) > 0
+       (Line 239 in run)
+  └──> PSBTChangeDetailsView
+       Condition: NOT (len(psbt_parser.destination_addresses) > 0)
+       (Line 242 in run)
+
+PSBTNoChangeWarningView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 199 in run)
+  └──> PSBTMathView
+       Metadata:  skip_current=True
+       (Line 202 in run)
+
+PSBTOpReturnView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 509 in run)
+  └──> PSBTFinalizeView
+       (Line 511 in run)
+
+PSBTOverviewView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 152 in run)
+  └──> PSBTUnsupportedScriptTypeWarningView
+       Condition: psbt_parser.policy == None
+       (Line 157 in run)
+  └──> PSBTNoChangeWarningView
+       Condition: NOT (psbt_parser.policy == None) AND psbt_parser.change_amount == 0
+       (Line 160 in run)
+  └──> PSBTMathView
+       Condition: NOT (psbt_parser.policy == None) AND NOT (psbt_parser.change_amount == 0)
+       (Line 163 in run)
+
+PSBTSelectSeedView
+  └──> PSBTOverviewView
+       Condition: self.controller.psbt_seed AND PSBTParser.has_matching_input_fingerprint(psbt=self.controller.psbt, seed=self.controller.psbt_seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK))
+       (Line 30 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 57 in run)
+  └──> PSBTOverviewView
+       Condition: len(seeds) > 0 and selected_menu_num < len(seeds)
+       (Line 62 in run)
+  └──> ScanSeedQRView
+       Condition: button_data[selected_menu_num] == self.SCAN_SEED
+       (Line 69 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+       (Line 77 in run)
+  └──> SeedElectrumMnemonicStartView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM
+       (Line 81 in run)
+
+PSBTSignedQRDisplayView
+  └──> MainMenuView
+       Metadata:  clear_history=True
+       (Line 570 in run)
+
+PSBTSigningErrorView
+  └──> MainMenuView
+       Condition: not psbt_parser
+       (Line 581 in run)
+  └──> PSBTSelectSeedView
+       Condition: selected_menu_num == 0
+       Metadata:  clear_history=True
+       (Line 596 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 599 in run)
+
+PSBTUnsupportedScriptTypeWarningView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 177 in run)
+  └──> PSBTAddressDetailsView
+       Metadata:  skip_current=True
+       (Line 181 in run)
+
+PowerOffView
+  └──> [BACK]
+       (Line 287 in run)
+
+PowerOptionsView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 241 in run)
+  └──> RestartView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.RESET
+       (Line 244 in run)
+  └──> PowerOffView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RESET) AND button_data[selected_menu_num] == self.POWER_OFF
+       (Line 247 in run)
+
+RemoveMicroSDWarningView
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.CONTINUE AND not MicroSD.get_instance().is_inserted
+       Metadata:  clear_history=True
+       (Line 463 in run)
+  └──> RemoveMicroSDWarningView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.CONTINUE AND NOT (not MicroSD.get_instance().is_inserted)
+       Metadata:  clear_history=True
+       (Line 465 in run)
+  └──> SettingsEntryUpdateSelectionView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.CONTINUE) AND button_data[selected_menu_num] == self.SETTINGS
+       (Line 469 in run)
+
+ScanInvalidQRTypeView
+  └──> MainMenuView
+       Metadata:  clear_history=True
+       (Line 229 in run)
+
+ScanView
+  └──> ErrorView
+       Condition: self.decoder.is_complete AND not self.is_valid_qr_type
+       (Line 64 in run)
+  └──> [BACK]
+       Condition: self.decoder.is_complete AND not self.is_valid_qr_type
+       Metadata:  skip_current=True
+       (Line 69 in run)
+  └──> NotYetImplementedView
+       Condition: self.decoder.is_complete AND self.decoder.is_seed AND not seed_mnemonic
+       (Line 77 in run)
+  └──> SeedAddPassphraseView
+       Condition: self.decoder.is_complete AND self.decoder.is_seed AND NOT (not seed_mnemonic) AND self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED
+       (Line 88 in run)
+  └──> SeedFinalizeView
+       Condition: self.decoder.is_complete AND self.decoder.is_seed AND NOT (not seed_mnemonic) AND NOT (self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED)
+       (Line 90 in run)
+  └──> PSBTSelectSeedView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND self.decoder.is_psbt
+       Metadata:  skip_current=True
+       (Line 97 in run)
+  └──> SettingsIngestSettingsQRView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND self.decoder.is_settings
+       (Line 102 in run)
+  └──> NotYetImplementedView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND self.decoder.is_wallet_descriptor AND not descriptor.is_basic_multisig
+       (Line 128 in run)
+  └──> MultisigWalletDescriptorView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND self.decoder.is_wallet_descriptor
+       Metadata:  skip_current=True
+       (Line 131 in run)
+  └──> AddressVerificationStartView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND self.decoder.is_address
+       Metadata:  skip_current=True
+       (Line 138 in run)
+  └──> SeedSignMessageStartView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND NOT (self.decoder.is_address) AND self.decoder.is_sign_message
+       (Line 152 in run)
+  └──> NotYetImplementedView
+       Condition: self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND NOT (self.decoder.is_address) AND NOT (self.decoder.is_sign_message)
+       (Line 161 in run)
+  └──> ScanInvalidQRTypeView
+       Condition: NOT (self.decoder.is_complete) AND self.decoder.is_invalid
+       (Line 167 in run)
+  └──> MainMenuView
+       (Line 169 in run)
+
+SeedAddPassphraseExitDialogView
+  └──> SeedAddPassphraseView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.EDIT
+       (Line 407 in run)
+  └──> SeedFinalizeView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] in [self.DISCARD, self.SKIP]
+       (Line 411 in run)
+
+SeedAddPassphraseView
+  └──> SeedAddPassphraseExitDialogView
+       Condition: 'is_back_button' in ret_dict or len(self.seed.passphrase) == 0
+       (Line 370 in run)
+  └──> SeedReviewPassphraseView
+       Condition: NOT ('is_back_button' in ret_dict or len(self.seed.passphrase) == 0)
+       (Line 373 in run)
+
+SeedAddressVerificationSuccessView
+  └──> MainMenuView
+       (Line 2028 in run)
+
+SeedAddressVerificationView
+  └──> SeedAddressVerificationSuccessView
+       Condition: self.verified_index.cur_count is not None
+       (Line 1944 in run)
+  └──> MainMenuView
+       (Line 1955 in run)
+
+SeedBIP85InvalidChildIndexView
+  └──> SeedBIP85SelectChildIndexView
+       Metadata:  skip_current=True
+       (Line 1197 in run)
+
+SeedBIP85SelectChildIndexView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 1157 in run)
+  └──> SeedBIP85InvalidChildIndexView
+       Condition: not 0 <= int(ret) < 2 ** 31
+       Metadata:  skip_current=True
+       (Line 1160 in run)
+  └──> SeedWordsWarningView
+       (Line 1169 in run)
+
+SeedBIP85SelectNumWordsView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1130 in run)
+  └──> SeedBIP85SelectChildIndexView
+       (Line 1137 in run)
+
+SeedBackupView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 651 in run)
+  └──> SeedWordsWarningView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.VIEW_WORDS
+       (Line 654 in run)
+  └──> SeedTranscribeSeedQRFormatView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.VIEW_WORDS) AND button_data[selected_menu_num] == self.EXPORT_SEEDQR
+       (Line 657 in run)
+
+SeedDiscardView
+  └──> SeedOptionsView
+       Condition: button_data[selected_menu_num] == self.KEEP AND self.seed_num is not None
+       Metadata:  skip_current=True
+       (Line 489 in run)
+  └──> SeedFinalizeView
+       Condition: button_data[selected_menu_num] == self.KEEP AND NOT (self.seed_num is not None)
+       Metadata:  skip_current=True
+       (Line 491 in run)
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.KEEP) AND button_data[selected_menu_num] == self.DISCARD
+       Metadata:  clear_history=True
+       (Line 498 in run)
+
+SeedElectrumMnemonicStartView
+  └──> SeedMnemonicEntryView ⚠️ [TRAP RISK]
+       (Line 519 in run)
+
+SeedExportXpubCustomDerivationView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 778 in run)
+  └──> ToolsAddressExplorerAddressTypeView
+       Condition: self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+       (Line 785 in run)
+  └──> SeedExportXpubQRFormatView
+       (Line 787 in run)
+
+SeedExportXpubDetailsView
+  └──> SeedExportXpubQRDisplayView
+       Condition: selected_menu_num == 0
+       (Line 952 in run)
+  └──> [BACK]
+       Condition: NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 962 in run)
+
+SeedExportXpubQRDisplayView
+  └──> MainMenuView
+       (Line 997 in run)
+
+SeedExportXpubQRFormatView
+  └──> SeedExportXpubWarningView
+       Condition: len(self.settings.get_value(SettingsConstants.SETTING__XPUB_QR_FORMAT)) == 1
+       Metadata:  skip_current=True
+       (Line 818 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 833 in run)
+  └──> SeedExportXpubWarningView
+       (Line 837 in run)
+
+SeedExportXpubScriptTypeView
+  └──> ToolsAddressExplorerAddressTypeView
+       Condition: len(script_types) == 1 AND self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+       Metadata:  skip_current=True
+       (Line 720 in run)
+  └──> SeedExportXpubQRFormatView
+       Condition: len(script_types) == 1 AND NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)
+       Metadata:  skip_current=True
+       (Line 722 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 745 in run)
+  └──> SeedExportXpubCustomDerivationView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND args['script_type'] == SettingsConstants.CUSTOM_DERIVATION
+       (Line 751 in run)
+  └──> ToolsAddressExplorerAddressTypeView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+       (Line 755 in run)
+  └──> SeedExportXpubQRFormatView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)
+       (Line 757 in run)
+
+SeedExportXpubSigTypeView
+  └──> SeedExportXpubScriptTypeView
+       Condition: len(self.settings.get_value(SettingsConstants.SETTING__SIG_TYPES)) == 1
+       Metadata:  skip_current=True
+       (Line 676 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 687 in run)
+  └──> SeedExportXpubScriptTypeView
+       (Line 689 in run)
+
+SeedExportXpubWarningView
+  └──> SeedExportXpubDetailsView
+       Metadata:  skip_current=True
+       (Line 852 in run)
+  └──> [BACK]
+       Condition: NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 879 in run)
+
+SeedFinalizeView
+  └──> SeedOptionsView
+       Condition: button_data[selected_menu_num] == self.FINALIZE
+       Metadata:  clear_history=True
+       (Line 337 in run)
+  └──> SeedAddPassphraseView
+       Condition: NOT (button_data[selected_menu_num] == self.FINALIZE) AND button_data[selected_menu_num] == self.PASSPHRASE
+       (Line 340 in run)
+  └──> [BACK]
+       Condition: NOT (button_data[selected_menu_num] == self.FINALIZE) AND NOT (button_data[selected_menu_num] == self.PASSPHRASE) AND selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 343 in run)
+
+SeedMnemonicEntryView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON AND self.cur_word_index > 0
+       (Line 230 in run)
+  └──> MainMenuView
+       Condition: ret == RET_CODE__BACK_BUTTON AND NOT (self.cur_word_index > 0)
+       (Line 233 in run)
+  └──> ToolsCalcFinalWordFinalizePromptView
+       Condition: self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 2
+       (Line 242 in run)
+  └──> ToolsCalcFinalWordShowFinalWordView
+       Condition: self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 1
+       (Line 248 in run)
+  └──> SeedMnemonicEntryView
+       Condition: self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1
+       (Line 251 in run)
+  └──> SeedMnemonicInvalidView
+       Condition: NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)
+       (Line 264 in run)
+  └──> SeedFinalizeView
+       Condition: NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)
+       (Line 266 in run)
+
+SeedMnemonicInvalidView
+  └──> SeedMnemonicEntryView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.EDIT
+       (Line 292 in run)
+  └──> MainMenuView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] == self.DISCARD
+       (Line 296 in run)
+
+SeedOptionsView
+  └──> SeedAddressVerificationView
+       Condition: self.controller.unverified_address AND self.controller.resume_main_flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR
+       Metadata:  skip_current=True
+       (Line 550 in run)
+  └──> SeedExportXpubScriptTypeView
+       Condition: self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+       Metadata:  skip_current=True
+       (Line 556 in run)
+  └──> SeedSignMessageConfirmMessageView
+       Condition: NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER) AND self.controller.resume_main_flow == Controller.FLOW__SIGN_MESSAGE
+       Metadata:  skip_current=True
+       (Line 560 in run)
+  └──> PSBTOverviewView
+       Condition: self.controller.psbt AND PSBTParser.has_matching_input_fingerprint(self.controller.psbt, self.seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK)) AND self.controller.resume_main_flow and self.controller.resume_main_flow == Controller.FLOW__PSBT
+       Metadata:  skip_current=True
+       (Line 569 in run)
+  └──> MainMenuView
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 596 in run)
+  └──> ScanPSBTView
+       Condition: button_data[selected_menu_num] == self.SCAN_PSBT
+       (Line 601 in run)
+  └──> SeedExportXpubSigTypeView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND button_data[selected_menu_num] == self.EXPORT_XPUB
+       (Line 604 in run)
+  └──> SeedExportXpubScriptTypeView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND button_data[selected_menu_num] == self.EXPLORER
+       (Line 608 in run)
+  └──> ScanView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND button_data[selected_menu_num] == self.SIGN_MESSAGE
+       (Line 614 in run)
+  └──> SeedBackupView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND button_data[selected_menu_num] == self.BACKUP
+       (Line 617 in run)
+  └──> SeedBIP85SelectNumWordsView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND NOT (button_data[selected_menu_num] == self.BACKUP) AND button_data[selected_menu_num] == self.BIP85_CHILD_SEED
+       (Line 620 in run)
+  └──> SeedDiscardView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND NOT (button_data[selected_menu_num] == self.BACKUP) AND NOT (button_data[selected_menu_num] == self.BIP85_CHILD_SEED) AND button_data[selected_menu_num] == self.DISCARD
+       (Line 623 in run)
+
+SeedReviewPassphraseView
+  └──> SeedAddPassphraseView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.EDIT
+       (Line 450 in run)
+  └──> SeedOptionsView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] == self.DONE
+       Metadata:  clear_history=True
+       (Line 454 in run)
+
+SeedSelectSeedView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 127 in run)
+  └──> SeedAddressVerificationView
+       Condition: len(seeds) > 0 and selected_menu_num < len(seeds) AND self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR
+       (Line 133 in run)
+  └──> SeedSignMessageConfirmMessageView
+       Condition: len(seeds) > 0 and selected_menu_num < len(seeds) AND NOT (self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR) AND self.flow == Controller.FLOW__SIGN_MESSAGE
+       (Line 137 in run)
+  └──> ScanView
+       Condition: button_data[selected_menu_num] == self.SCAN_SEED
+       (Line 143 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+       (Line 151 in run)
+  └──> SeedElectrumMnemonicStartView
+       Condition: NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM
+       (Line 154 in run)
+
+SeedSignMessageConfirmAddressView
+  └──> NetworkMismatchErrorView [REDIRECT]
+       Condition: addr_format['network'] != SettingsConstants.MAINNET AND NOT (self.settings.get_value(SettingsConstants.SETTING__NETWORK) in [SettingsConstants.TESTNET, SettingsConstants.REGTEST])
+       (Line 2229 in __init__)
+  └──> NetworkMismatchErrorView
+       Condition: addr_format['network'] != SettingsConstants.MAINNET AND NOT (self.settings.get_value(SettingsConstants.SETTING__NETWORK) in [SettingsConstants.TESTNET, SettingsConstants.REGTEST])
+       (Line 2229 in __init__)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 2251 in run)
+  └──> SeedSignMessageSignedMessageQRView
+       (Line 2254 in run)
+
+SeedSignMessageConfirmMessageView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 2192 in run)
+  └──> SeedSignMessageConfirmAddressView
+       Condition: self.page_num == len(self.controller.sign_message_data['paged_message']) - 1
+       (Line 2197 in run)
+  └──> SeedSignMessageConfirmMessageView
+       Condition: NOT (self.page_num == len(self.controller.sign_message_data['paged_message']) - 1)
+       (Line 2199 in run)
+
+SeedSignMessageSignedMessageQRView
+  └──> MainMenuView
+       Metadata:  skip_current=True
+       (Line 2289 in run)
+
+SeedSignMessageStartView
+  └──> OptionDisabledView [REDIRECT]
+       Condition: self.settings.get_value(SettingsConstants.SETTING__MESSAGE_SIGNING) == SettingsConstants.OPTION__DISABLED
+       (Line 2133 in __init__)
+  └──> OptionDisabledView
+       Condition: self.settings.get_value(SettingsConstants.SETTING__MESSAGE_SIGNING) == SettingsConstants.OPTION__DISABLED
+       (Line 2133 in __init__)
+  └──> NotYetImplementedView [REDIRECT]
+       Condition: not addr_format['clean_match']
+       (Line 2139 in __init__)
+  └──> NotYetImplementedView
+       Condition: not addr_format['clean_match']
+       (Line 2139 in __init__)
+  └──> NetworkMismatchErrorView [REDIRECT]
+       Condition: self.settings.get_value(SettingsConstants.SETTING__NETWORK) not in addr_format['network']
+       (Line 2146 in __init__)
+  └──> NetworkMismatchErrorView
+       Condition: self.settings.get_value(SettingsConstants.SETTING__NETWORK) not in addr_format['network']
+       (Line 2146 in __init__)
+  └──> SeedSignMessageConfirmMessageView [REDIRECT]
+       Condition: self.seed_num is not None
+       Metadata:  skip_current=True
+       (Line 2166 in __init__)
+  └──> SeedSignMessageConfirmMessageView
+       Condition: self.seed_num is not None
+       Metadata:  skip_current=True
+       (Line 2166 in __init__)
+  └──> SeedSelectSeedView [REDIRECT]
+       Condition: NOT (self.seed_num is not None)
+       Metadata:  skip_current=True
+       (Line 2169 in __init__)
+  └──> SeedSelectSeedView
+       Condition: NOT (self.seed_num is not None)
+       Metadata:  skip_current=True
+       (Line 2169 in __init__)
+
+SeedTranscribeSeedQRConfirmInvalidQRView
+  └──> [BACK]
+       Metadata:  skip_current=True
+       (Line 1696 in run)
+
+SeedTranscribeSeedQRConfirmQRPromptView
+  └──> [BACK]
+       Condition: selected_menu_option == RET_CODE__BACK_BUTTON
+       (Line 1612 in run)
+  └──> SeedTranscribeSeedQRConfirmScanView
+       Condition: NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_option] == self.SCAN
+       (Line 1615 in run)
+  └──> SeedOptionsView
+       Condition: NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_option] == self.SCAN) AND button_data[selected_menu_option] == self.DONE
+       Metadata:  clear_history=True
+       (Line 1618 in run)
+
+SeedTranscribeSeedQRConfirmScanView
+  └──> [BACK]
+       Condition: scanning_done == False
+       (Line 1644 in run)
+  └──> SeedTranscribeSeedQRConfirmWrongSeedView
+       Condition: self.decoder.is_complete AND self.decoder.is_seed AND seed_mnemonic != self.seed.mnemonic_list
+       Metadata:  skip_current=True
+       (Line 1651 in run)
+  └──> SeedTranscribeSeedQRConfirmSuccessView
+       Condition: self.decoder.is_complete AND self.decoder.is_seed AND NOT (seed_mnemonic != self.seed.mnemonic_list)
+       (Line 1653 in run)
+  └──> SeedTranscribeSeedQRConfirmInvalidQRView
+       Metadata:  skip_current=True
+       (Line 1656 in run)
+
+SeedTranscribeSeedQRConfirmSuccessView
+  └──> SeedOptionsView ⚠️ [TRAP RISK]
+       (Line 1720 in run)
+
+SeedTranscribeSeedQRConfirmWrongSeedView
+  └──> [BACK]
+       Metadata:  skip_current=True
+       (Line 1675 in run)
+
+SeedTranscribeSeedQRFormatView
+  └──> SeedTranscribeSeedQRWarningView
+       Condition: self.settings.get_value(SettingsConstants.SETTING__COMPACT_SEEDQR) != SettingsConstants.OPTION__ENABLED
+       Metadata:  skip_current=True
+       (Line 1425 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1447 in run)
+  └──> SeedTranscribeSeedQRWarningView
+       (Line 1456 in run)
+
+SeedTranscribeSeedQRWarningView
+  └──> SeedTranscribeSeedQRWholeQRView
+       Metadata:  skip_current=True
+       (Line 1476 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1497 in run)
+
+SeedTranscribeSeedQRWholeQRView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 1531 in run)
+  └──> SeedTranscribeSeedQRZoomedInView
+       Condition: NOT (ret == RET_CODE__BACK_BUTTON)
+       (Line 1534 in run)
+
+SeedTranscribeSeedQRZoomedInView
+  └──> SeedTranscribeSeedQRConfirmQRPromptView
+       (Line 1588 in run)
+
+SeedWordsBackupTestMistakeView
+  └──> SeedWordsView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == self.REVIEW
+       (Line 1362 in run)
+  └──> SeedWordsBackupTestView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == self.REVIEW) AND button_data[selected_menu_num] == self.RETRY
+       (Line 1368 in run)
+
+SeedWordsBackupTestPromptView
+  └──> SeedWordsBackupTestView
+       Condition: button_data[selected_menu_num] == self.VERIFY
+       (Line 1229 in run)
+  └──> SeedOptionsView
+       Condition: NOT (button_data[selected_menu_num] == self.VERIFY) AND button_data[selected_menu_num] == self.SKIP AND self.seed_num is not None
+       (Line 1236 in run)
+  └──> SeedFinalizeView
+       Condition: NOT (button_data[selected_menu_num] == self.VERIFY) AND button_data[selected_menu_num] == self.SKIP AND NOT (self.seed_num is not None)
+       (Line 1238 in run)
+
+SeedWordsBackupTestSuccessView
+  └──> SeedOptionsView ⚠️ [TRAP RISK]
+       Condition: self.seed_num is not None
+       Metadata:  clear_history=True
+       (Line 1397 in run)
+  └──> SeedFinalizeView ⚠️ [TRAP RISK]
+       Condition: NOT (self.seed_num is not None)
+       (Line 1399 in run)
+
+SeedWordsBackupTestView
+  └──> SeedWordsBackupTestSuccessView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == real_word AND len(self.confirmed_list) == len(self.mnemonic_list)
+       (Line 1303 in run)
+  └──> SeedWordsBackupTestView ⚠️ [TRAP RISK]
+       Condition: button_data[selected_menu_num] == real_word AND NOT (len(self.confirmed_list) == len(self.mnemonic_list))
+       (Line 1309 in run)
+  └──> SeedWordsBackupTestMistakeView ⚠️ [TRAP RISK]
+       Condition: NOT (button_data[selected_menu_num] == real_word)
+       (Line 1316 in run)
+
+SeedWordsView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1084 in run)
+  └──> SeedWordsBackupTestPromptView
+       Condition: button_data[selected_menu_num] == self.NEXT AND self.seed_num is None and self.page_index == num_pages - 1
+       (Line 1088 in run)
+  └──> SeedWordsView
+       Condition: button_data[selected_menu_num] == self.NEXT AND NOT (self.seed_num is None and self.page_index == num_pages - 1)
+       (Line 1093 in run)
+  └──> SeedWordsBackupTestPromptView
+       Condition: NOT (button_data[selected_menu_num] == self.NEXT) AND button_data[selected_menu_num] == self.DONE
+       (Line 1100 in run)
+
+SeedWordsWarningView
+  └──> SeedWordsView
+       Metadata:  skip_current=True
+       (Line 1012 in run)
+  └──> [BACK]
+       Condition: NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 1035 in run)
+
+SeedsMenuView
+  └──> LoadSeedView
+       Condition: not self.seeds
+       Metadata:  clear_history=True
+       (Line 41 in run)
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 56 in run)
+  └──> SeedOptionsView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND len(self.seeds) > 0 and selected_menu_num < len(self.seeds)
+       (Line 59 in run)
+  └──> LoadSeedView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (len(self.seeds) > 0 and selected_menu_num < len(self.seeds)) AND button_data[selected_menu_num] == self.LOAD
+       (Line 62 in run)
+
+SettingsEntryUpdateSelectionView
+  └──> SettingsMenuView
+       (Line 197 in run)
+  └──> SettingsSelectionRequiredWarningView
+       Condition: ret_value == RET_CODE__BACK_BUTTON AND self.settings_entry.type == SettingsConstants.TYPE__MULTISELECT AND not initial_value
+       (Line 212 in run)
+  └──> blocking_view
+       Condition: ret_value == RET_CODE__BACK_BUTTON AND self.blocking_view
+       Metadata:  clear_history=True
+       (Line 215 in run)
+  └──> blocking_view
+       Condition: self.blocking_view AND current_value == initial_value
+       Metadata:  clear_history=True
+       (Line 260 in run)
+  └──> unblocking_view
+       Condition: self.blocking_view AND NOT (current_value == initial_value) AND self.unblocking_view
+       Metadata:  clear_history=True
+       (Line 262 in run)
+  └──> SettingsEntryUpdateSelectionView
+       Metadata:  skip_current=True
+       (Line 267 in run)
+
+SettingsIngestSettingsQRView
+  └──> MainMenuView
+       (Line 336 in run)
+
+SettingsMenuView
+  └──> SettingsMenuView
+       Condition: self.visibility == SettingsConstants.VISIBILITY__GENERAL
+       (Line 48 in run)
+  └──> SettingsMenuView
+       Condition: NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND self.visibility == SettingsConstants.VISIBILITY__ADVANCED
+       (Line 58 in run)
+  └──> MainMenuView
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON AND self.visibility == SettingsConstants.VISIBILITY__GENERAL
+       (Line 82 in run)
+  └──> SettingsMenuView
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON AND NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND self.visibility == SettingsConstants.VISIBILITY__ADVANCED
+       (Line 84 in run)
+  └──> SettingsMenuView
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON AND NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND NOT (self.visibility == SettingsConstants.VISIBILITY__ADVANCED)
+       (Line 86 in run)
+  └──> IOTestView
+       Condition: NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND button_data[selected_menu_num] == self.IO_TEST
+       (Line 95 in run)
+  └──> DonateView
+       Condition: NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND button_data[selected_menu_num] == self.DONATE
+       (Line 98 in run)
+  └──> LocaleSelectionView
+       Condition: NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND NOT (button_data[selected_menu_num] == self.DONATE) AND settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE
+       (Line 101 in run)
+  └──> SettingsEntryUpdateSelectionView
+       Condition: NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND NOT (button_data[selected_menu_num] == self.DONATE) AND NOT (settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE)
+       (Line 104 in run)
+
+SettingsSelectionRequiredWarningView
+  └──> SettingsEntryUpdateSelectionView ⚠️ [TRAP RISK]
+       (Line 298 in run)
+
+ToolsAddressExplorerAddressListView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 712 in run)
+  └──> ToolsAddressExplorerAddressListView
+       Condition: selected_menu_num == len(addresses)
+       (Line 716 in run)
+  └──> ToolsAddressExplorerAddressView
+       Metadata:  skip_current=True
+       (Line 722 in run)
+
+ToolsAddressExplorerAddressTypeView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 631 in run)
+  └──> ToolsAddressExplorerAddressListView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] in [self.RECEIVE, self.CHANGE]
+       (Line 634 in run)
+
+ToolsAddressExplorerAddressView
+  └──> ToolsAddressExplorerAddressListView
+       Metadata:  skip_current=True
+       (Line 748 in run)
+
+ToolsAddressExplorerSelectSourceView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 503 in run)
+  └──> SeedExportXpubScriptTypeView
+       Condition: len(seeds) > 0 and selected_menu_num < len(seeds)
+       (Line 512 in run)
+  └──> ScanSeedQRView
+       Condition: NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND button_data[selected_menu_num] == self.SCAN_SEED
+       (Line 522 in run)
+  └──> ScanWalletDescriptorView
+       Condition: NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] == self.SCAN_DESCRIPTOR
+       (Line 526 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+       (Line 531 in run)
+  └──> SeedElectrumMnemonicStartView
+       Condition: NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM
+       (Line 535 in run)
+
+ToolsCalcFinalWordCoinFlipsView
+  └──> [BACK]
+       Condition: ret_val == RET_CODE__BACK_BUTTON
+       (Line 353 in run)
+  └──> ToolsCalcFinalWordShowFinalWordView
+       Condition: NOT (ret_val == RET_CODE__BACK_BUTTON)
+       (Line 356 in run)
+
+ToolsCalcFinalWordDoneView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 460 in run)
+  └──> SeedFinalizeView
+       Condition: button_data[selected_menu_num] == self.LOAD
+       (Line 465 in run)
+  └──> SeedDiscardView
+       Condition: NOT (button_data[selected_menu_num] == self.LOAD) AND button_data[selected_menu_num] == self.DISCARD
+       (Line 468 in run)
+
+ToolsCalcFinalWordFinalizePromptView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 318 in run)
+  └──> ToolsCalcFinalWordCoinFlipsView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.COIN_FLIPS
+       (Line 321 in run)
+  └──> SeedMnemonicEntryView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.COIN_FLIPS) AND button_data[selected_menu_num] == self.SELECT_WORD
+       (Line 326 in run)
+  └──> ToolsCalcFinalWordShowFinalWordView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.COIN_FLIPS) AND NOT (button_data[selected_menu_num] == self.SELECT_WORD) AND button_data[selected_menu_num] == self.ZEROS
+       (Line 333 in run)
+
+ToolsCalcFinalWordNumWordsView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 282 in run)
+  └──> SeedMnemonicEntryView
+       (Line 286 in run)
+
+ToolsCalcFinalWordShowFinalWordView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 432 in run)
+  └──> ToolsCalcFinalWordDoneView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT
+       (Line 435 in run)
+
+ToolsDiceEntropyEntryView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 250 in run)
+  └──> SeedWordsWarningView
+       Metadata:  clear_history=True
+       (Line 259 in run)
+
+ToolsDiceEntropyMnemonicLengthView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 226 in run)
+  └──> ToolsDiceEntropyEntryView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == TWELVE
+       (Line 229 in run)
+  └──> ToolsDiceEntropyEntryView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == TWELVE) AND button_data[selected_menu_num] == TWENTY_FOUR
+       (Line 232 in run)
+
+ToolsImageEntropyFinalImageView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 115 in run)
+  └──> ToolsImageEntropyMnemonicLengthView
+       (Line 117 in run)
+
+ToolsImageEntropyLivePreviewView
+  └──> [BACK]
+       Condition: ret == RET_CODE__BACK_BUTTON
+       (Line 70 in run)
+  └──> ToolsImageEntropyFinalImageView
+       (Line 73 in run)
+
+ToolsImageEntropyMnemonicLengthView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 135 in run)
+  └──> SeedWordsWarningView
+       Metadata:  clear_history=True
+       (Line 196 in run)
+
+ToolsMenuView
+  └──> [BACK]
+       Condition: selected_menu_num == RET_CODE__BACK_BUTTON
+       (Line 40 in run)
+  └──> ToolsImageEntropyLivePreviewView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.IMAGE
+       (Line 43 in run)
+  └──> ToolsDiceEntropyMnemonicLengthView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND button_data[selected_menu_num] == self.DICE
+       (Line 46 in run)
+  └──> ToolsCalcFinalWordNumWordsView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND button_data[selected_menu_num] == self.KEYBOARD
+       (Line 49 in run)
+  └──> ToolsAddressExplorerSelectSourceView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND NOT (button_data[selected_menu_num] == self.KEYBOARD) AND button_data[selected_menu_num] == self.ADDRESS_EXPLORER
+       (Line 52 in run)
+  └──> ScanAddressView
+       Condition: NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND NOT (button_data[selected_menu_num] == self.KEYBOARD) AND NOT (button_data[selected_menu_num] == self.ADDRESS_EXPLORER) AND button_data[selected_menu_num] == self.VERIFY_ADDRESS
+       (Line 56 in run)
+
+UnhandledExceptionView
+  └──> CameraConnectionErrorView [REDIRECT]
+       Condition: self.error[0] == CameraConnectionError.__name__
+       Metadata:  skip_current=True
+       (Line 373 in __post_init__)
+  └──> CameraConnectionErrorView
+       Condition: self.error[0] == CameraConnectionError.__name__
+       Metadata:  skip_current=True
+       (Line 374 in __post_init__)
+  └──> MainMenuView
+       Metadata:  clear_history=True
+       (Line 390 in run)

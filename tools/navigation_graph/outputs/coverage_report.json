@@ -1,0 +1,687 @@
+{
+    "total_static_edges": 293,
+    "total_unique_static_pairs": 209,
+    "total_tested_edges": 325,
+    "total_unique_tested_pairs": 132,
+    "covered_pairs": 110,
+    "coverage_percent": 52.6,
+    "uncovered": [
+        {
+            "source": "AddressVerificationSigTypeView",
+            "target": "SeedAddressVerificationView"
+        },
+        {
+            "source": "AddressVerificationSigTypeView",
+            "target": "SeedSelectSeedView"
+        },
+        {
+            "source": "AddressVerificationStartView",
+            "target": "LoadMultisigWalletDescriptorView"
+        },
+        {
+            "source": "AddressVerificationStartView",
+            "target": "SeedAddressVerificationView"
+        },
+        {
+            "source": "ErrorView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "LoadMultisigWalletDescriptorView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "LoadSeedView",
+            "target": "ScanSeedQRView"
+        },
+        {
+            "source": "LoadSeedView",
+            "target": "SeedElectrumMnemonicStartView"
+        },
+        {
+            "source": "LoadSeedView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "LoadSeedView",
+            "target": "ToolsMenuView"
+        },
+        {
+            "source": "LocaleSelectionView",
+            "target": "SettingsMenuView"
+        },
+        {
+            "source": "MultisigWalletDescriptorView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "MultisigWalletDescriptorView",
+            "target": "PSBTChangeDetailsView"
+        },
+        {
+            "source": "OptionDisabledView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "OptionDisabledView",
+            "target": "SettingsEntryUpdateSelectionView"
+        },
+        {
+            "source": "PSBTAddressDetailsView",
+            "target": "PSBTAddressDetailsView"
+        },
+        {
+            "source": "PSBTAddressDetailsView",
+            "target": "PSBTFinalizeView"
+        },
+        {
+            "source": "PSBTAddressDetailsView",
+            "target": "PSBTOpReturnView"
+        },
+        {
+            "source": "PSBTAddressVerificationFailedView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTChangeDetailsView",
+            "target": "LoadMultisigWalletDescriptorView"
+        },
+        {
+            "source": "PSBTChangeDetailsView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTChangeDetailsView",
+            "target": "NotYetImplementedView"
+        },
+        {
+            "source": "PSBTChangeDetailsView",
+            "target": "PSBTAddressVerificationFailedView"
+        },
+        {
+            "source": "PSBTFinalizeView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTMathView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTNoChangeWarningView",
+            "target": "PSBTMathView"
+        },
+        {
+            "source": "PSBTOverviewView",
+            "target": "PSBTNoChangeWarningView"
+        },
+        {
+            "source": "PSBTOverviewView",
+            "target": "PSBTUnsupportedScriptTypeWarningView"
+        },
+        {
+            "source": "PSBTSelectSeedView",
+            "target": "PSBTOverviewView"
+        },
+        {
+            "source": "PSBTSelectSeedView",
+            "target": "SeedElectrumMnemonicStartView"
+        },
+        {
+            "source": "PSBTSelectSeedView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "PSBTSigningErrorView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTUnsupportedScriptTypeWarningView",
+            "target": "PSBTAddressDetailsView"
+        },
+        {
+            "source": "RemoveMicroSDWarningView",
+            "target": "RemoveMicroSDWarningView"
+        },
+        {
+            "source": "ScanView",
+            "target": "AddressVerificationStartView"
+        },
+        {
+            "source": "ScanView",
+            "target": "ErrorView"
+        },
+        {
+            "source": "ScanView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "ScanView",
+            "target": "MultisigWalletDescriptorView"
+        },
+        {
+            "source": "ScanView",
+            "target": "NotYetImplementedView"
+        },
+        {
+            "source": "ScanView",
+            "target": "SeedAddPassphraseView"
+        },
+        {
+            "source": "SeedAddressVerificationSuccessView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SeedAddressVerificationView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SeedBIP85InvalidChildIndexView",
+            "target": "SeedBIP85SelectChildIndexView"
+        },
+        {
+            "source": "SeedBIP85SelectChildIndexView",
+            "target": "SeedBIP85InvalidChildIndexView"
+        },
+        {
+            "source": "SeedBIP85SelectChildIndexView",
+            "target": "SeedWordsWarningView"
+        },
+        {
+            "source": "SeedBIP85SelectNumWordsView",
+            "target": "SeedBIP85SelectChildIndexView"
+        },
+        {
+            "source": "SeedBackupView",
+            "target": "SeedWordsWarningView"
+        },
+        {
+            "source": "SeedDiscardView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "SeedDiscardView",
+            "target": "SeedOptionsView"
+        },
+        {
+            "source": "SeedElectrumMnemonicStartView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "SeedExportXpubCustomDerivationView",
+            "target": "ToolsAddressExplorerAddressTypeView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "SeedMnemonicInvalidView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "ToolsCalcFinalWordFinalizePromptView"
+        },
+        {
+            "source": "SeedMnemonicEntryView",
+            "target": "ToolsCalcFinalWordShowFinalWordView"
+        },
+        {
+            "source": "SeedMnemonicInvalidView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SeedMnemonicInvalidView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "SeedOptionsView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SeedOptionsView",
+            "target": "ScanPSBTView"
+        },
+        {
+            "source": "SeedOptionsView",
+            "target": "SeedAddressVerificationView"
+        },
+        {
+            "source": "SeedOptionsView",
+            "target": "SeedBIP85SelectNumWordsView"
+        },
+        {
+            "source": "SeedSelectSeedView",
+            "target": "SeedElectrumMnemonicStartView"
+        },
+        {
+            "source": "SeedSelectSeedView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "SeedSelectSeedView",
+            "target": "SeedSignMessageConfirmMessageView"
+        },
+        {
+            "source": "SeedSignMessageConfirmAddressView",
+            "target": "NetworkMismatchErrorView"
+        },
+        {
+            "source": "SeedSignMessageStartView",
+            "target": "OptionDisabledView"
+        },
+        {
+            "source": "SeedTranscribeSeedQRConfirmQRPromptView",
+            "target": "SeedOptionsView"
+        },
+        {
+            "source": "SeedWordsBackupTestMistakeView",
+            "target": "SeedWordsBackupTestView"
+        },
+        {
+            "source": "SeedWordsBackupTestMistakeView",
+            "target": "SeedWordsView"
+        },
+        {
+            "source": "SeedWordsBackupTestPromptView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "SeedWordsBackupTestPromptView",
+            "target": "SeedOptionsView"
+        },
+        {
+            "source": "SeedWordsBackupTestPromptView",
+            "target": "SeedWordsBackupTestView"
+        },
+        {
+            "source": "SeedWordsBackupTestSuccessView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "SeedWordsBackupTestSuccessView",
+            "target": "SeedOptionsView"
+        },
+        {
+            "source": "SeedWordsBackupTestView",
+            "target": "SeedWordsBackupTestMistakeView"
+        },
+        {
+            "source": "SeedWordsBackupTestView",
+            "target": "SeedWordsBackupTestSuccessView"
+        },
+        {
+            "source": "SeedWordsBackupTestView",
+            "target": "SeedWordsBackupTestView"
+        },
+        {
+            "source": "SeedWordsView",
+            "target": "SeedWordsBackupTestPromptView"
+        },
+        {
+            "source": "SeedWordsView",
+            "target": "SeedWordsView"
+        },
+        {
+            "source": "SeedWordsWarningView",
+            "target": "SeedWordsView"
+        },
+        {
+            "source": "SettingsMenuView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "ToolsAddressExplorerSelectSourceView",
+            "target": "SeedElectrumMnemonicStartView"
+        },
+        {
+            "source": "ToolsAddressExplorerSelectSourceView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "ToolsCalcFinalWordCoinFlipsView",
+            "target": "ToolsCalcFinalWordShowFinalWordView"
+        },
+        {
+            "source": "ToolsCalcFinalWordDoneView",
+            "target": "SeedDiscardView"
+        },
+        {
+            "source": "ToolsCalcFinalWordDoneView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "ToolsCalcFinalWordFinalizePromptView",
+            "target": "SeedMnemonicEntryView"
+        },
+        {
+            "source": "ToolsCalcFinalWordFinalizePromptView",
+            "target": "ToolsCalcFinalWordCoinFlipsView"
+        },
+        {
+            "source": "ToolsCalcFinalWordFinalizePromptView",
+            "target": "ToolsCalcFinalWordShowFinalWordView"
+        },
+        {
+            "source": "ToolsCalcFinalWordShowFinalWordView",
+            "target": "ToolsCalcFinalWordDoneView"
+        },
+        {
+            "source": "ToolsDiceEntropyEntryView",
+            "target": "SeedWordsWarningView"
+        },
+        {
+            "source": "ToolsDiceEntropyMnemonicLengthView",
+            "target": "ToolsDiceEntropyEntryView"
+        },
+        {
+            "source": "ToolsImageEntropyFinalImageView",
+            "target": "ToolsImageEntropyMnemonicLengthView"
+        },
+        {
+            "source": "ToolsImageEntropyLivePreviewView",
+            "target": "ToolsImageEntropyFinalImageView"
+        },
+        {
+            "source": "ToolsImageEntropyMnemonicLengthView",
+            "target": "SeedWordsWarningView"
+        },
+        {
+            "source": "ToolsMenuView",
+            "target": "ToolsDiceEntropyMnemonicLengthView"
+        },
+        {
+            "source": "ToolsMenuView",
+            "target": "ToolsImageEntropyLivePreviewView"
+        }
+    ],
+    "tested_only": [
+        {
+            "source": "IncompleteView",
+            "target": "NotYetImplementedView"
+        },
+        {
+            "source": "MainMenuView",
+            "target": "UnhandledExceptionView"
+        },
+        {
+            "source": "MyBadButtonDataTestView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "MyGoodButtonDataTestView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "PSBTSelectSeedView",
+            "target": "UnhandledExceptionView"
+        },
+        {
+            "source": "PowerOffView",
+            "target": "PowerOptionsView"
+        },
+        {
+            "source": "PowerOptionsView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "ScanAddressView",
+            "target": "AddressVerificationStartView"
+        },
+        {
+            "source": "ScanSeedQRView",
+            "target": "ErrorView"
+        },
+        {
+            "source": "ScanSeedQRView",
+            "target": "SeedFinalizeView"
+        },
+        {
+            "source": "ScanView",
+            "target": "UnhandledExceptionView"
+        },
+        {
+            "source": "ScanWalletDescriptorView",
+            "target": "MultisigWalletDescriptorView"
+        },
+        {
+            "source": "SeedSignMessageConfirmAddressView",
+            "target": "SeedSignMessageConfirmMessageView"
+        },
+        {
+            "source": "SeedTranscribeSeedQRConfirmInvalidQRView",
+            "target": "SeedTranscribeSeedQRZoomedInView"
+        },
+        {
+            "source": "SeedTranscribeSeedQRConfirmWrongSeedView",
+            "target": "SeedTranscribeSeedQRZoomedInView"
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "RemoveMicroSDWarningView"
+        },
+        {
+            "source": "ToolsAddressExplorerAddressTypeView",
+            "target": "MainMenuView"
+        },
+        {
+            "source": "ToolsAddressExplorerAddressTypeView",
+            "target": "SeedExportXpubScriptTypeView"
+        },
+        {
+            "source": "ToolsAddressExplorerAddressTypeView",
+            "target": "SeedOptionsView"
+        },
+        {
+            "source": "ToolsAddressExplorerAddressTypeView",
+            "target": "ToolsAddressExplorerSelectSourceView"
+        },
+        {
+            "source": "ToolsCalcFinalWordNumWordsView",
+            "target": "UnhandledExceptionView"
+        }
+    ],
+    "back_to_home_edges": [],
+    "clear_history_edges": [
+        {
+            "source": "ScanInvalidQRTypeView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 229,
+            "method": "run"
+        },
+        {
+            "source": "PSBTChangeDetailsView",
+            "target": "PSBTAddressVerificationFailedView",
+            "condition": "is_change_addr_verified == False and (not psbt_parser.is_multisig or self.controller.multisig_wallet_descriptor is not None)",
+            "line": 418,
+            "method": "run"
+        },
+        {
+            "source": "PSBTAddressVerificationFailedView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 482,
+            "method": "run"
+        },
+        {
+            "source": "PSBTSignedQRDisplayView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 570,
+            "method": "run"
+        },
+        {
+            "source": "PSBTSigningErrorView",
+            "target": "PSBTSelectSeedView",
+            "condition": "selected_menu_num == 0",
+            "line": 596,
+            "method": "run"
+        },
+        {
+            "source": "ToolsImageEntropyMnemonicLengthView",
+            "target": "SeedWordsWarningView",
+            "condition": "",
+            "line": 196,
+            "method": "run"
+        },
+        {
+            "source": "ToolsDiceEntropyEntryView",
+            "target": "SeedWordsWarningView",
+            "condition": "",
+            "line": 259,
+            "method": "run"
+        },
+        {
+            "source": "ErrorView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 332,
+            "method": "run"
+        },
+        {
+            "source": "NetworkMismatchErrorView",
+            "target": "SettingsEntryUpdateSelectionView",
+            "condition": "",
+            "line": 350,
+            "method": "__post_init__"
+        },
+        {
+            "source": "UnhandledExceptionView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 390,
+            "method": "run"
+        },
+        {
+            "source": "CameraConnectionErrorView",
+            "target": "MainMenuView",
+            "condition": "",
+            "line": 406,
+            "method": "run"
+        },
+        {
+            "source": "OptionDisabledView",
+            "target": "SettingsEntryUpdateSelectionView",
+            "condition": "button_data[selected_menu_num] == self.UPDATE_SETTING",
+            "line": 438,
+            "method": "run"
+        },
+        {
+            "source": "OptionDisabledView",
+            "target": "MainMenuView",
+            "condition": "NOT (button_data[selected_menu_num] == self.UPDATE_SETTING)",
+            "line": 440,
+            "method": "run"
+        },
+        {
+            "source": "RemoveMicroSDWarningView",
+            "target": "MainMenuView",
+            "condition": "button_data[selected_menu_num] == self.CONTINUE AND not MicroSD.get_instance().is_inserted",
+            "line": 463,
+            "method": "run"
+        },
+        {
+            "source": "RemoveMicroSDWarningView",
+            "target": "RemoveMicroSDWarningView",
+            "condition": "button_data[selected_menu_num] == self.CONTINUE AND NOT (not MicroSD.get_instance().is_inserted)",
+            "line": 465,
+            "method": "run"
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.blocking_view",
+            "condition": "ret_value == RET_CODE__BACK_BUTTON AND self.blocking_view",
+            "line": 215,
+            "method": "run"
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.blocking_view",
+            "condition": "self.blocking_view AND current_value == initial_value",
+            "line": 260,
+            "method": "run"
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.unblocking_view",
+            "condition": "self.blocking_view AND NOT (current_value == initial_value) AND self.unblocking_view",
+            "line": 262,
+            "method": "run"
+        },
+        {
+            "source": "SeedsMenuView",
+            "target": "LoadSeedView",
+            "condition": "not self.seeds",
+            "line": 41,
+            "method": "run"
+        },
+        {
+            "source": "SeedFinalizeView",
+            "target": "SeedOptionsView",
+            "condition": "button_data[selected_menu_num] == self.FINALIZE",
+            "line": 337,
+            "method": "run"
+        },
+        {
+            "source": "SeedReviewPassphraseView",
+            "target": "SeedOptionsView",
+            "condition": "NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] == self.DONE",
+            "line": 454,
+            "method": "run"
+        },
+        {
+            "source": "SeedDiscardView",
+            "target": "MainMenuView",
+            "condition": "NOT (button_data[selected_menu_num] == self.KEEP) AND button_data[selected_menu_num] == self.DISCARD",
+            "line": 498,
+            "method": "run"
+        },
+        {
+            "source": "SeedWordsBackupTestSuccessView",
+            "target": "SeedOptionsView",
+            "condition": "self.seed_num is not None",
+            "line": 1397,
+            "method": "run"
+        },
+        {
+            "source": "SeedTranscribeSeedQRConfirmQRPromptView",
+            "target": "SeedOptionsView",
+            "condition": "NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_option] == self.SCAN) AND button_data[selected_menu_option] == self.DONE",
+            "line": 1618,
+            "method": "run"
+        }
+    ],
+    "dynamic_edges": [
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.blocking_view",
+            "condition": "ret_value == RET_CODE__BACK_BUTTON AND self.blocking_view",
+            "line": 215
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.blocking_view",
+            "condition": "self.blocking_view AND current_value == initial_value",
+            "line": 260
+        },
+        {
+            "source": "SettingsEntryUpdateSelectionView",
+            "target": "DYNAMIC: self.unblocking_view",
+            "condition": "self.blocking_view AND NOT (current_value == initial_value) AND self.unblocking_view",
+            "line": 262
+        }
+    ]
+}

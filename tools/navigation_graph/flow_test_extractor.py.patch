@@ -1,0 +1,38 @@
+--- tools/navigation_graph/flow_test_extractor.py
++++ tools/navigation_graph/flow_test_extractor.py
+@@ -102,6 +102,7 @@
+         def process_stmt(stmt, in_loop=False):
+             nonlocal views
+             if isinstance(stmt, ast.Assign):
++                print(f"Assign")
+                 for target in stmt.targets:
+                     if isinstance(target, ast.Name) and target.id == var_name and isinstance(stmt.value, ast.List):
+                         new_views = self._add_edges_from_list(stmt.value.elts, in_loop)
+@@ -110,6 +111,7 @@
+                         views.extend(new_views)
+             elif isinstance(stmt, ast.AugAssign):
+                 if isinstance(stmt.target, ast.Name) and stmt.target.id == var_name and isinstance(stmt.value, ast.List):
++                    print(f"AugAssign")
+                     new_views = self._add_edges_from_list(stmt.value.elts, in_loop)
+                     if views and new_views:
+                         self.tested_edges.append((views[-1], new_views[0], f"{self._current_file}::{self._current_test}"))
+@@ -118,17 +120,21 @@
+                 call = stmt.value
+                 if isinstance(call.func, ast.Attribute) and isinstance(call.func.value, ast.Name) and call.func.value.id == var_name:
+                     if call.func.attr in ("append", "extend") and call.args:
++                        print(f"Append {call.func.attr}")
+                         arg = call.args[0]
+                         new_views = self._add_edges_from_list(arg.elts if isinstance(arg, ast.List) else [arg], in_loop)
+                         if views and new_views:
+                             self.tested_edges.append((views[-1], new_views[0], f"{self._current_file}::{self._current_test}"))
+                         views.extend(new_views)
+             elif isinstance(stmt, ast.For):
++                print(f"For")
+                 for child_stmt in stmt.body:
+                     process_stmt(child_stmt, in_loop=True)
+             elif isinstance(stmt, ast.If):
++                print(f"If")
+                 for child_stmt in stmt.body:
+                     process_stmt(child_stmt, in_loop)
+                 for child_stmt in stmt.orelse:
+                     process_stmt(child_stmt, in_loop)

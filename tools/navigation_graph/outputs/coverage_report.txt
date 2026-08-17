@@ -1,0 +1,194 @@
+======================================================================
+  SeedSigner Navigation Coverage Report
+======================================================================
+
+  Static edges (from AST):        293
+  Unique static pairs:            209
+  Tested edges (from FlowTests):  325
+  Unique tested pairs:            132
+  Covered pairs:                  110
+  Coverage:                       52.6%
+  Uncovered:                      99
+
+──────────────────────────────────────────────────────────────────────
+  UNCOVERED EDGES (99)
+──────────────────────────────────────────────────────────────────────
+  AddressVerificationSigTypeView                → SeedAddressVerificationView
+  AddressVerificationSigTypeView                → SeedSelectSeedView
+  AddressVerificationStartView                  → LoadMultisigWalletDescriptorView
+  AddressVerificationStartView                  → SeedAddressVerificationView
+  ErrorView                                     → MainMenuView
+  LoadMultisigWalletDescriptorView              → MainMenuView
+  LoadSeedView                                  → ScanSeedQRView
+  LoadSeedView                                  → SeedElectrumMnemonicStartView
+  LoadSeedView                                  → SeedMnemonicEntryView
+  LoadSeedView                                  → ToolsMenuView
+  LocaleSelectionView                           → SettingsMenuView
+  MultisigWalletDescriptorView                  → MainMenuView
+  MultisigWalletDescriptorView                  → PSBTChangeDetailsView
+  OptionDisabledView                            → MainMenuView
+  OptionDisabledView                            → SettingsEntryUpdateSelectionView
+  PSBTAddressDetailsView                        → PSBTAddressDetailsView
+  PSBTAddressDetailsView                        → PSBTFinalizeView
+  PSBTAddressDetailsView                        → PSBTOpReturnView
+  PSBTAddressVerificationFailedView             → MainMenuView
+  PSBTChangeDetailsView                         → LoadMultisigWalletDescriptorView
+  PSBTChangeDetailsView                         → MainMenuView
+  PSBTChangeDetailsView                         → NotYetImplementedView
+  PSBTChangeDetailsView                         → PSBTAddressVerificationFailedView
+  PSBTFinalizeView                              → MainMenuView
+  PSBTMathView                                  → MainMenuView
+  PSBTNoChangeWarningView                       → PSBTMathView
+  PSBTOverviewView                              → PSBTNoChangeWarningView
+  PSBTOverviewView                              → PSBTUnsupportedScriptTypeWarningView
+  PSBTSelectSeedView                            → PSBTOverviewView
+  PSBTSelectSeedView                            → SeedElectrumMnemonicStartView
+  PSBTSelectSeedView                            → SeedMnemonicEntryView
+  PSBTSigningErrorView                          → MainMenuView
+  PSBTUnsupportedScriptTypeWarningView          → PSBTAddressDetailsView
+  RemoveMicroSDWarningView                      → RemoveMicroSDWarningView
+  ScanView                                      → AddressVerificationStartView
+  ScanView                                      → ErrorView
+  ScanView                                      → MainMenuView
+  ScanView                                      → MultisigWalletDescriptorView
+  ScanView                                      → NotYetImplementedView
+  ScanView                                      → SeedAddPassphraseView
+  SeedAddressVerificationSuccessView            → MainMenuView
+  SeedAddressVerificationView                   → MainMenuView
+  SeedBIP85InvalidChildIndexView                → SeedBIP85SelectChildIndexView
+  SeedBIP85SelectChildIndexView                 → SeedBIP85InvalidChildIndexView
+  SeedBIP85SelectChildIndexView                 → SeedWordsWarningView
+  SeedBIP85SelectNumWordsView                   → SeedBIP85SelectChildIndexView
+  SeedBackupView                                → SeedWordsWarningView
+  SeedDiscardView                               → SeedFinalizeView
+  SeedDiscardView                               → SeedOptionsView
+  SeedElectrumMnemonicStartView                 → SeedMnemonicEntryView
+  SeedExportXpubCustomDerivationView            → ToolsAddressExplorerAddressTypeView
+  SeedMnemonicEntryView                         → MainMenuView
+  SeedMnemonicEntryView                         → SeedFinalizeView
+  SeedMnemonicEntryView                         → SeedMnemonicEntryView
+  SeedMnemonicEntryView                         → SeedMnemonicInvalidView
+  SeedMnemonicEntryView                         → ToolsCalcFinalWordFinalizePromptView
+  SeedMnemonicEntryView                         → ToolsCalcFinalWordShowFinalWordView
+  SeedMnemonicInvalidView                       → MainMenuView
+  SeedMnemonicInvalidView                       → SeedMnemonicEntryView
+  SeedOptionsView                               → MainMenuView
+  SeedOptionsView                               → ScanPSBTView
+  SeedOptionsView                               → SeedAddressVerificationView
+  SeedOptionsView                               → SeedBIP85SelectNumWordsView
+  SeedSelectSeedView                            → SeedElectrumMnemonicStartView
+  SeedSelectSeedView                            → SeedMnemonicEntryView
+  SeedSelectSeedView                            → SeedSignMessageConfirmMessageView
+  SeedSignMessageConfirmAddressView             → NetworkMismatchErrorView
+  SeedSignMessageStartView                      → OptionDisabledView
+  SeedTranscribeSeedQRConfirmQRPromptView       → SeedOptionsView
+  SeedWordsBackupTestMistakeView                → SeedWordsBackupTestView
+  SeedWordsBackupTestMistakeView                → SeedWordsView
+  SeedWordsBackupTestPromptView                 → SeedFinalizeView
+  SeedWordsBackupTestPromptView                 → SeedOptionsView
+  SeedWordsBackupTestPromptView                 → SeedWordsBackupTestView
+  SeedWordsBackupTestSuccessView                → SeedFinalizeView
+  SeedWordsBackupTestSuccessView                → SeedOptionsView
+  SeedWordsBackupTestView                       → SeedWordsBackupTestMistakeView
+  SeedWordsBackupTestView                       → SeedWordsBackupTestSuccessView
+  SeedWordsBackupTestView                       → SeedWordsBackupTestView
+  SeedWordsView                                 → SeedWordsBackupTestPromptView
+  SeedWordsView                                 → SeedWordsView
+  SeedWordsWarningView                          → SeedWordsView
+  SettingsMenuView                              → MainMenuView
+  ToolsAddressExplorerSelectSourceView          → SeedElectrumMnemonicStartView
+  ToolsAddressExplorerSelectSourceView          → SeedMnemonicEntryView
+  ToolsCalcFinalWordCoinFlipsView               → ToolsCalcFinalWordShowFinalWordView
+  ToolsCalcFinalWordDoneView                    → SeedDiscardView
+  ToolsCalcFinalWordDoneView                    → SeedFinalizeView
+  ToolsCalcFinalWordFinalizePromptView          → SeedMnemonicEntryView
+  ToolsCalcFinalWordFinalizePromptView          → ToolsCalcFinalWordCoinFlipsView
+  ToolsCalcFinalWordFinalizePromptView          → ToolsCalcFinalWordShowFinalWordView
+  ToolsCalcFinalWordShowFinalWordView           → ToolsCalcFinalWordDoneView
+  ToolsDiceEntropyEntryView                     → SeedWordsWarningView
+  ToolsDiceEntropyMnemonicLengthView            → ToolsDiceEntropyEntryView
+  ToolsImageEntropyFinalImageView               → ToolsImageEntropyMnemonicLengthView
+  ToolsImageEntropyLivePreviewView              → ToolsImageEntropyFinalImageView
+  ToolsImageEntropyMnemonicLengthView           → SeedWordsWarningView
+  ToolsMenuView                                 → ToolsDiceEntropyMnemonicLengthView
+  ToolsMenuView                                 → ToolsImageEntropyLivePreviewView
+
+──────────────────────────────────────────────────────────────────────
+  CLEAR HISTORY EDGES (24)
+  These edges wipe the back stack, forcing the user to MainMenuView.
+──────────────────────────────────────────────────────────────────────
+  ScanInvalidQRTypeView                         → MainMenuView
+  PSBTChangeDetailsView                         → PSBTAddressVerificationFailedView
+    Condition: is_change_addr_verified == False and (not psbt_parser.is_multisig or self.contro
+  PSBTAddressVerificationFailedView             → MainMenuView
+  PSBTSignedQRDisplayView                       → MainMenuView
+  PSBTSigningErrorView                          → PSBTSelectSeedView
+    Condition: selected_menu_num == 0
+  ToolsImageEntropyMnemonicLengthView           → SeedWordsWarningView
+  ToolsDiceEntropyEntryView                     → SeedWordsWarningView
+  ErrorView                                     → MainMenuView
+  NetworkMismatchErrorView                      → SettingsEntryUpdateSelectionView
+  UnhandledExceptionView                        → MainMenuView
+  CameraConnectionErrorView                     → MainMenuView
+  OptionDisabledView                            → SettingsEntryUpdateSelectionView
+    Condition: button_data[selected_menu_num] == self.UPDATE_SETTING
+  OptionDisabledView                            → MainMenuView
+    Condition: NOT (button_data[selected_menu_num] == self.UPDATE_SETTING)
+  RemoveMicroSDWarningView                      → MainMenuView
+    Condition: button_data[selected_menu_num] == self.CONTINUE AND not MicroSD.get_instance().i
+  RemoveMicroSDWarningView                      → RemoveMicroSDWarningView
+    Condition: button_data[selected_menu_num] == self.CONTINUE AND NOT (not MicroSD.get_instanc
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.blocking_view
+    Condition: ret_value == RET_CODE__BACK_BUTTON AND self.blocking_view
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.blocking_view
+    Condition: self.blocking_view AND current_value == initial_value
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.unblocking_view
+    Condition: self.blocking_view AND NOT (current_value == initial_value) AND self.unblocking_
+  SeedsMenuView                                 → LoadSeedView
+    Condition: not self.seeds
+  SeedFinalizeView                              → SeedOptionsView
+    Condition: button_data[selected_menu_num] == self.FINALIZE
+  SeedReviewPassphraseView                      → SeedOptionsView
+    Condition: NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_
+  SeedDiscardView                               → MainMenuView
+    Condition: NOT (button_data[selected_menu_num] == self.KEEP) AND button_data[selected_menu_
+  SeedWordsBackupTestSuccessView                → SeedOptionsView
+    Condition: self.seed_num is not None
+  SeedTranscribeSeedQRConfirmQRPromptView       → SeedOptionsView
+    Condition: NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND NOT (button_data[selecte
+
+──────────────────────────────────────────────────────────────────────
+  DYNAMIC/UNRESOLVABLE EDGES (3)
+  Cannot be statically matched to test coverage.
+──────────────────────────────────────────────────────────────────────
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.blocking_view
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.blocking_view
+  SettingsEntryUpdateSelectionView              → DYNAMIC: self.unblocking_view
+
+──────────────────────────────────────────────────────────────────────
+  TESTED-ONLY EDGES (22)
+  Present in FlowTests but not found in static AST extraction.
+  (Sub-Views, mock Views, or back-stack pops not captured statically)
+──────────────────────────────────────────────────────────────────────
+  IncompleteView                                → NotYetImplementedView
+  MainMenuView                                  → UnhandledExceptionView
+  MyBadButtonDataTestView                       → MainMenuView
+  MyGoodButtonDataTestView                      → MainMenuView
+  PSBTSelectSeedView                            → UnhandledExceptionView
+  PowerOffView                                  → PowerOptionsView
+  PowerOptionsView                              → MainMenuView
+  ScanAddressView                               → AddressVerificationStartView
+  ScanSeedQRView                                → ErrorView
+  ScanSeedQRView                                → SeedFinalizeView
+  ScanView                                      → UnhandledExceptionView
+  ScanWalletDescriptorView                      → MultisigWalletDescriptorView
+  SeedSignMessageConfirmAddressView             → SeedSignMessageConfirmMessageView
+  SeedTranscribeSeedQRConfirmInvalidQRView      → SeedTranscribeSeedQRZoomedInView
+  SeedTranscribeSeedQRConfirmWrongSeedView      → SeedTranscribeSeedQRZoomedInView
+  SettingsEntryUpdateSelectionView              → MainMenuView
+  SettingsEntryUpdateSelectionView              → RemoveMicroSDWarningView
+  ToolsAddressExplorerAddressTypeView           → MainMenuView
+  ToolsAddressExplorerAddressTypeView           → SeedExportXpubScriptTypeView
+  ToolsAddressExplorerAddressTypeView           → SeedOptionsView
+  ToolsAddressExplorerAddressTypeView           → ToolsAddressExplorerSelectSourceView
+  ToolsCalcFinalWordNumWordsView                → UnhandledExceptionView

@@ -1,0 +1,5674 @@
+{
+  "analyzer version": "1.0",
+  "coverage": {
+    "covered_edges": [
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "SeedElectrumMnemonicStartView"
+      ],
+      [
+        "UnhandledExceptionView",
+        "CameraConnectionErrorView"
+      ],
+      [
+        "SettingsIngestSettingsQRView",
+        "MainMenuView"
+      ],
+      [
+        "SeedTranscribeSeedQRWarningView",
+        "SeedTranscribeSeedQRWholeQRView"
+      ],
+      [
+        "SeedSignMessageStartView",
+        "SeedSelectSeedView"
+      ],
+      [
+        "SeedSignMessageStartView",
+        "NetworkMismatchErrorView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmScanView",
+        "SeedTranscribeSeedQRConfirmSuccessView"
+      ],
+      [
+        "DonateView",
+        "SettingsMenuView"
+      ],
+      [
+        "SeedAddPassphraseExitDialogView",
+        "SeedFinalizeView"
+      ],
+      [
+        "MainMenuView",
+        "ScanView"
+      ],
+      [
+        "ToolsAddressExplorerAddressListView",
+        "ToolsAddressExplorerAddressListView"
+      ],
+      [
+        "ToolsCalcFinalWordNumWordsView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedSignMessageConfirmMessageView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmSuccessView",
+        "SeedOptionsView"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "PSBTFinalizeView"
+      ],
+      [
+        "SeedTranscribeSeedQRZoomedInView",
+        "SeedTranscribeSeedQRConfirmQRPromptView"
+      ],
+      [
+        "RemoveMicroSDWarningView",
+        "MainMenuView"
+      ],
+      [
+        "SeedSignMessageConfirmMessageView",
+        "SeedSignMessageConfirmAddressView"
+      ],
+      [
+        "SeedOptionsView",
+        "PSBTOverviewView"
+      ],
+      [
+        "ScanView",
+        "AddressVerificationStartView"
+      ],
+      [
+        "SeedDiscardView",
+        "MainMenuView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmQRPromptView",
+        "SeedTranscribeSeedQRConfirmScanView"
+      ],
+      [
+        "SeedExportXpubScriptTypeView",
+        "ToolsAddressExplorerAddressTypeView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SeedOptionsView",
+        "ScanView"
+      ],
+      [
+        "PSBTMathView",
+        "PSBTChangeDetailsView"
+      ],
+      [
+        "ScanView",
+        "PSBTSelectSeedView"
+      ],
+      [
+        "SettingsSelectionRequiredWarningView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmScanView",
+        "SeedTranscribeSeedQRConfirmInvalidQRView"
+      ],
+      [
+        "ScanView",
+        "SeedSignMessageStartView"
+      ],
+      [
+        "SeedSignMessageConfirmMessageView",
+        "SeedSignMessageConfirmMessageView"
+      ],
+      [
+        "SeedExportXpubCustomDerivationView",
+        "SeedExportXpubQRFormatView"
+      ],
+      [
+        "PSBTAddressDetailsView",
+        "PSBTChangeDetailsView"
+      ],
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "ScanWalletDescriptorView"
+      ],
+      [
+        "AddressVerificationStartView",
+        "AddressVerificationSigTypeView"
+      ],
+      [
+        "SeedAddPassphraseView",
+        "SeedAddPassphraseExitDialogView"
+      ],
+      [
+        "PSBTOverviewView",
+        "PSBTMathView"
+      ],
+      [
+        "PSBTFinalizeView",
+        "PSBTSignedQRDisplayView"
+      ],
+      [
+        "SeedSelectSeedView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SeedExportXpubScriptTypeView",
+        "SeedExportXpubQRFormatView"
+      ],
+      [
+        "SeedExportXpubQRDisplayView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "ScanSeedQRView"
+      ],
+      [
+        "SeedSelectSeedView",
+        "SeedAddressVerificationView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "SettingsSelectionRequiredWarningView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "SeedMnemonicInvalidView"
+      ],
+      [
+        "SeedExportXpubSigTypeView",
+        "SeedExportXpubScriptTypeView"
+      ],
+      [
+        "SeedAddPassphraseExitDialogView",
+        "SeedAddPassphraseView"
+      ],
+      [
+        "SettingsMenuView",
+        "DonateView"
+      ],
+      [
+        "SeedSignMessageConfirmAddressView",
+        "SeedSignMessageSignedMessageQRView"
+      ],
+      [
+        "PSBTMathView",
+        "PSBTAddressDetailsView"
+      ],
+      [
+        "PSBTSigningErrorView",
+        "PSBTSelectSeedView"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "PSBTChangeDetailsView"
+      ],
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "SeedExportXpubScriptTypeView"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "PSBTOverviewView"
+      ],
+      [
+        "LoadSeedView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SettingsMenuView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "PowerOptionsView",
+        "RestartView"
+      ],
+      [
+        "ControllerEventLoop",
+        "NotYetImplementedView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "PSBTOpReturnView",
+        "PSBTFinalizeView"
+      ],
+      [
+        "SeedsMenuView",
+        "LoadSeedView"
+      ],
+      [
+        "SettingsMenuView",
+        "SettingsMenuView"
+      ],
+      [
+        "NotYetImplementedView",
+        "MainMenuView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "SettingsMenuView"
+      ],
+      [
+        "SeedReviewPassphraseView",
+        "SeedOptionsView"
+      ],
+      [
+        "SeedFinalizeView",
+        "SeedOptionsView"
+      ],
+      [
+        "SeedExportXpubDetailsView",
+        "SeedExportXpubQRDisplayView"
+      ],
+      [
+        "SeedMnemonicInvalidView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "MainMenuView",
+        "SettingsMenuView"
+      ],
+      [
+        "ScanView",
+        "ErrorView"
+      ],
+      [
+        "MultisigWalletDescriptorView",
+        "SeedAddressVerificationView"
+      ],
+      [
+        "PowerOptionsView",
+        "PowerOffView"
+      ],
+      [
+        "SeedSelectSeedView",
+        "ScanView"
+      ],
+      [
+        "ScanInvalidQRTypeView",
+        "MainMenuView"
+      ],
+      [
+        "SeedTranscribeSeedQRFormatView",
+        "SeedTranscribeSeedQRWarningView"
+      ],
+      [
+        "SettingsMenuView",
+        "IOTestView"
+      ],
+      [
+        "ToolsImageEntropyLivePreviewView",
+        "ToolsImageEntropyFinalImageView"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "SeedElectrumMnemonicStartView"
+      ],
+      [
+        "ToolsMenuView",
+        "ToolsAddressExplorerSelectSourceView"
+      ],
+      [
+        "SeedElectrumMnemonicStartView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "RemoveMicroSDWarningView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "ToolsAddressExplorerAddressListView"
+      ],
+      [
+        "AddressVerificationSigTypeView",
+        "LoadMultisigWalletDescriptorView"
+      ],
+      [
+        "SeedExportXpubQRFormatView",
+        "SeedExportXpubWarningView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedExportXpubScriptTypeView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedDiscardView"
+      ],
+      [
+        "SeedBackupView",
+        "SeedTranscribeSeedQRFormatView"
+      ],
+      [
+        "SeedMnemonicInvalidView",
+        "MainMenuView"
+      ],
+      [
+        "UnhandledExceptionView",
+        "MainMenuView"
+      ],
+      [
+        "MainMenuView",
+        "SeedsMenuView"
+      ],
+      [
+        "SettingsMenuView",
+        "LocaleSelectionView"
+      ],
+      [
+        "SeedReviewPassphraseView",
+        "SeedAddPassphraseView"
+      ],
+      [
+        "ToolsAddressExplorerAddressView",
+        "ToolsAddressExplorerAddressListView"
+      ],
+      [
+        "SeedSignMessageSignedMessageQRView",
+        "MainMenuView"
+      ],
+      [
+        "PSBTFinalizeView",
+        "PSBTSigningErrorView"
+      ],
+      [
+        "SeedFinalizeView",
+        "SeedAddPassphraseView"
+      ],
+      [
+        "MainMenuView",
+        "PowerOptionsView"
+      ],
+      [
+        "SeedSignMessageStartView",
+        "NotYetImplementedView"
+      ],
+      [
+        "ToolsMenuView",
+        "ToolsCalcFinalWordNumWordsView"
+      ],
+      [
+        "ToolsAddressExplorerAddressListView",
+        "ToolsAddressExplorerAddressView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmScanView",
+        "SeedTranscribeSeedQRConfirmWrongSeedView"
+      ],
+      [
+        "SeedAddressVerificationView",
+        "SeedAddressVerificationSuccessView"
+      ],
+      [
+        "ScanView",
+        "SeedFinalizeView"
+      ],
+      [
+        "SeedAddPassphraseView",
+        "SeedReviewPassphraseView"
+      ],
+      [
+        "NetworkMismatchErrorView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "IOTestView",
+        "SettingsMenuView"
+      ],
+      [
+        "LoadSeedView",
+        "SeedElectrumMnemonicStartView"
+      ],
+      [
+        "SeedExportXpubWarningView",
+        "SeedExportXpubDetailsView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "SeedFinalizeView"
+      ],
+      [
+        "ScanView",
+        "MultisigWalletDescriptorView"
+      ],
+      [
+        "LoadMultisigWalletDescriptorView",
+        "ScanWalletDescriptorView"
+      ],
+      [
+        "SeedExportXpubScriptTypeView",
+        "SeedExportXpubCustomDerivationView"
+      ],
+      [
+        "MultisigWalletDescriptorView",
+        "ToolsAddressExplorerAddressTypeView"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "ScanSeedQRView"
+      ],
+      [
+        "ScanView",
+        "ScanInvalidQRTypeView"
+      ],
+      [
+        "CameraConnectionErrorView",
+        "MainMenuView"
+      ],
+      [
+        "MainMenuView",
+        "ToolsMenuView"
+      ],
+      [
+        "PSBTSignedQRDisplayView",
+        "MainMenuView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedExportXpubSigTypeView"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "PSBTOpReturnView"
+      ],
+      [
+        "SeedSignMessageStartView",
+        "SeedSignMessageConfirmMessageView"
+      ],
+      [
+        "SeedTranscribeSeedQRWholeQRView",
+        "SeedTranscribeSeedQRZoomedInView"
+      ],
+      [
+        "AddressVerificationStartView",
+        "SeedSelectSeedView"
+      ],
+      [
+        "ToolsMenuView",
+        "ScanAddressView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedBackupView"
+      ],
+      [
+        "ControllerEventLoop",
+        "UnhandledExceptionView"
+      ],
+      [
+        "SeedsMenuView",
+        "SeedOptionsView"
+      ],
+      [
+        "ScanView",
+        "SettingsIngestSettingsQRView"
+      ]
+    ],
+    "percentage": 47.8,
+    "tested_edges_count": 128,
+    "total_edges_count": 268,
+    "unresolved_pairs": [
+      [
+        "ToolsImageEntropyLivePreviewView",
+        "UnhandledExceptionView"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "UnhandledExceptionView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "SeedExportXpubScriptTypeView"
+      ],
+      [
+        "SeedElectrumMnemonicStartView",
+        "SeedFinalizeView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "RemoveMicroSDWarningView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmWrongSeedView",
+        "SeedTranscribeSeedQRZoomedInView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedFinalizeView"
+      ],
+      [
+        "MyGoodButtonDataTestView",
+        "MainMenuView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "LoadSeedView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmInvalidQRView",
+        "SeedTranscribeSeedQRZoomedInView"
+      ],
+      [
+        "LoadSeedView",
+        "SeedFinalizeView"
+      ],
+      [
+        "PowerOptionsView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "ToolsAddressExplorerSelectSourceView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "MainMenuView"
+      ],
+      [
+        "ScanView",
+        "UnhandledExceptionView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "SeedSelectSeedView"
+      ],
+      [
+        "SeedSignMessageConfirmAddressView",
+        "SeedSignMessageConfirmMessageView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "SeedOptionsView"
+      ],
+      [
+        "PowerOffView",
+        "PowerOptionsView"
+      ]
+    ],
+    "unresolved_pairs_count": 20,
+    "untested_edges": [
+      [
+        "SeedBIP85SelectChildIndexView",
+        "[BACK]"
+      ],
+      [
+        "MultisigWalletDescriptorView",
+        "[BACK]"
+      ],
+      [
+        "OptionDisabledView",
+        "MainMenuView"
+      ],
+      [
+        "PSBTNoChangeWarningView",
+        "[BACK]"
+      ],
+      [
+        "SeedsMenuView",
+        "[BACK]"
+      ],
+      [
+        "SeedBIP85SelectNumWordsView",
+        "SeedBIP85SelectChildIndexView"
+      ],
+      [
+        "SeedWordsView",
+        "SeedWordsBackupTestPromptView"
+      ],
+      [
+        "SeedSelectSeedView",
+        "[BACK]"
+      ],
+      [
+        "PSBTAddressDetailsView",
+        "[BACK]"
+      ],
+      [
+        "SeedWordsBackupTestView",
+        "SeedWordsBackupTestSuccessView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "ToolsCalcFinalWordShowFinalWordView"
+      ],
+      [
+        "SeedExportXpubCustomDerivationView",
+        "ToolsAddressExplorerAddressTypeView"
+      ],
+      [
+        "AddressVerificationSigTypeView",
+        "[BACK]"
+      ],
+      [
+        "SeedSignMessageConfirmAddressView",
+        "NetworkMismatchErrorView"
+      ],
+      [
+        "ToolsCalcFinalWordShowFinalWordView",
+        "[BACK]"
+      ],
+      [
+        "ToolsCalcFinalWordCoinFlipsView",
+        "[BACK]"
+      ],
+      [
+        "LoadSeedView",
+        "ScanSeedQRView"
+      ],
+      [
+        "ScanView",
+        "SeedAddPassphraseView"
+      ],
+      [
+        "PowerOffView",
+        "[BACK]"
+      ],
+      [
+        "PSBTMathView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsCalcFinalWordFinalizePromptView",
+        "ToolsCalcFinalWordShowFinalWordView"
+      ],
+      [
+        "PSBTSigningErrorView",
+        "[BACK]"
+      ],
+      [
+        "ToolsDiceEntropyMnemonicLengthView",
+        "[BACK]"
+      ],
+      [
+        "LoadMultisigWalletDescriptorView",
+        "MainMenuView"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SeedWordsBackupTestMistakeView",
+        "SeedWordsBackupTestView"
+      ],
+      [
+        "ToolsCalcFinalWordFinalizePromptView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "ToolsImageEntropyFinalImageView",
+        "ToolsImageEntropyMnemonicLengthView"
+      ],
+      [
+        "ToolsCalcFinalWordCoinFlipsView",
+        "ToolsCalcFinalWordShowFinalWordView"
+      ],
+      [
+        "LoadSeedView",
+        "[BACK]"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "[BACK]"
+      ],
+      [
+        "ToolsCalcFinalWordDoneView",
+        "SeedFinalizeView"
+      ],
+      [
+        "ToolsDiceEntropyEntryView",
+        "SeedWordsWarningView"
+      ],
+      [
+        "PSBTUnsupportedScriptTypeWarningView",
+        "[BACK]"
+      ],
+      [
+        "PSBTOverviewView",
+        "PSBTNoChangeWarningView"
+      ],
+      [
+        "ToolsMenuView",
+        "[BACK]"
+      ],
+      [
+        "SeedExportXpubCustomDerivationView",
+        "[BACK]"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmScanView",
+        "[BACK]"
+      ],
+      [
+        "PSBTSigningErrorView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsAddressExplorerAddressTypeView",
+        "[BACK]"
+      ],
+      [
+        "ScanView",
+        "MainMenuView"
+      ],
+      [
+        "VersionView",
+        "SettingsMenuView"
+      ],
+      [
+        "SeedExportXpubScriptTypeView",
+        "[BACK]"
+      ],
+      [
+        "SeedTranscribeSeedQRWholeQRView",
+        "[BACK]"
+      ],
+      [
+        "SeedExportXpubSigTypeView",
+        "[BACK]"
+      ],
+      [
+        "SeedWordsBackupTestView",
+        "SeedWordsBackupTestView"
+      ],
+      [
+        "SeedBIP85SelectChildIndexView",
+        "SeedWordsWarningView"
+      ],
+      [
+        "SeedWordsBackupTestPromptView",
+        "SeedFinalizeView"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedBIP85SelectNumWordsView"
+      ],
+      [
+        "AddressVerificationStartView",
+        "SeedAddressVerificationView"
+      ],
+      [
+        "SeedAddressVerificationView",
+        "MainMenuView"
+      ],
+      [
+        "ScanView",
+        "NotYetImplementedView"
+      ],
+      [
+        "SeedWordsBackupTestPromptView",
+        "SeedWordsBackupTestView"
+      ],
+      [
+        "MultisigWalletDescriptorView",
+        "MainMenuView"
+      ],
+      [
+        "PSBTFinalizeView",
+        "[BACK]"
+      ],
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "[BACK]"
+      ],
+      [
+        "SeedTranscribeSeedQRWarningView",
+        "[BACK]"
+      ],
+      [
+        "SeedBIP85SelectChildIndexView",
+        "SeedBIP85InvalidChildIndexView"
+      ],
+      [
+        "SeedWordsBackupTestPromptView",
+        "SeedOptionsView"
+      ],
+      [
+        "ToolsCalcFinalWordFinalizePromptView",
+        "ToolsCalcFinalWordCoinFlipsView"
+      ],
+      [
+        "MultisigWalletDescriptorView",
+        "PSBTChangeDetailsView"
+      ],
+      [
+        "ToolsImageEntropyMnemonicLengthView",
+        "[BACK]"
+      ],
+      [
+        "SeedSelectSeedView",
+        "SeedSignMessageConfirmMessageView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "ToolsCalcFinalWordFinalizePromptView"
+      ],
+      [
+        "ToolsMenuView",
+        "ToolsDiceEntropyMnemonicLengthView"
+      ],
+      [
+        "LocaleSelectionView",
+        "SettingsMenuView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmInvalidQRView",
+        "[BACK]"
+      ],
+      [
+        "LoadSeedView",
+        "ToolsMenuView"
+      ],
+      [
+        "PowerOptionsView",
+        "[BACK]"
+      ],
+      [
+        "OptionDisabledView",
+        "SettingsEntryUpdateSelectionView"
+      ],
+      [
+        "PSBTAddressVerificationFailedView",
+        "MainMenuView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "unblocking_view"
+      ],
+      [
+        "SeedBackupView",
+        "[BACK]"
+      ],
+      [
+        "SeedWordsBackupTestMistakeView",
+        "SeedWordsView"
+      ],
+      [
+        "SeedSignMessageConfirmAddressView",
+        "[BACK]"
+      ],
+      [
+        "AddressVerificationSigTypeView",
+        "SeedAddressVerificationView"
+      ],
+      [
+        "ToolsCalcFinalWordDoneView",
+        "SeedDiscardView"
+      ],
+      [
+        "PSBTOpReturnView",
+        "[BACK]"
+      ],
+      [
+        "PSBTOverviewView",
+        "[BACK]"
+      ],
+      [
+        "SeedExportXpubDetailsView",
+        "[BACK]"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmQRPromptView",
+        "SeedOptionsView"
+      ],
+      [
+        "ToolsDiceEntropyMnemonicLengthView",
+        "ToolsDiceEntropyEntryView"
+      ],
+      [
+        "ToolsCalcFinalWordDoneView",
+        "[BACK]"
+      ],
+      [
+        "ToolsDiceEntropyEntryView",
+        "[BACK]"
+      ],
+      [
+        "PSBTUnsupportedScriptTypeWarningView",
+        "PSBTAddressDetailsView"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "MainMenuView"
+      ],
+      [
+        "SeedDiscardView",
+        "SeedFinalizeView"
+      ],
+      [
+        "ToolsAddressExplorerSelectSourceView",
+        "SeedMnemonicEntryView"
+      ],
+      [
+        "SeedBIP85InvalidChildIndexView",
+        "SeedBIP85SelectChildIndexView"
+      ],
+      [
+        "SeedSelectSeedView",
+        "SeedElectrumMnemonicStartView"
+      ],
+      [
+        "ToolsMenuView",
+        "ToolsImageEntropyLivePreviewView"
+      ],
+      [
+        "SettingsMenuView",
+        "MainMenuView"
+      ],
+      [
+        "SeedDiscardView",
+        "SeedOptionsView"
+      ],
+      [
+        "SeedAddressVerificationSuccessView",
+        "MainMenuView"
+      ],
+      [
+        "PSBTAddressDetailsView",
+        "PSBTAddressDetailsView"
+      ],
+      [
+        "PSBTNoChangeWarningView",
+        "PSBTMathView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmWrongSeedView",
+        "[BACK]"
+      ],
+      [
+        "AddressVerificationStartView",
+        "LoadMultisigWalletDescriptorView"
+      ],
+      [
+        "PSBTMathView",
+        "[BACK]"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "NotYetImplementedView"
+      ],
+      [
+        "RemoveMicroSDWarningView",
+        "RemoveMicroSDWarningView"
+      ],
+      [
+        "SeedWordsWarningView",
+        "[BACK]"
+      ],
+      [
+        "ToolsAddressExplorerAddressListView",
+        "[BACK]"
+      ],
+      [
+        "ToolsImageEntropyFinalImageView",
+        "[BACK]"
+      ],
+      [
+        "PSBTAddressDetailsView",
+        "PSBTOpReturnView"
+      ],
+      [
+        "SeedWordsView",
+        "[BACK]"
+      ],
+      [
+        "SeedWordsWarningView",
+        "SeedWordsView"
+      ],
+      [
+        "LoadMultisigWalletDescriptorView",
+        "[BACK]"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "LoadMultisigWalletDescriptorView"
+      ],
+      [
+        "SeedWordsBackupTestView",
+        "SeedWordsBackupTestMistakeView"
+      ],
+      [
+        "SeedWordsView",
+        "SeedWordsView"
+      ],
+      [
+        "SeedSignMessageConfirmMessageView",
+        "[BACK]"
+      ],
+      [
+        "ToolsCalcFinalWordShowFinalWordView",
+        "ToolsCalcFinalWordDoneView"
+      ],
+      [
+        "SeedOptionsView",
+        "MainMenuView"
+      ],
+      [
+        "ToolsImageEntropyMnemonicLengthView",
+        "SeedWordsWarningView"
+      ],
+      [
+        "PSBTFinalizeView",
+        "MainMenuView"
+      ],
+      [
+        "SeedSignMessageStartView",
+        "OptionDisabledView"
+      ],
+      [
+        "SeedOptionsView",
+        "ScanPSBTView"
+      ],
+      [
+        "AddressVerificationSigTypeView",
+        "SeedSelectSeedView"
+      ],
+      [
+        "ToolsCalcFinalWordNumWordsView",
+        "[BACK]"
+      ],
+      [
+        "PSBTChangeDetailsView",
+        "PSBTAddressVerificationFailedView"
+      ],
+      [
+        "SettingsEntryUpdateSelectionView",
+        "blocking_view"
+      ],
+      [
+        "SeedTranscribeSeedQRFormatView",
+        "[BACK]"
+      ],
+      [
+        "SeedBackupView",
+        "SeedWordsWarningView"
+      ],
+      [
+        "SeedTranscribeSeedQRConfirmQRPromptView",
+        "[BACK]"
+      ],
+      [
+        "ScanView",
+        "[BACK]"
+      ],
+      [
+        "SeedOptionsView",
+        "SeedAddressVerificationView"
+      ],
+      [
+        "SeedExportXpubWarningView",
+        "[BACK]"
+      ],
+      [
+        "SeedWordsBackupTestSuccessView",
+        "SeedFinalizeView"
+      ],
+      [
+        "PSBTAddressDetailsView",
+        "PSBTFinalizeView"
+      ],
+      [
+        "SettingsMenuView",
+        "VersionView"
+      ],
+      [
+        "SeedMnemonicEntryView",
+        "[BACK]"
+      ],
+      [
+        "PSBTOverviewView",
+        "PSBTUnsupportedScriptTypeWarningView"
+      ],
+      [
+        "SeedWordsBackupTestSuccessView",
+        "SeedOptionsView"
+      ],
+      [
+        "ToolsImageEntropyLivePreviewView",
+        "[BACK]"
+      ],
+      [
+        "PSBTSelectSeedView",
+        "[BACK]"
+      ],
+      [
+        "ErrorView",
+        "MainMenuView"
+      ],
+      [
+        "SeedBIP85SelectNumWordsView",
+        "[BACK]"
+      ],
+      [
+        "SeedExportXpubQRFormatView",
+        "[BACK]"
+      ],
+      [
+        "ToolsCalcFinalWordFinalizePromptView",
+        "[BACK]"
+      ]
+    ]
+  },
+  "edges": [
+    {
+      "clear_history": false,
+      "condition": "self.controller.psbt_seed AND PSBTParser.has_matching_input_fingerprint(psbt=self.controller.psbt, seed=self.controller.psbt_seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK))",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 30,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "seedsigner.views.psbt_views.PSBTOverviewView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 57,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(seeds) > 0 and selected_menu_num < len(seeds)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 62,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "seedsigner.views.psbt_views.PSBTOverviewView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SCAN_SEED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 69,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "seedsigner.views.scan_views.ScanSeedQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 77,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 81,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedElectrumMnemonicStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 151,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOverviewView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "psbt_parser.policy == None",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 156,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOverviewView",
+      "target_view": "seedsigner.views.psbt_views.PSBTUnsupportedScriptTypeWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (psbt_parser.policy == None) AND psbt_parser.change_amount == 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 159,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOverviewView",
+      "target_view": "seedsigner.views.psbt_views.PSBTNoChangeWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (psbt_parser.policy == None) AND NOT (psbt_parser.change_amount == 0)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 162,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOverviewView",
+      "target_view": "seedsigner.views.psbt_views.PSBTMathView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 176,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTUnsupportedScriptTypeWarningView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 180,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTUnsupportedScriptTypeWarningView",
+      "target_view": "seedsigner.views.psbt_views.PSBTAddressDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 198,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTNoChangeWarningView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 201,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTNoChangeWarningView",
+      "target_view": "seedsigner.views.psbt_views.PSBTMathView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT psbt_parser",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 222,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTMathView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 235,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTMathView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(psbt_parser.destination_addresses) > 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 238,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTMathView",
+      "target_view": "seedsigner.views.psbt_views.PSBTAddressDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (len(psbt_parser.destination_addresses) > 0)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 241,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTMathView",
+      "target_view": "seedsigner.views.psbt_views.PSBTChangeDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 283,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressDetailsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.address_num < len(psbt_parser.destination_addresses) - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 287,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTAddressDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND psbt_parser.change_amount > 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 291,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTChangeDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND NOT (psbt_parser.change_amount > 0) AND psbt_parser.op_return_data",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 294,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTOpReturnView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.address_num < len(psbt_parser.destination_addresses) - 1) AND NOT (psbt_parser.change_amount > 0) AND NOT (psbt_parser.op_return_data)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 298,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT psbt_parser",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 318,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "seed_fingerprint NOT in change_data.get('claimed_fingerprints')",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 338,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.view.NotYetImplementedView"
+    },
+    {
+      "clear_history": true,
+      "condition": "is_change_addr_verified == False and (NOT psbt_parser.is_multisig or self.controller.multisig_wallet_descriptor is NOT None)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 417,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTAddressVerificationFailedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 434,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND self.change_address_num < psbt_parser.num_change_outputs - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 438,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTChangeDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND NOT (self.change_address_num < psbt_parser.num_change_outputs - 1) AND psbt_parser.op_return_data",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 441,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTOpReturnView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION AND NOT (self.change_address_num < psbt_parser.num_change_outputs - 1) AND NOT (psbt_parser.op_return_data)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 445,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION) AND button_data[selected_menu_num] == self.VERIFY_MULTISIG",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 451,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTChangeDetailsView",
+      "target_view": "seedsigner.views.seed_views.LoadMultisigWalletDescriptorView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 481,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTAddressVerificationFailedView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 508,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOpReturnView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 510,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTOpReturnView",
+      "target_view": "seedsigner.views.psbt_views.PSBTFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT psbt_parser",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 529,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTFinalizeView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 537,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTFinalizeView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND sig_cnt == PSBTParser.sig_count(trimmed_psbt)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 549,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTFinalizeView",
+      "target_view": "seedsigner.views.psbt_views.PSBTSigningErrorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (sig_cnt == PSBTParser.sig_count(trimmed_psbt))",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 553,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTFinalizeView",
+      "target_view": "seedsigner.views.psbt_views.PSBTSignedQRDisplayView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 569,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSignedQRDisplayView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT psbt_parser",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 580,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSigningErrorView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "selected_menu_num == 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 595,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSigningErrorView",
+      "target_view": "seedsigner.views.psbt_views.PSBTSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 598,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/psbt_views.py",
+      "source_view": "PSBTSigningErrorView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT self.is_valid_qr_type",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 64,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.view.ErrorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT self.is_valid_qr_type",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 69,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND self.decoder.is_seed AND NOT seed_mnemonic",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 77,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.view.NotYetImplementedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND self.decoder.is_seed AND seed_mnemonic AND self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 88,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.seed_views.SeedAddPassphraseView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND self.decoder.is_seed AND seed_mnemonic AND NOT (self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 90,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND self.decoder.is_psbt",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 97,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.psbt_views.PSBTSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND self.decoder.is_settings",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 102,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.settings_views.SettingsIngestSettingsQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND self.decoder.is_wallet_descriptor AND NOT descriptor.is_basic_multisig",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 128,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.view.NotYetImplementedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND self.decoder.is_wallet_descriptor",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 131,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.seed_views.MultisigWalletDescriptorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND self.decoder.is_address",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 138,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.seed_views.AddressVerificationStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND NOT (self.decoder.is_address) AND self.decoder.is_sign_message",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 152,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND NOT (self.decoder.is_seed) AND NOT (self.decoder.is_psbt) AND NOT (self.decoder.is_settings) AND NOT (self.decoder.is_wallet_descriptor) AND NOT (self.decoder.is_address) AND NOT (self.decoder.is_sign_message)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 161,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.view.NotYetImplementedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.decoder.is_complete) AND self.decoder.is_invalid",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 167,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.scan_views.ScanInvalidQRTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 169,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 229,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/scan_views.py",
+      "source_view": "ScanInvalidQRTypeView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT self.seeds",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 41,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedsMenuView",
+      "target_view": "seedsigner.views.seed_views.LoadSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 56,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedsMenuView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND len(self.seeds) > 0 and selected_menu_num < len(self.seeds)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 60,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedsMenuView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (len(self.seeds) > 0 and selected_menu_num < len(self.seeds)) AND button_data[selected_menu_num] == self.LOAD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 63,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedsMenuView",
+      "target_view": "seedsigner.views.seed_views.LoadSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 128,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(seeds) > 0 and selected_menu_num < len(seeds) AND self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 134,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(seeds) > 0 and selected_menu_num < len(seeds) AND NOT (self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR) AND self.flow == Controller.FLOW__SIGN_MESSAGE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 138,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageConfirmMessageView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SCAN_SEED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 144,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "seedsigner.views.scan_views.ScanView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 152,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 155,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSelectSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedElectrumMnemonicStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 189,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SEED_QR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 193,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "seedsigner.views.scan_views.ScanSeedQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SEED_QR) AND button_data[selected_menu_num] == self.TYPE_12WORD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 197,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND button_data[selected_menu_num] == self.TYPE_24WORD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 201,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_24WORD) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 204,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "seedsigner.views.seed_views.SeedElectrumMnemonicStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SEED_QR) AND NOT (button_data[selected_menu_num] == self.TYPE_12WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_24WORD) AND NOT (button_data[selected_menu_num] == self.TYPE_ELECTRUM) AND button_data[selected_menu_num] == self.CREATE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 208,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadSeedView",
+      "target_view": "seedsigner.views.tools_views.ToolsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 236,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 2",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 245,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordFinalizePromptView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 251,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordShowFinalWordView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 254,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 267,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicInvalidView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 269,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicEntryView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.EDIT",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 295,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicInvalidView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] == self.DISCARD",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 299,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedMnemonicInvalidView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "button_data[selected_menu_num] == self.FINALIZE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 341,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedFinalizeView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.FINALIZE) AND button_data[selected_menu_num] == self.PASSPHRASE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 344,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedFinalizeView",
+      "target_view": "seedsigner.views.seed_views.SeedAddPassphraseView"
+    },
+    {
+      "clear_history": false,
+      "condition": "'is_back_button' in ret_dict or len(self.seed.passphrase) == 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 371,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddPassphraseView",
+      "target_view": "seedsigner.views.seed_views.SeedAddPassphraseExitDialogView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT ('is_back_button' in ret_dict or len(self.seed.passphrase) == 0)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 374,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddPassphraseView",
+      "target_view": "seedsigner.views.seed_views.SeedReviewPassphraseView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.EDIT",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 408,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddPassphraseExitDialogView",
+      "target_view": "seedsigner.views.seed_views.SeedAddPassphraseView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] in [self.DISCARD, self.SKIP]",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 412,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddPassphraseExitDialogView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.EDIT",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 451,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedReviewPassphraseView",
+      "target_view": "seedsigner.views.seed_views.SeedAddPassphraseView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT (button_data[selected_menu_num] == self.EDIT) AND button_data[selected_menu_num] == self.DONE",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 455,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedReviewPassphraseView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.KEEP AND self.is_pending_seed",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 491,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedDiscardView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.KEEP AND NOT (self.is_pending_seed)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 493,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedDiscardView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT (button_data[selected_menu_num] == self.KEEP) AND button_data[selected_menu_num] == self.DISCARD",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 500,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedDiscardView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 521,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedElectrumMnemonicStartView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address AND self.controller.resume_main_flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 551,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 557,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubScriptTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER) AND self.controller.resume_main_flow == Controller.FLOW__SIGN_MESSAGE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 561,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageConfirmMessageView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.psbt AND PSBTParser.has_matching_input_fingerprint(self.controller.psbt, self.seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK)) AND self.controller.resume_main_flow and self.controller.resume_main_flow == Controller.FLOW__PSBT",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 570,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.psbt_views.PSBTOverviewView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 597,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SCAN_PSBT",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 602,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.scan_views.ScanPSBTView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND button_data[selected_menu_num] == self.EXPORT_XPUB",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 605,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubSigTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND button_data[selected_menu_num] == self.EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 609,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubScriptTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND button_data[selected_menu_num] == self.SIGN_MESSAGE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 615,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.scan_views.ScanView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND button_data[selected_menu_num] == self.BACKUP",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 618,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedBackupView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND NOT (button_data[selected_menu_num] == self.BACKUP) AND button_data[selected_menu_num] == self.BIP85_CHILD_SEED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 621,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedBIP85SelectNumWordsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN_PSBT) AND NOT (button_data[selected_menu_num] == self.EXPORT_XPUB) AND NOT (button_data[selected_menu_num] == self.EXPLORER) AND NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE) AND NOT (button_data[selected_menu_num] == self.BACKUP) AND NOT (button_data[selected_menu_num] == self.BIP85_CHILD_SEED) AND button_data[selected_menu_num] == self.DISCARD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 624,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedOptionsView",
+      "target_view": "seedsigner.views.seed_views.SeedDiscardView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 651,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBackupView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.VIEW_WORDS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 654,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBackupView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.VIEW_WORDS) AND button_data[selected_menu_num] == self.EXPORT_SEEDQR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 657,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBackupView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRFormatView"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(self.settings.get_value(SettingsConstants.SETTING__SIG_TYPES)) == 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 676,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubSigTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubScriptTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 687,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubSigTypeView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 689,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubSigTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubScriptTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(script_types) == 1 AND self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 719,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(script_types) == 1 AND NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 721,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubQRFormatView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 744,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND args['script_type'] == SettingsConstants.CUSTOM_DERIVATION",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 750,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubCustomDerivationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 754,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 756,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubScriptTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubQRFormatView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 777,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubCustomDerivationView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 784,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubCustomDerivationView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 786,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubCustomDerivationView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubQRFormatView"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(self.settings.get_value(SettingsConstants.SETTING__XPUB_QR_FORMAT)) == 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 817,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubQRFormatView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 832,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubQRFormatView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 836,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubQRFormatView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 851,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubWarningView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 878,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubWarningView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == 0",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 950,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubDetailsView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubQRDisplayView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 960,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubDetailsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 995,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedExportXpubQRDisplayView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1010,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsWarningView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == 0) AND selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1033,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsWarningView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1083,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.NEXT AND self.is_pending_seed and self.page_index == num_pages - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1090,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestPromptView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.NEXT AND NOT (self.is_pending_seed and self.page_index == num_pages - 1)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1095,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.NEXT) AND button_data[selected_menu_num] == self.DONE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1102,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestPromptView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1132,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85SelectNumWordsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1139,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85SelectNumWordsView",
+      "target_view": "seedsigner.views.seed_views.SeedBIP85SelectChildIndexView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1159,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85SelectChildIndexView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT 0 <= int(ret) < 2 ** 31",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1162,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85SelectChildIndexView",
+      "target_view": "seedsigner.views.seed_views.SeedBIP85InvalidChildIndexView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1171,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85SelectChildIndexView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1199,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedBIP85InvalidChildIndexView",
+      "target_view": "seedsigner.views.seed_views.SeedBIP85SelectChildIndexView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.VERIFY",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1231,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestPromptView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.VERIFY) AND button_data[selected_menu_num] == self.SKIP AND self.seed is None",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1238,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestPromptView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.VERIFY) AND button_data[selected_menu_num] == self.SKIP AND NOT (self.seed is None)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1240,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestPromptView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == real_word AND len(self.confirmed_list) == len(self.mnemonic_list)",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1309,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestSuccessView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == real_word AND NOT (len(self.confirmed_list) == len(self.mnemonic_list))",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1315,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == real_word)",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1322,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestMistakeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.REVIEW",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1368,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestMistakeView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.REVIEW) AND button_data[selected_menu_num] == self.RETRY",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1374,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestMistakeView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsBackupTestView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.seed is None",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1403,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestSuccessView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT (self.seed is None)",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1405,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedWordsBackupTestSuccessView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.settings.get_value(SettingsConstants.SETTING__COMPACT_SEEDQR) != SettingsConstants.OPTION__ENABLED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1430,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRFormatView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1452,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRFormatView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1461,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRFormatView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1481,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRWarningView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRWholeQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1502,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRWarningView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1535,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRWholeQRView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (ret == RET_CODE__BACK_BUTTON)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1538,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRWholeQRView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRZoomedInView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1591,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRZoomedInView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRConfirmQRPromptView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_option == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1614,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmQRPromptView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_option] == self.SCAN",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1617,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmQRPromptView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRConfirmScanView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT (selected_menu_option == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_option] == self.SCAN) AND button_data[selected_menu_option] == self.DONE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1620,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmQRPromptView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "scanning_done == False",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1645,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmScanView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND self.decoder.is_seed AND seed_mnemonic != self.seed.mnemonic_list",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1652,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmScanView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRConfirmWrongSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.decoder.is_complete AND self.decoder.is_seed AND NOT (seed_mnemonic != self.seed.mnemonic_list)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1654,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmScanView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRConfirmSuccessView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1657,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmScanView",
+      "target_view": "seedsigner.views.seed_views.SeedTranscribeSeedQRConfirmInvalidQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1676,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmWrongSeedView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1697,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmInvalidQRView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 1721,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedTranscribeSeedQRConfirmSuccessView",
+      "target_view": "seedsigner.views.seed_views.SeedOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address['script_type'] == SettingsConstants.LEGACY_P2PKH",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1745,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.SeedSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address['script_type'] == SettingsConstants.NESTED_SEGWIT",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1749,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.AddressVerificationSigTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND len(self.controller.unverified_address['address']) >= 62 AND self.controller.multisig_wallet_descriptor",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1757,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND len(self.controller.unverified_address['address']) >= 62 AND NOT (self.controller.multisig_wallet_descriptor)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1760,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.LoadMultisigWalletDescriptorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT AND NOT (len(self.controller.unverified_address['address']) >= 62)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1764,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.SeedSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT) AND self.controller.unverified_address['script_type'] == SettingsConstants.TAPROOT",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1768,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationStartView",
+      "target_view": "seedsigner.views.seed_views.SeedSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1801,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationSigTypeView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.SINGLE_SIG",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1805,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationSigTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.SINGLE_SIG) AND button_data[selected_menu_num] == self.MULTISIG AND self.controller.multisig_wallet_descriptor",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1810,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationSigTypeView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.SINGLE_SIG) AND button_data[selected_menu_num] == self.MULTISIG AND NOT (self.controller.multisig_wallet_descriptor)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1813,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "AddressVerificationSigTypeView",
+      "target_view": "seedsigner.views.seed_views.LoadMultisigWalletDescriptorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.verified_index.cur_count is NOT None",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1941,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddressVerificationView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationSuccessView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 1952,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddressVerificationView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2018,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedAddressVerificationSuccessView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SCAN",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 2036,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadMultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.scan_views.ScanWalletDescriptorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.CANCEL AND self.controller.resume_main_flow == Controller.FLOW__PSBT",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 2041,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadMultisigWalletDescriptorView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.CANCEL AND NOT (self.controller.resume_main_flow == Controller.FLOW__PSBT)",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 2043,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "LoadMultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2086,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "MultisigWalletDescriptorView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.RETURN",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2092,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "MultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.psbt_views.PSBTChangeDetailsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RETURN) AND button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label))",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2096,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "MultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.seed_views.SeedAddressVerificationView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RETURN) AND NOT (button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label))) AND button_data[selected_menu_num] == self.ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2101,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "MultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2103,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "MultisigWalletDescriptorView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.settings.get_value(SettingsConstants.SETTING__MESSAGE_SIGNING) == SettingsConstants.OPTION__DISABLED",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2123,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageStartView",
+      "target_view": "seedsigner.views.view.OptionDisabledView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT addr_format['clean_match']",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2129,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageStartView",
+      "target_view": "seedsigner.views.view.NotYetImplementedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.settings.get_value(SettingsConstants.SETTING__NETWORK) NOT in addr_format['network']",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2136,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageStartView",
+      "target_view": "seedsigner.views.view.NetworkMismatchErrorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "data.get('seed') is NOT None",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2153,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageStartView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageConfirmMessageView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (data.get('seed') is NOT None)",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2156,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageStartView",
+      "target_view": "seedsigner.views.seed_views.SeedSelectSeedView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2179,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmMessageView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.page_num == len(self.controller.sign_message_data['paged_message']) - 1",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2184,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmMessageView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageConfirmAddressView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.page_num == len(self.controller.sign_message_data['paged_message']) - 1)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2186,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmMessageView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageConfirmMessageView"
+    },
+    {
+      "clear_history": false,
+      "condition": "addr_format['network'] != SettingsConstants.MAINNET AND NOT (self.settings.get_value(SettingsConstants.SETTING__NETWORK) in [SettingsConstants.TESTNET, SettingsConstants.REGTEST])",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 2211,
+      "method": "__init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmAddressView",
+      "target_view": "seedsigner.views.view.NetworkMismatchErrorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2233,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmAddressView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2236,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageConfirmAddressView",
+      "target_view": "seedsigner.views.seed_views.SeedSignMessageSignedMessageQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 2270,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/seed_views.py",
+      "source_view": "SeedSignMessageSignedMessageQRView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.visibility == SettingsConstants.VISIBILITY__GENERAL",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 43,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND self.visibility == SettingsConstants.VISIBILITY__ADVANCED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 54,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON AND self.visibility == SettingsConstants.VISIBILITY__GENERAL",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 87,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON AND NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND self.visibility == SettingsConstants.VISIBILITY__ADVANCED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 89,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON AND NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL) AND NOT (self.visibility == SettingsConstants.VISIBILITY__ADVANCED)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 91,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND button_data[selected_menu_num] == self.IO_TEST",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 100,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.IOTestView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND button_data[selected_menu_num] == self.DONATE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 103,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.DonateView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND NOT (button_data[selected_menu_num] == self.DONATE) AND button_data[selected_menu_num] == self.VERSION",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 106,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.VersionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND NOT (button_data[selected_menu_num] == self.DONATE) AND NOT (button_data[selected_menu_num] == self.VERSION) AND settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 109,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.LocaleSelectionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.ADVANCED) AND NOT (button_data[selected_menu_num] == self.HARDWARE) AND NOT (button_data[selected_menu_num] == self.IO_TEST) AND NOT (button_data[selected_menu_num] == self.DONATE) AND NOT (button_data[selected_menu_num] == self.VERSION) AND NOT (settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 112,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 147,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "LocaleSelectionView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 152,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "LocaleSelectionView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 205,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret_value == RET_CODE__BACK_BUTTON AND self.settings_entry.type == SettingsConstants.TYPE__MULTISELECT AND NOT initial_value",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 220,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "seedsigner.views.settings_views.SettingsSelectionRequiredWarningView"
+    },
+    {
+      "clear_history": true,
+      "condition": "ret_value == RET_CODE__BACK_BUTTON AND self.blocking_view",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 223,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "self.blocking_view"
+    },
+    {
+      "clear_history": true,
+      "condition": "self.blocking_view AND current_value == initial_value",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 268,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "self.blocking_view"
+    },
+    {
+      "clear_history": true,
+      "condition": "self.blocking_view AND NOT (current_value == initial_value) AND self.unblocking_view",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 270,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "self.unblocking_view"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 275,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsEntryUpdateSelectionView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 306,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsSelectionRequiredWarningView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 344,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "SettingsIngestSettingsQRView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 355,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "IOTestView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 363,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "DonateView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 387,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/settings_views.py",
+      "source_view": "VersionView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 39,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.IMAGE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 42,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "seedsigner.views.tools_views.ToolsImageEntropyLivePreviewView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND button_data[selected_menu_num] == self.DICE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 45,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "seedsigner.views.tools_views.ToolsDiceEntropyMnemonicLengthView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND button_data[selected_menu_num] == self.KEYBOARD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 48,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordNumWordsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND NOT (button_data[selected_menu_num] == self.KEYBOARD) AND button_data[selected_menu_num] == self.ADDRESS_EXPLORER",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 51,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerSelectSourceView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.IMAGE) AND NOT (button_data[selected_menu_num] == self.DICE) AND NOT (button_data[selected_menu_num] == self.KEYBOARD) AND NOT (button_data[selected_menu_num] == self.ADDRESS_EXPLORER) AND button_data[selected_menu_num] == self.VERIFY_ADDRESS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 55,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsMenuView",
+      "target_view": "seedsigner.views.scan_views.ScanAddressView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 89,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyLivePreviewView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 99,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyLivePreviewView",
+      "target_view": "seedsigner.views.tools_views.ToolsImageEntropyFinalImageView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 141,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyFinalImageView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 143,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyFinalImageView",
+      "target_view": "seedsigner.views.tools_views.ToolsImageEntropyMnemonicLengthView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 161,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyMnemonicLengthView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 225,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsImageEntropyMnemonicLengthView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 255,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsDiceEntropyMnemonicLengthView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == TWELVE",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 258,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsDiceEntropyMnemonicLengthView",
+      "target_view": "seedsigner.views.tools_views.ToolsDiceEntropyEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == TWELVE) AND button_data[selected_menu_num] == TWENTY_FOUR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 261,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsDiceEntropyMnemonicLengthView",
+      "target_view": "seedsigner.views.tools_views.ToolsDiceEntropyEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 279,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsDiceEntropyEntryView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 288,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsDiceEntropyEntryView",
+      "target_view": "seedsigner.views.seed_views.SeedWordsWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 311,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordNumWordsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 315,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordNumWordsView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 347,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordFinalizePromptView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.COIN_FLIPS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 350,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordFinalizePromptView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordCoinFlipsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.COIN_FLIPS) AND button_data[selected_menu_num] == self.SELECT_WORD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 355,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordFinalizePromptView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.COIN_FLIPS) AND NOT (button_data[selected_menu_num] == self.SELECT_WORD) AND button_data[selected_menu_num] == self.ZEROS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 362,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordFinalizePromptView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordShowFinalWordView"
+    },
+    {
+      "clear_history": false,
+      "condition": "ret_val == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 382,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordCoinFlipsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (ret_val == RET_CODE__BACK_BUTTON)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 385,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordCoinFlipsView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordShowFinalWordView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 461,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordShowFinalWordView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.NEXT",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 464,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordShowFinalWordView",
+      "target_view": "seedsigner.views.tools_views.ToolsCalcFinalWordDoneView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 489,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordDoneView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.LOAD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 494,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordDoneView",
+      "target_view": "seedsigner.views.seed_views.SeedFinalizeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.LOAD) AND button_data[selected_menu_num] == self.DISCARD",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 497,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsCalcFinalWordDoneView",
+      "target_view": "seedsigner.views.seed_views.SeedDiscardView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 532,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "len(seeds) > 0 and selected_menu_num < len(seeds)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 541,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "seedsigner.views.seed_views.SeedExportXpubScriptTypeView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND button_data[selected_menu_num] == self.SCAN_SEED",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 551,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "seedsigner.views.scan_views.ScanSeedQRView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND button_data[selected_menu_num] == self.SCAN_DESCRIPTOR",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 555,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "seedsigner.views.scan_views.ScanWalletDescriptorView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR) AND button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 560,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "seedsigner.views.seed_views.SeedMnemonicEntryView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (len(seeds) > 0 and selected_menu_num < len(seeds)) AND NOT (button_data[selected_menu_num] == self.SCAN_SEED) AND NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR) AND NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]) AND button_data[selected_menu_num] == self.TYPE_ELECTRUM",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 564,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerSelectSourceView",
+      "target_view": "seedsigner.views.seed_views.SeedElectrumMnemonicStartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 658,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressTypeView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] in [self.RECEIVE, self.CHANGE]",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 661,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressTypeView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressListView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 739,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressListView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == len(addresses)",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 743,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressListView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressListView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 749,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressListView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 775,
+      "method": "run",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/tools_views.py",
+      "source_view": "ToolsAddressExplorerAddressView",
+      "target_view": "seedsigner.views.tools_views.ToolsAddressExplorerAddressListView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__POWER_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 207,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "MainMenuView",
+      "target_view": "seedsigner.views.view.PowerOptionsView"
+    },
+    {
+      "clear_history": false,
+      "condition": "button_data[selected_menu_num] == self.SCAN",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 211,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "MainMenuView",
+      "target_view": "seedsigner.views.scan_views.ScanView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN) AND button_data[selected_menu_num] == self.SEEDS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 215,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "MainMenuView",
+      "target_view": "seedsigner.views.seed_views.SeedsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN) AND NOT (button_data[selected_menu_num] == self.SEEDS) AND button_data[selected_menu_num] == self.TOOLS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 219,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "MainMenuView",
+      "target_view": "seedsigner.views.tools_views.ToolsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.SCAN) AND NOT (button_data[selected_menu_num] == self.SEEDS) AND NOT (button_data[selected_menu_num] == self.TOOLS) AND button_data[selected_menu_num] == self.SETTINGS",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 223,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "MainMenuView",
+      "target_view": "seedsigner.views.settings_views.SettingsMenuView"
+    },
+    {
+      "clear_history": false,
+      "condition": "selected_menu_num == RET_CODE__BACK_BUTTON",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 241,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "PowerOptionsView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND button_data[selected_menu_num] == self.RESET",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 244,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "PowerOptionsView",
+      "target_view": "seedsigner.views.view.RestartView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (selected_menu_num == RET_CODE__BACK_BUTTON) AND NOT (button_data[selected_menu_num] == self.RESET) AND button_data[selected_menu_num] == self.POWER_OFF",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 247,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "PowerOptionsView",
+      "target_view": "seedsigner.views.view.PowerOffView"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 287,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "PowerOffView",
+      "target_view": "[BACK]"
+    },
+    {
+      "clear_history": false,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 308,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "NotYetImplementedView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 332,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "ErrorView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 350,
+      "method": "__post_init__",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "NetworkMismatchErrorView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    },
+    {
+      "clear_history": false,
+      "condition": "self.error[0] == CameraConnectionError.__name__",
+      "is_redirect": true,
+      "is_trap_risk": false,
+      "line_number": 373,
+      "method": "__post_init__",
+      "skip_current_view": true,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "UnhandledExceptionView",
+      "target_view": "seedsigner.views.view.CameraConnectionErrorView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": false,
+      "line_number": 390,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "UnhandledExceptionView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 406,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "CameraConnectionErrorView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "button_data[selected_menu_num] == self.UPDATE_SETTING",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 438,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "OptionDisabledView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    },
+    {
+      "clear_history": true,
+      "condition": "NOT (button_data[selected_menu_num] == self.UPDATE_SETTING)",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 440,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "OptionDisabledView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "button_data[selected_menu_num] == self.CONTINUE AND NOT MicroSD.get_instance().is_inserted",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 463,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "RemoveMicroSDWarningView",
+      "target_view": "seedsigner.views.view.MainMenuView"
+    },
+    {
+      "clear_history": true,
+      "condition": "button_data[selected_menu_num] == self.CONTINUE AND MicroSD.get_instance().is_inserted",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 465,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "RemoveMicroSDWarningView",
+      "target_view": "seedsigner.views.view.RemoveMicroSDWarningView"
+    },
+    {
+      "clear_history": false,
+      "condition": "NOT (button_data[selected_menu_num] == self.CONTINUE) AND button_data[selected_menu_num] == self.SETTINGS",
+      "is_redirect": false,
+      "is_trap_risk": true,
+      "line_number": 469,
+      "method": "run",
+      "skip_current_view": false,
+      "source_file": "src/seedsigner/views/view.py",
+      "source_view": "RemoveMicroSDWarningView",
+      "target_view": "seedsigner.views.settings_views.SettingsEntryUpdateSelectionView"
+    }
+  ],
+  "nodes": [
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTSelectSeedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "PSBTOverviewView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTUnsupportedScriptTypeWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTNoChangeWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTMathView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "PSBTAddressDetailsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "PSBTChangeDetailsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "PSBTAddressVerificationFailedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTOpReturnView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTFinalizeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTSignedQRDisplayView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/psbt_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PSBTSigningErrorView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "__init__",
+        "is_valid_qr_type",
+        "run"
+      ],
+      "view_class_name": "ScanView"
+    },
+    {
+      "base_class_names": [
+        "ScanView"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "is_valid_qr_type"
+      ],
+      "view_class_name": "ScanPSBTView"
+    },
+    {
+      "base_class_names": [
+        "ScanView"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "is_valid_qr_type"
+      ],
+      "view_class_name": "ScanSeedQRView"
+    },
+    {
+      "base_class_names": [
+        "ScanView"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "is_valid_qr_type"
+      ],
+      "view_class_name": "ScanWalletDescriptorView"
+    },
+    {
+      "base_class_names": [
+        "ScanView"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "is_valid_qr_type"
+      ],
+      "view_class_name": "ScanAddressView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/scan_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ScanInvalidQRTypeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/screensaver.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "OpeningSplashView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedsMenuView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedSelectSeedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "LoadSeedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedMnemonicEntryView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedMnemonicInvalidView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedFinalizeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedAddPassphraseView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedAddPassphraseExitDialogView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedReviewPassphraseView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedDiscardView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "SeedElectrumMnemonicStartView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedOptionsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedBackupView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubSigTypeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubScriptTypeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubCustomDerivationView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubQRFormatView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubDetailsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedExportXpubQRDisplayView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedBIP85SelectNumWordsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedBIP85SelectChildIndexView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedBIP85InvalidChildIndexView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsBackupTestPromptView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsBackupTestView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsBackupTestMistakeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedWordsBackupTestSuccessView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRFormatView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRWholeQRView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRZoomedInView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRConfirmQRPromptView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRConfirmScanView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRConfirmWrongSeedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRConfirmInvalidQRView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedTranscribeSeedQRConfirmSuccessView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "AddressVerificationStartView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "AddressVerificationSigTypeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedAddressVerificationView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "SeedAddressVerificationSuccessView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "LoadMultisigWalletDescriptorView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "MultisigWalletDescriptorView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__"
+      ],
+      "view_class_name": "SeedSignMessageStartView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedSignMessageConfirmMessageView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedSignMessageConfirmAddressView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/seed_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SeedSignMessageSignedMessageQRView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SettingsMenuView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "LocaleSelectionView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SettingsEntryUpdateSelectionView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SettingsSelectionRequiredWarningView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "SettingsIngestSettingsQRView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "IOTestView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "DonateView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/settings_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "VersionView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsMenuView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsImageEntropyLivePreviewView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsImageEntropyFinalImageView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsImageEntropyMnemonicLengthView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsDiceEntropyMnemonicLengthView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "ToolsDiceEntropyEntryView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsCalcFinalWordNumWordsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsCalcFinalWordFinalizePromptView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsCalcFinalWordCoinFlipsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "ToolsCalcFinalWordShowFinalWordView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsCalcFinalWordDoneView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ToolsAddressExplorerSelectSourceView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "ToolsAddressExplorerAddressTypeView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "ToolsAddressExplorerAddressListView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/tools_views.py",
+      "method_names": [
+        "__init__",
+        "run"
+      ],
+      "view_class_name": "ToolsAddressExplorerAddressView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "MainMenuView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PowerOptionsView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "RestartView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "PowerOffView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "NotYetImplementedView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "ErrorView"
+    },
+    {
+      "base_class_names": [
+        "ErrorView"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "__post_init__"
+      ],
+      "view_class_name": "NetworkMismatchErrorView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "__post_init__",
+        "run"
+      ],
+      "view_class_name": "UnhandledExceptionView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "CameraConnectionErrorView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "__post_init__",
+        "run"
+      ],
+      "view_class_name": "OptionDisabledView"
+    },
+    {
+      "base_class_names": [
+        "View"
+      ],
+      "defining_module": "src/seedsigner/views/view.py",
+      "method_names": [
+        "run"
+      ],
+      "view_class_name": "RemoveMicroSDWarningView"
+    }
+  ],
+  "summary": {
+    "total_edges": 286,
+    "total_views": 101
+  },
+  "transitions": []
+}

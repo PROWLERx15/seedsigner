@@ -1,0 +1,1877 @@
+╭─────────────────────────────────────────────────────────╮
+│            SeedSigner Analyzer - Text Report            │
+╰─────────────────────────────────────────────────────────╯
+
+Total Views found: 101
+Total Edges found: 286
+
+=== NODES ===
+
+▶ psbt_views.py (12 views)
+  · PSBTSelectSeedView                       inherits: View
+  · PSBTOverviewView                         inherits: View
+  · PSBTUnsupportedScriptTypeWarningView     inherits: View
+  · PSBTNoChangeWarningView                  inherits: View
+  · PSBTMathView                             inherits: View
+  · PSBTAddressDetailsView                   inherits: View
+  · PSBTChangeDetailsView                    inherits: View
+  · PSBTAddressVerificationFailedView        inherits: View
+  · PSBTOpReturnView                         inherits: View
+  · PSBTFinalizeView                         inherits: View
+  · PSBTSignedQRDisplayView                  inherits: View
+  · PSBTSigningErrorView                     inherits: View
+
+▶ scan_views.py (6 views)
+  · ScanView                                 inherits: View
+  · ScanPSBTView                             inherits: ScanView
+  · ScanSeedQRView                           inherits: ScanView
+  · ScanWalletDescriptorView                 inherits: ScanView
+  · ScanAddressView                          inherits: ScanView
+  · ScanInvalidQRTypeView                    inherits: View
+
+▶ screensaver.py (1 views)
+  · OpeningSplashView                        inherits: View
+
+▶ seed_views.py (48 views)
+  · SeedsMenuView                            inherits: View
+  · SeedSelectSeedView                       inherits: View
+  · LoadSeedView                             inherits: View
+  · SeedMnemonicEntryView                    inherits: View
+  · SeedMnemonicInvalidView                  inherits: View
+  · SeedFinalizeView                         inherits: View
+  · SeedAddPassphraseView                    inherits: View
+  · SeedAddPassphraseExitDialogView          inherits: View
+  · SeedReviewPassphraseView                 inherits: View
+  · SeedDiscardView                          inherits: View
+  · SeedElectrumMnemonicStartView            inherits: View
+  · SeedOptionsView                          inherits: View
+  · SeedBackupView                           inherits: View
+  · SeedExportXpubSigTypeView                inherits: View
+  · SeedExportXpubScriptTypeView             inherits: View
+  · SeedExportXpubCustomDerivationView       inherits: View
+  · SeedExportXpubQRFormatView               inherits: View
+  · SeedExportXpubWarningView                inherits: View
+  · SeedExportXpubDetailsView                inherits: View
+  · SeedExportXpubQRDisplayView              inherits: View
+  · SeedWordsWarningView                     inherits: View
+  · SeedWordsView                            inherits: View
+  · SeedBIP85SelectNumWordsView              inherits: View
+  · SeedBIP85SelectChildIndexView            inherits: View
+  · SeedBIP85InvalidChildIndexView           inherits: View
+  · SeedWordsBackupTestPromptView            inherits: View
+  · SeedWordsBackupTestView                  inherits: View
+  · SeedWordsBackupTestMistakeView           inherits: View
+  · SeedWordsBackupTestSuccessView           inherits: View
+  · SeedTranscribeSeedQRFormatView           inherits: View
+  · SeedTranscribeSeedQRWarningView          inherits: View
+  · SeedTranscribeSeedQRWholeQRView          inherits: View
+  · SeedTranscribeSeedQRZoomedInView         inherits: View
+  · SeedTranscribeSeedQRConfirmQRPromptView  inherits: View
+  · SeedTranscribeSeedQRConfirmScanView      inherits: View
+  · SeedTranscribeSeedQRConfirmWrongSeedView inherits: View
+  · SeedTranscribeSeedQRConfirmInvalidQRView inherits: View
+  · SeedTranscribeSeedQRConfirmSuccessView   inherits: View
+  · AddressVerificationStartView             inherits: View
+  · AddressVerificationSigTypeView           inherits: View
+  · SeedAddressVerificationView              inherits: View
+  · SeedAddressVerificationSuccessView       inherits: View
+  · LoadMultisigWalletDescriptorView         inherits: View
+  · MultisigWalletDescriptorView             inherits: View
+  · SeedSignMessageStartView                 inherits: View
+  · SeedSignMessageConfirmMessageView        inherits: View
+  · SeedSignMessageConfirmAddressView        inherits: View
+  · SeedSignMessageSignedMessageQRView       inherits: View
+
+▶ settings_views.py (8 views)
+  · SettingsMenuView                         inherits: View
+  · LocaleSelectionView                      inherits: View
+  · SettingsEntryUpdateSelectionView         inherits: View
+  · SettingsSelectionRequiredWarningView     inherits: View
+  · SettingsIngestSettingsQRView             inherits: View
+  · IOTestView                               inherits: View
+  · DonateView                               inherits: View
+  · VersionView                              inherits: View
+
+▶ tools_views.py (15 views)
+  · ToolsMenuView                            inherits: View
+  · ToolsImageEntropyLivePreviewView         inherits: View
+  · ToolsImageEntropyFinalImageView          inherits: View
+  · ToolsImageEntropyMnemonicLengthView      inherits: View
+  · ToolsDiceEntropyMnemonicLengthView       inherits: View
+  · ToolsDiceEntropyEntryView                inherits: View
+  · ToolsCalcFinalWordNumWordsView           inherits: View
+  · ToolsCalcFinalWordFinalizePromptView     inherits: View
+  · ToolsCalcFinalWordCoinFlipsView          inherits: View
+  · ToolsCalcFinalWordShowFinalWordView      inherits: View
+  · ToolsCalcFinalWordDoneView               inherits: View
+  · ToolsAddressExplorerSelectSourceView     inherits: View
+  · ToolsAddressExplorerAddressTypeView      inherits: View
+  · ToolsAddressExplorerAddressListView      inherits: View
+  · ToolsAddressExplorerAddressView          inherits: View
+
+▶ view.py (11 views)
+  · MainMenuView                             inherits: View
+  · PowerOptionsView                         inherits: View
+  · RestartView                              inherits: View
+  · PowerOffView                             inherits: View
+  · NotYetImplementedView                    inherits: View
+  · ErrorView                                inherits: View
+  · NetworkMismatchErrorView                 inherits: ErrorView
+  · UnhandledExceptionView                   inherits: View
+  · CameraConnectionErrorView                inherits: View
+  · OptionDisabledView                       inherits: View
+  · RemoveMicroSDWarningView                 inherits: View
+
+=== EDGES ===
+
+▶ psbt_views.py (42 edges)
+
+  PSBTSelectSeedView [SOURCE VIEW]
+  │
+  ├──▶ PSBTOverviewView [TARGET VIEW] (Line 30)
+  │    Conditions:
+  │      · self.controller.psbt_seed
+  │      · PSBTParser.has_matching_input_fingerprint(psbt=self.controller.psbt, seed=self.controller.psbt_seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK))
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 57)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTOverviewView [TARGET VIEW] (Line 62)
+  │    Conditions:
+  │      · len(seeds) > 0 and selected_menu_num < len(seeds)
+  │
+  ├──▶ ScanSeedQRView [TARGET VIEW] (Line 69)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SCAN_SEED
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 77)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+  │      · button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+  │
+  └──▶ SeedElectrumMnemonicStartView [TARGET VIEW] (Line 81)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+         · NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD])
+         · button_data[selected_menu_num] == self.TYPE_ELECTRUM
+
+  PSBTOverviewView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 151)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTUnsupportedScriptTypeWarningView [TARGET VIEW] (Line 156)
+  │    Conditions:
+  │      · psbt_parser.policy == None
+  │
+  ├──▶ PSBTNoChangeWarningView [TARGET VIEW] (Line 159)
+  │    Conditions:
+  │      · NOT (psbt_parser.policy == None)
+  │      · psbt_parser.change_amount == 0
+  │
+  └──▶ PSBTMathView [TARGET VIEW] (Line 162)
+       Conditions:
+         · NOT (psbt_parser.policy == None)
+         · NOT (psbt_parser.change_amount == 0)
+
+  PSBTUnsupportedScriptTypeWarningView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 176)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ PSBTAddressDetailsView [TARGET VIEW] (Line 180)
+
+  PSBTNoChangeWarningView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 198)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ PSBTMathView [TARGET VIEW] (Line 201)
+
+  PSBTMathView [SOURCE VIEW]
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 222)
+  │    Conditions:
+  │      · NOT psbt_parser
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 235)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTAddressDetailsView [TARGET VIEW] (Line 238)
+  │    Conditions:
+  │      · len(psbt_parser.destination_addresses) > 0
+  │
+  └──▶ PSBTChangeDetailsView [TARGET VIEW] (Line 241)
+       Conditions:
+         · NOT (len(psbt_parser.destination_addresses) > 0)
+
+  PSBTAddressDetailsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 283)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTAddressDetailsView [TARGET VIEW] (Line 287)
+  │    Conditions:
+  │      · self.address_num < len(psbt_parser.destination_addresses) - 1
+  │
+  ├──▶ PSBTChangeDetailsView [TARGET VIEW] (Line 291)
+  │    Conditions:
+  │      · NOT (self.address_num < len(psbt_parser.destination_addresses) - 1)
+  │      · psbt_parser.change_amount > 0
+  │
+  ├──▶ PSBTOpReturnView [TARGET VIEW] (Line 294)
+  │    Conditions:
+  │      · NOT (self.address_num < len(psbt_parser.destination_addresses) - 1)
+  │      · NOT (psbt_parser.change_amount > 0)
+  │      · psbt_parser.op_return_data
+  │
+  └──▶ PSBTFinalizeView [TARGET VIEW] (Line 298)
+       Conditions:
+         · NOT (self.address_num < len(psbt_parser.destination_addresses) - 1)
+         · NOT (psbt_parser.change_amount > 0)
+         · NOT (psbt_parser.op_return_data)
+
+  PSBTChangeDetailsView [SOURCE VIEW]
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 318)
+  │    Conditions:
+  │      · NOT psbt_parser
+  │
+  ├──▶ NotYetImplementedView [TARGET VIEW] (Line 338)
+  │    Conditions:
+  │      · seed_fingerprint NOT in change_data.get('claimed_fingerprints')
+  │
+  ├──▶ PSBTAddressVerificationFailedView [TARGET VIEW] (Line 417)
+  │    Conditions:
+  │      · is_change_addr_verified == False and (NOT psbt_parser.is_multisig or self.controller.multisig_wallet_descriptor is NOT None)
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 434)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTChangeDetailsView [TARGET VIEW] (Line 438)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION
+  │      · self.change_address_num < psbt_parser.num_change_outputs - 1
+  │
+  ├──▶ PSBTOpReturnView [TARGET VIEW] (Line 441)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION
+  │      · NOT (self.change_address_num < psbt_parser.num_change_outputs - 1)
+  │      · psbt_parser.op_return_data
+  │
+  ├──▶ PSBTFinalizeView [TARGET VIEW] (Line 445)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION
+  │      · NOT (self.change_address_num < psbt_parser.num_change_outputs - 1)
+  │      · NOT (psbt_parser.op_return_data)
+  │
+  └──▶ LoadMultisigWalletDescriptorView [TARGET VIEW] (Line 451)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.NEXT or button_data[selected_menu_num] == self.SKIP_VERIFICATION)
+         · button_data[selected_menu_num] == self.VERIFY_MULTISIG
+
+  PSBTAddressVerificationFailedView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 481)
+
+  PSBTOpReturnView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 508)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ PSBTFinalizeView [TARGET VIEW] (Line 510)
+
+  PSBTFinalizeView [SOURCE VIEW]
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 529)
+  │    Conditions:
+  │      · NOT psbt_parser
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 537)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTSigningErrorView [TARGET VIEW] (Line 549)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · sig_cnt == PSBTParser.sig_count(trimmed_psbt)
+  │
+  └──▶ PSBTSignedQRDisplayView [TARGET VIEW] (Line 553)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (sig_cnt == PSBTParser.sig_count(trimmed_psbt))
+
+  PSBTSignedQRDisplayView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 569)
+
+  PSBTSigningErrorView [SOURCE VIEW]
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 580)
+  │    Conditions:
+  │      · NOT psbt_parser
+  │
+  ├──▶ PSBTSelectSeedView [TARGET VIEW] (Line 595)
+  │    Conditions:
+  │      · selected_menu_num == 0
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 598)
+       Conditions:
+         · selected_menu_num == RET_CODE__BACK_BUTTON
+
+▶ scan_views.py (15 edges)
+
+  ScanView [SOURCE VIEW]
+  │
+  ├──▶ ErrorView [TARGET VIEW] (Line 64)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT self.is_valid_qr_type
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 69)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT self.is_valid_qr_type
+  │
+  ├──▶ NotYetImplementedView [TARGET VIEW] (Line 77)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · self.decoder.is_seed
+  │      · NOT seed_mnemonic
+  │
+  ├──▶ SeedAddPassphraseView [TARGET VIEW] (Line 88)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · self.decoder.is_seed
+  │      · seed_mnemonic
+  │      · self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED
+  │
+  ├──▶ SeedFinalizeView [TARGET VIEW] (Line 90)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · self.decoder.is_seed
+  │      · seed_mnemonic
+  │      · NOT (self.settings.get_value(SettingsConstants.SETTING__PASSPHRASE) == SettingsConstants.OPTION__REQUIRED)
+  │
+  ├──▶ PSBTSelectSeedView [TARGET VIEW] (Line 97)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · self.decoder.is_psbt
+  │
+  ├──▶ SettingsIngestSettingsQRView [TARGET VIEW] (Line 102)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · self.decoder.is_settings
+  │
+  ├──▶ NotYetImplementedView [TARGET VIEW] (Line 128)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · NOT (self.decoder.is_settings)
+  │      · self.decoder.is_wallet_descriptor
+  │      · NOT descriptor.is_basic_multisig
+  │
+  ├──▶ MultisigWalletDescriptorView [TARGET VIEW] (Line 131)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · NOT (self.decoder.is_settings)
+  │      · self.decoder.is_wallet_descriptor
+  │
+  ├──▶ AddressVerificationStartView [TARGET VIEW] (Line 138)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · NOT (self.decoder.is_settings)
+  │      · NOT (self.decoder.is_wallet_descriptor)
+  │      · self.decoder.is_address
+  │
+  ├──▶ SeedSignMessageStartView [TARGET VIEW] (Line 152)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · NOT (self.decoder.is_settings)
+  │      · NOT (self.decoder.is_wallet_descriptor)
+  │      · NOT (self.decoder.is_address)
+  │      · self.decoder.is_sign_message
+  │
+  ├──▶ NotYetImplementedView [TARGET VIEW] (Line 161)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · NOT (self.decoder.is_seed)
+  │      · NOT (self.decoder.is_psbt)
+  │      · NOT (self.decoder.is_settings)
+  │      · NOT (self.decoder.is_wallet_descriptor)
+  │      · NOT (self.decoder.is_address)
+  │      · NOT (self.decoder.is_sign_message)
+  │
+  ├──▶ ScanInvalidQRTypeView [TARGET VIEW] (Line 167)
+  │    Conditions:
+  │      · NOT (self.decoder.is_complete)
+  │      · self.decoder.is_invalid
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 169)
+
+  ScanInvalidQRTypeView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 229)
+
+▶ seed_views.py (144 edges)
+
+  SeedsMenuView [SOURCE VIEW]
+  │
+  ├──▶ LoadSeedView [TARGET VIEW] (Line 41)
+  │    Conditions:
+  │      · NOT self.seeds
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 56)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedOptionsView [TARGET VIEW] (Line 60)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · len(self.seeds) > 0 and selected_menu_num < len(self.seeds)
+  │
+  └──▶ LoadSeedView [TARGET VIEW] (Line 63)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (len(self.seeds) > 0 and selected_menu_num < len(self.seeds))
+         · button_data[selected_menu_num] == self.LOAD
+
+  SeedSelectSeedView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 128)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedAddressVerificationView [TARGET VIEW] (Line 134)
+  │    Conditions:
+  │      · len(seeds) > 0 and selected_menu_num < len(seeds)
+  │      · self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR
+  │
+  ├──▶ SeedSignMessageConfirmMessageView [TARGET VIEW] (Line 138)
+  │    Conditions:
+  │      · len(seeds) > 0 and selected_menu_num < len(seeds)
+  │      · NOT (self.flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR)
+  │      · self.flow == Controller.FLOW__SIGN_MESSAGE
+  │
+  ├──▶ ScanView [TARGET VIEW] (Line 144)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SCAN_SEED
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 152)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+  │      · button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+  │
+  └──▶ SeedElectrumMnemonicStartView [TARGET VIEW] (Line 155)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+         · NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD])
+         · button_data[selected_menu_num] == self.TYPE_ELECTRUM
+
+  LoadSeedView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 189)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ScanSeedQRView [TARGET VIEW] (Line 193)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SEED_QR
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 197)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SEED_QR)
+  │      · button_data[selected_menu_num] == self.TYPE_12WORD
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 201)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SEED_QR)
+  │      · NOT (button_data[selected_menu_num] == self.TYPE_12WORD)
+  │      · button_data[selected_menu_num] == self.TYPE_24WORD
+  │
+  ├──▶ SeedElectrumMnemonicStartView [TARGET VIEW] (Line 204)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SEED_QR)
+  │      · NOT (button_data[selected_menu_num] == self.TYPE_12WORD)
+  │      · NOT (button_data[selected_menu_num] == self.TYPE_24WORD)
+  │      · button_data[selected_menu_num] == self.TYPE_ELECTRUM
+  │
+  └──▶ ToolsMenuView [TARGET VIEW] (Line 208)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SEED_QR)
+         · NOT (button_data[selected_menu_num] == self.TYPE_12WORD)
+         · NOT (button_data[selected_menu_num] == self.TYPE_24WORD)
+         · NOT (button_data[selected_menu_num] == self.TYPE_ELECTRUM)
+         · button_data[selected_menu_num] == self.CREATE
+
+  SeedMnemonicEntryView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 236)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsCalcFinalWordFinalizePromptView [TARGET VIEW] (Line 245)
+  │    Conditions:
+  │      · self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 2
+  │
+  ├──▶ ToolsCalcFinalWordShowFinalWordView [TARGET VIEW] (Line 251)
+  │    Conditions:
+  │      · self.is_calc_final_word and self.cur_word_index == self.controller.storage.pending_mnemonic_length - 1
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 254)
+  │    Conditions:
+  │      · self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1
+  │
+  ├──▶ SeedMnemonicInvalidView [TARGET VIEW] (Line 267)
+  │    Conditions:
+  │      · NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)
+  │
+  └──▶ SeedFinalizeView [TARGET VIEW] (Line 269)
+       Conditions:
+         · NOT (self.cur_word_index < self.controller.storage.pending_mnemonic_length - 1)
+
+  SeedMnemonicInvalidView [SOURCE VIEW]
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 295)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.EDIT
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 299)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.EDIT)
+         · button_data[selected_menu_num] == self.DISCARD
+
+  SeedFinalizeView [SOURCE VIEW]
+  │
+  ├──▶ SeedOptionsView [TARGET VIEW] (Line 341)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.FINALIZE
+  │
+  └──▶ SeedAddPassphraseView [TARGET VIEW] (Line 344)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.FINALIZE)
+         · button_data[selected_menu_num] == self.PASSPHRASE
+
+  SeedAddPassphraseView [SOURCE VIEW]
+  │
+  ├──▶ SeedAddPassphraseExitDialogView [TARGET VIEW] (Line 371)
+  │    Conditions:
+  │      · 'is_back_button' in ret_dict or len(self.seed.passphrase) == 0
+  │
+  └──▶ SeedReviewPassphraseView [TARGET VIEW] (Line 374)
+       Conditions:
+         · NOT ('is_back_button' in ret_dict or len(self.seed.passphrase) == 0)
+
+  SeedAddPassphraseExitDialogView [SOURCE VIEW]
+  │
+  ├──▶ SeedAddPassphraseView [TARGET VIEW] (Line 408)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.EDIT
+  │
+  └──▶ SeedFinalizeView [TARGET VIEW] (Line 412)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.EDIT)
+         · button_data[selected_menu_num] in [self.DISCARD, self.SKIP]
+
+  SeedReviewPassphraseView [SOURCE VIEW]
+  │
+  ├──▶ SeedAddPassphraseView [TARGET VIEW] (Line 451)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.EDIT
+  │
+  └──▶ SeedOptionsView [TARGET VIEW] (Line 455)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.EDIT)
+         · button_data[selected_menu_num] == self.DONE
+
+  SeedDiscardView [SOURCE VIEW]
+  │
+  ├──▶ SeedFinalizeView [TARGET VIEW] (Line 491)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.KEEP
+  │      · self.is_pending_seed
+  │
+  ├──▶ SeedOptionsView [TARGET VIEW] (Line 493)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.KEEP
+  │      · NOT (self.is_pending_seed)
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 500)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.KEEP)
+         · button_data[selected_menu_num] == self.DISCARD
+
+  SeedElectrumMnemonicStartView [SOURCE VIEW]
+  │
+  └──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 521)
+
+  SeedOptionsView [SOURCE VIEW]
+  │
+  ├──▶ SeedAddressVerificationView [TARGET VIEW] (Line 551)
+  │    Conditions:
+  │      · self.controller.unverified_address
+  │      · self.controller.resume_main_flow == Controller.FLOW__VERIFY_SINGLESIG_ADDR
+  │
+  ├──▶ SeedExportXpubScriptTypeView [TARGET VIEW] (Line 557)
+  │    Conditions:
+  │      · self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+  │
+  ├──▶ SeedSignMessageConfirmMessageView [TARGET VIEW] (Line 561)
+  │    Conditions:
+  │      · NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)
+  │      · self.controller.resume_main_flow == Controller.FLOW__SIGN_MESSAGE
+  │
+  ├──▶ PSBTOverviewView [TARGET VIEW] (Line 570)
+  │    Conditions:
+  │      · self.controller.psbt
+  │      · PSBTParser.has_matching_input_fingerprint(self.controller.psbt, self.seed, network=self.settings.get_value(SettingsConstants.SETTING__NETWORK))
+  │      · self.controller.resume_main_flow and self.controller.resume_main_flow == Controller.FLOW__PSBT
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 597)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ScanPSBTView [TARGET VIEW] (Line 602)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SCAN_PSBT
+  │
+  ├──▶ SeedExportXpubSigTypeView [TARGET VIEW] (Line 605)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+  │      · button_data[selected_menu_num] == self.EXPORT_XPUB
+  │
+  ├──▶ SeedExportXpubScriptTypeView [TARGET VIEW] (Line 609)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+  │      · NOT (button_data[selected_menu_num] == self.EXPORT_XPUB)
+  │      · button_data[selected_menu_num] == self.EXPLORER
+  │
+  ├──▶ ScanView [TARGET VIEW] (Line 615)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+  │      · NOT (button_data[selected_menu_num] == self.EXPORT_XPUB)
+  │      · NOT (button_data[selected_menu_num] == self.EXPLORER)
+  │      · button_data[selected_menu_num] == self.SIGN_MESSAGE
+  │
+  ├──▶ SeedBackupView [TARGET VIEW] (Line 618)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+  │      · NOT (button_data[selected_menu_num] == self.EXPORT_XPUB)
+  │      · NOT (button_data[selected_menu_num] == self.EXPLORER)
+  │      · NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE)
+  │      · button_data[selected_menu_num] == self.BACKUP
+  │
+  ├──▶ SeedBIP85SelectNumWordsView [TARGET VIEW] (Line 621)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+  │      · NOT (button_data[selected_menu_num] == self.EXPORT_XPUB)
+  │      · NOT (button_data[selected_menu_num] == self.EXPLORER)
+  │      · NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE)
+  │      · NOT (button_data[selected_menu_num] == self.BACKUP)
+  │      · button_data[selected_menu_num] == self.BIP85_CHILD_SEED
+  │
+  └──▶ SeedDiscardView [TARGET VIEW] (Line 624)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SCAN_PSBT)
+         · NOT (button_data[selected_menu_num] == self.EXPORT_XPUB)
+         · NOT (button_data[selected_menu_num] == self.EXPLORER)
+         · NOT (button_data[selected_menu_num] == self.SIGN_MESSAGE)
+         · NOT (button_data[selected_menu_num] == self.BACKUP)
+         · NOT (button_data[selected_menu_num] == self.BIP85_CHILD_SEED)
+         · button_data[selected_menu_num] == self.DISCARD
+
+  SeedBackupView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 651)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedWordsWarningView [TARGET VIEW] (Line 654)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.VIEW_WORDS
+  │
+  └──▶ SeedTranscribeSeedQRFormatView [TARGET VIEW] (Line 657)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.VIEW_WORDS)
+         · button_data[selected_menu_num] == self.EXPORT_SEEDQR
+
+  SeedExportXpubSigTypeView [SOURCE VIEW]
+  │
+  ├──▶ SeedExportXpubScriptTypeView [TARGET VIEW] (Line 676)
+  │    Conditions:
+  │      · len(self.settings.get_value(SettingsConstants.SETTING__SIG_TYPES)) == 1
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 687)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedExportXpubScriptTypeView [TARGET VIEW] (Line 689)
+
+  SeedExportXpubScriptTypeView [SOURCE VIEW]
+  │
+  ├──▶ ToolsAddressExplorerAddressTypeView [TARGET VIEW] (Line 719)
+  │    Conditions:
+  │      · len(script_types) == 1
+  │      · self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+  │
+  ├──▶ SeedExportXpubQRFormatView [TARGET VIEW] (Line 721)
+  │    Conditions:
+  │      · len(script_types) == 1
+  │      · NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 744)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedExportXpubCustomDerivationView [TARGET VIEW] (Line 750)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · args['script_type'] == SettingsConstants.CUSTOM_DERIVATION
+  │
+  ├──▶ ToolsAddressExplorerAddressTypeView [TARGET VIEW] (Line 754)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+  │
+  └──▶ SeedExportXpubQRFormatView [TARGET VIEW] (Line 756)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER)
+
+  SeedExportXpubCustomDerivationView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 777)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsAddressExplorerAddressTypeView [TARGET VIEW] (Line 784)
+  │    Conditions:
+  │      · self.controller.resume_main_flow == Controller.FLOW__ADDRESS_EXPLORER
+  │
+  └──▶ SeedExportXpubQRFormatView [TARGET VIEW] (Line 786)
+
+  SeedExportXpubQRFormatView [SOURCE VIEW]
+  │
+  ├──▶ SeedExportXpubWarningView [TARGET VIEW] (Line 817)
+  │    Conditions:
+  │      · len(self.settings.get_value(SettingsConstants.SETTING__XPUB_QR_FORMAT)) == 1
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 832)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedExportXpubWarningView [TARGET VIEW] (Line 836)
+
+  SeedExportXpubWarningView [SOURCE VIEW]
+  │
+  ├──▶ SeedExportXpubDetailsView [TARGET VIEW] (Line 851)
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 878)
+       Conditions:
+         · NOT (selected_menu_num == 0)
+         · selected_menu_num == RET_CODE__BACK_BUTTON
+
+  SeedExportXpubDetailsView [SOURCE VIEW]
+  │
+  ├──▶ SeedExportXpubQRDisplayView [TARGET VIEW] (Line 950)
+  │    Conditions:
+  │      · selected_menu_num == 0
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 960)
+       Conditions:
+         · NOT (selected_menu_num == 0)
+         · selected_menu_num == RET_CODE__BACK_BUTTON
+
+  SeedExportXpubQRDisplayView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 995)
+
+  SeedWordsWarningView [SOURCE VIEW]
+  │
+  ├──▶ SeedWordsView [TARGET VIEW] (Line 1010)
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 1033)
+       Conditions:
+         · NOT (selected_menu_num == 0)
+         · selected_menu_num == RET_CODE__BACK_BUTTON
+
+  SeedWordsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1083)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedWordsBackupTestPromptView [TARGET VIEW] (Line 1090)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.NEXT
+  │      · self.is_pending_seed and self.page_index == num_pages - 1
+  │
+  ├──▶ SeedWordsView [TARGET VIEW] (Line 1095)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.NEXT
+  │      · NOT (self.is_pending_seed and self.page_index == num_pages - 1)
+  │
+  └──▶ SeedWordsBackupTestPromptView [TARGET VIEW] (Line 1102)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.NEXT)
+         · button_data[selected_menu_num] == self.DONE
+
+  SeedBIP85SelectNumWordsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1132)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedBIP85SelectChildIndexView [TARGET VIEW] (Line 1139)
+
+  SeedBIP85SelectChildIndexView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1159)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedBIP85InvalidChildIndexView [TARGET VIEW] (Line 1162)
+  │    Conditions:
+  │      · NOT 0 <= int(ret) < 2 ** 31
+  │
+  └──▶ SeedWordsWarningView [TARGET VIEW] (Line 1171)
+
+  SeedBIP85InvalidChildIndexView [SOURCE VIEW]
+  │
+  └──▶ SeedBIP85SelectChildIndexView [TARGET VIEW] (Line 1199)
+
+  SeedWordsBackupTestPromptView [SOURCE VIEW]
+  │
+  ├──▶ SeedWordsBackupTestView [TARGET VIEW] (Line 1231)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.VERIFY
+  │
+  ├──▶ SeedFinalizeView [TARGET VIEW] (Line 1238)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.VERIFY)
+  │      · button_data[selected_menu_num] == self.SKIP
+  │      · self.seed is None
+  │
+  └──▶ SeedOptionsView [TARGET VIEW] (Line 1240)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.VERIFY)
+         · button_data[selected_menu_num] == self.SKIP
+         · NOT (self.seed is None)
+
+  SeedWordsBackupTestView [SOURCE VIEW]
+  │
+  ├──▶ SeedWordsBackupTestSuccessView [TARGET VIEW] (Line 1309)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == real_word
+  │      · len(self.confirmed_list) == len(self.mnemonic_list)
+  │
+  ├──▶ SeedWordsBackupTestView [TARGET VIEW] (Line 1315)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == real_word
+  │      · NOT (len(self.confirmed_list) == len(self.mnemonic_list))
+  │
+  └──▶ SeedWordsBackupTestMistakeView [TARGET VIEW] (Line 1322)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == real_word)
+
+  SeedWordsBackupTestMistakeView [SOURCE VIEW]
+  │
+  ├──▶ SeedWordsView [TARGET VIEW] (Line 1368)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.REVIEW
+  │
+  └──▶ SeedWordsBackupTestView [TARGET VIEW] (Line 1374)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.REVIEW)
+         · button_data[selected_menu_num] == self.RETRY
+
+  SeedWordsBackupTestSuccessView [SOURCE VIEW]
+  │
+  ├──▶ SeedFinalizeView [TARGET VIEW] (Line 1403)
+  │    Conditions:
+  │      · self.seed is None
+  │
+  └──▶ SeedOptionsView [TARGET VIEW] (Line 1405)
+       Conditions:
+         · NOT (self.seed is None)
+
+  SeedTranscribeSeedQRFormatView [SOURCE VIEW]
+  │
+  ├──▶ SeedTranscribeSeedQRWarningView [TARGET VIEW] (Line 1430)
+  │    Conditions:
+  │      · self.settings.get_value(SettingsConstants.SETTING__COMPACT_SEEDQR) != SettingsConstants.OPTION__ENABLED
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1452)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedTranscribeSeedQRWarningView [TARGET VIEW] (Line 1461)
+
+  SeedTranscribeSeedQRWarningView [SOURCE VIEW]
+  │
+  ├──▶ SeedTranscribeSeedQRWholeQRView [TARGET VIEW] (Line 1481)
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 1502)
+       Conditions:
+         · selected_menu_num == RET_CODE__BACK_BUTTON
+
+  SeedTranscribeSeedQRWholeQRView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1535)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedTranscribeSeedQRZoomedInView [TARGET VIEW] (Line 1538)
+       Conditions:
+         · NOT (ret == RET_CODE__BACK_BUTTON)
+
+  SeedTranscribeSeedQRZoomedInView [SOURCE VIEW]
+  │
+  └──▶ SeedTranscribeSeedQRConfirmQRPromptView [TARGET VIEW] (Line 1591)
+
+  SeedTranscribeSeedQRConfirmQRPromptView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1614)
+  │    Conditions:
+  │      · selected_menu_option == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedTranscribeSeedQRConfirmScanView [TARGET VIEW] (Line 1617)
+  │    Conditions:
+  │      · NOT (selected_menu_option == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_option] == self.SCAN
+  │
+  └──▶ SeedOptionsView [TARGET VIEW] (Line 1620)
+       Conditions:
+         · NOT (selected_menu_option == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_option] == self.SCAN)
+         · button_data[selected_menu_option] == self.DONE
+
+  SeedTranscribeSeedQRConfirmScanView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1645)
+  │    Conditions:
+  │      · scanning_done == False
+  │
+  ├──▶ SeedTranscribeSeedQRConfirmWrongSeedView [TARGET VIEW] (Line 1652)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · self.decoder.is_seed
+  │      · seed_mnemonic != self.seed.mnemonic_list
+  │
+  ├──▶ SeedTranscribeSeedQRConfirmSuccessView [TARGET VIEW] (Line 1654)
+  │    Conditions:
+  │      · self.decoder.is_complete
+  │      · self.decoder.is_seed
+  │      · NOT (seed_mnemonic != self.seed.mnemonic_list)
+  │
+  └──▶ SeedTranscribeSeedQRConfirmInvalidQRView [TARGET VIEW] (Line 1657)
+
+  SeedTranscribeSeedQRConfirmWrongSeedView [SOURCE VIEW]
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 1676)
+
+  SeedTranscribeSeedQRConfirmInvalidQRView [SOURCE VIEW]
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 1697)
+
+  SeedTranscribeSeedQRConfirmSuccessView [SOURCE VIEW]
+  │
+  └──▶ SeedOptionsView [TARGET VIEW] (Line 1721)
+
+  AddressVerificationStartView [SOURCE VIEW]
+  │
+  ├──▶ SeedSelectSeedView [TARGET VIEW] (Line 1745)
+  │    Conditions:
+  │      · self.controller.unverified_address['script_type'] == SettingsConstants.LEGACY_P2PKH
+  │
+  ├──▶ AddressVerificationSigTypeView [TARGET VIEW] (Line 1749)
+  │    Conditions:
+  │      · self.controller.unverified_address['script_type'] == SettingsConstants.NESTED_SEGWIT
+  │
+  ├──▶ SeedAddressVerificationView [TARGET VIEW] (Line 1757)
+  │    Conditions:
+  │      · self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT
+  │      · len(self.controller.unverified_address['address']) >= 62
+  │      · self.controller.multisig_wallet_descriptor
+  │
+  ├──▶ LoadMultisigWalletDescriptorView [TARGET VIEW] (Line 1760)
+  │    Conditions:
+  │      · self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT
+  │      · len(self.controller.unverified_address['address']) >= 62
+  │      · NOT (self.controller.multisig_wallet_descriptor)
+  │
+  ├──▶ SeedSelectSeedView [TARGET VIEW] (Line 1764)
+  │    Conditions:
+  │      · self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT
+  │      · NOT (len(self.controller.unverified_address['address']) >= 62)
+  │
+  └──▶ SeedSelectSeedView [TARGET VIEW] (Line 1768)
+       Conditions:
+         · NOT (self.controller.unverified_address['script_type'] == SettingsConstants.NATIVE_SEGWIT)
+         · self.controller.unverified_address['script_type'] == SettingsConstants.TAPROOT
+
+  AddressVerificationSigTypeView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 1801)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedSelectSeedView [TARGET VIEW] (Line 1805)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.SINGLE_SIG
+  │
+  ├──▶ SeedAddressVerificationView [TARGET VIEW] (Line 1810)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.SINGLE_SIG)
+  │      · button_data[selected_menu_num] == self.MULTISIG
+  │      · self.controller.multisig_wallet_descriptor
+  │
+  └──▶ LoadMultisigWalletDescriptorView [TARGET VIEW] (Line 1813)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.SINGLE_SIG)
+         · button_data[selected_menu_num] == self.MULTISIG
+         · NOT (self.controller.multisig_wallet_descriptor)
+
+  SeedAddressVerificationView [SOURCE VIEW]
+  │
+  ├──▶ SeedAddressVerificationSuccessView [TARGET VIEW] (Line 1941)
+  │    Conditions:
+  │      · self.verified_index.cur_count is NOT None
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 1952)
+
+  SeedAddressVerificationSuccessView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 2018)
+
+  LoadMultisigWalletDescriptorView [SOURCE VIEW]
+  │
+  ├──▶ ScanWalletDescriptorView [TARGET VIEW] (Line 2036)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SCAN
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 2041)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN)
+  │      · button_data[selected_menu_num] == self.CANCEL
+  │      · self.controller.resume_main_flow == Controller.FLOW__PSBT
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 2043)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SCAN)
+         · button_data[selected_menu_num] == self.CANCEL
+         · NOT (self.controller.resume_main_flow == Controller.FLOW__PSBT)
+
+  MultisigWalletDescriptorView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 2086)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ PSBTChangeDetailsView [TARGET VIEW] (Line 2092)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.RETURN
+  │
+  ├──▶ SeedAddressVerificationView [TARGET VIEW] (Line 2096)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.RETURN)
+  │      · button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label))
+  │
+  ├──▶ ToolsAddressExplorerAddressTypeView [TARGET VIEW] (Line 2101)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.RETURN)
+  │      · NOT (button_data[selected_menu_num].button_label.startswith(_(self.VERIFY_ADDR.button_label)))
+  │      · button_data[selected_menu_num] == self.ADDRESS_EXPLORER
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 2103)
+
+  SeedSignMessageStartView [SOURCE VIEW]
+  │
+  ├──▶ OptionDisabledView [TARGET VIEW] (Line 2123)
+  │    Conditions:
+  │      · self.settings.get_value(SettingsConstants.SETTING__MESSAGE_SIGNING) == SettingsConstants.OPTION__DISABLED
+  │
+  ├──▶ NotYetImplementedView [TARGET VIEW] (Line 2129)
+  │    Conditions:
+  │      · NOT addr_format['clean_match']
+  │
+  ├──▶ NetworkMismatchErrorView [TARGET VIEW] (Line 2136)
+  │    Conditions:
+  │      · self.settings.get_value(SettingsConstants.SETTING__NETWORK) NOT in addr_format['network']
+  │
+  ├──▶ SeedSignMessageConfirmMessageView [TARGET VIEW] (Line 2153)
+  │    Conditions:
+  │      · data.get('seed') is NOT None
+  │
+  └──▶ SeedSelectSeedView [TARGET VIEW] (Line 2156)
+       Conditions:
+         · NOT (data.get('seed') is NOT None)
+
+  SeedSignMessageConfirmMessageView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 2179)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedSignMessageConfirmAddressView [TARGET VIEW] (Line 2184)
+  │    Conditions:
+  │      · self.page_num == len(self.controller.sign_message_data['paged_message']) - 1
+  │
+  └──▶ SeedSignMessageConfirmMessageView [TARGET VIEW] (Line 2186)
+       Conditions:
+         · NOT (self.page_num == len(self.controller.sign_message_data['paged_message']) - 1)
+
+  SeedSignMessageConfirmAddressView [SOURCE VIEW]
+  │
+  ├──▶ NetworkMismatchErrorView [TARGET VIEW] (Line 2211)
+  │    Conditions:
+  │      · addr_format['network'] != SettingsConstants.MAINNET
+  │      · NOT (self.settings.get_value(SettingsConstants.SETTING__NETWORK) in [SettingsConstants.TESTNET, SettingsConstants.REGTEST])
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 2233)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedSignMessageSignedMessageQRView [TARGET VIEW] (Line 2236)
+
+  SeedSignMessageSignedMessageQRView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 2270)
+
+▶ settings_views.py (23 edges)
+
+  SettingsMenuView [SOURCE VIEW]
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 43)
+  │    Conditions:
+  │      · self.visibility == SettingsConstants.VISIBILITY__GENERAL
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 54)
+  │    Conditions:
+  │      · NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL)
+  │      · self.visibility == SettingsConstants.VISIBILITY__ADVANCED
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 87)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │      · self.visibility == SettingsConstants.VISIBILITY__GENERAL
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 89)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │      · NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL)
+  │      · self.visibility == SettingsConstants.VISIBILITY__ADVANCED
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 91)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │      · NOT (self.visibility == SettingsConstants.VISIBILITY__GENERAL)
+  │      · NOT (self.visibility == SettingsConstants.VISIBILITY__ADVANCED)
+  │
+  ├──▶ IOTestView [TARGET VIEW] (Line 100)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.ADVANCED)
+  │      · NOT (button_data[selected_menu_num] == self.HARDWARE)
+  │      · button_data[selected_menu_num] == self.IO_TEST
+  │
+  ├──▶ DonateView [TARGET VIEW] (Line 103)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.ADVANCED)
+  │      · NOT (button_data[selected_menu_num] == self.HARDWARE)
+  │      · NOT (button_data[selected_menu_num] == self.IO_TEST)
+  │      · button_data[selected_menu_num] == self.DONATE
+  │
+  ├──▶ VersionView [TARGET VIEW] (Line 106)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.ADVANCED)
+  │      · NOT (button_data[selected_menu_num] == self.HARDWARE)
+  │      · NOT (button_data[selected_menu_num] == self.IO_TEST)
+  │      · NOT (button_data[selected_menu_num] == self.DONATE)
+  │      · button_data[selected_menu_num] == self.VERSION
+  │
+  ├──▶ LocaleSelectionView [TARGET VIEW] (Line 109)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.ADVANCED)
+  │      · NOT (button_data[selected_menu_num] == self.HARDWARE)
+  │      · NOT (button_data[selected_menu_num] == self.IO_TEST)
+  │      · NOT (button_data[selected_menu_num] == self.DONATE)
+  │      · NOT (button_data[selected_menu_num] == self.VERSION)
+  │      · settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE
+  │
+  └──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 112)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.ADVANCED)
+         · NOT (button_data[selected_menu_num] == self.HARDWARE)
+         · NOT (button_data[selected_menu_num] == self.IO_TEST)
+         · NOT (button_data[selected_menu_num] == self.DONATE)
+         · NOT (button_data[selected_menu_num] == self.VERSION)
+         · NOT (settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LOCALE)
+
+  LocaleSelectionView [SOURCE VIEW]
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 147)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SettingsMenuView [TARGET VIEW] (Line 152)
+
+  SettingsEntryUpdateSelectionView [SOURCE VIEW]
+  │
+  ├──▶ SettingsMenuView [TARGET VIEW] (Line 205)
+  │
+  ├──▶ SettingsSelectionRequiredWarningView [TARGET VIEW] (Line 220)
+  │    Conditions:
+  │      · ret_value == RET_CODE__BACK_BUTTON
+  │      · self.settings_entry.type == SettingsConstants.TYPE__MULTISELECT
+  │      · NOT initial_value
+  │
+  ├──▶ blocking_view [TARGET VIEW] (Line 223)
+  │    Conditions:
+  │      · ret_value == RET_CODE__BACK_BUTTON
+  │      · self.blocking_view
+  │
+  ├──▶ blocking_view [TARGET VIEW] (Line 268)
+  │    Conditions:
+  │      · self.blocking_view
+  │      · current_value == initial_value
+  │
+  ├──▶ unblocking_view [TARGET VIEW] (Line 270)
+  │    Conditions:
+  │      · self.blocking_view
+  │      · NOT (current_value == initial_value)
+  │      · self.unblocking_view
+  │
+  └──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 275)
+
+  SettingsSelectionRequiredWarningView [SOURCE VIEW]
+  │
+  └──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 306)
+
+  SettingsIngestSettingsQRView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 344)
+
+  IOTestView [SOURCE VIEW]
+  │
+  └──▶ SettingsMenuView [TARGET VIEW] (Line 355)
+
+  DonateView [SOURCE VIEW]
+  │
+  └──▶ SettingsMenuView [TARGET VIEW] (Line 363)
+
+  VersionView [SOURCE VIEW]
+  │
+  └──▶ SettingsMenuView [TARGET VIEW] (Line 387)
+
+▶ tools_views.py (42 edges)
+
+  ToolsMenuView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 39)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsImageEntropyLivePreviewView [TARGET VIEW] (Line 42)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.IMAGE
+  │
+  ├──▶ ToolsDiceEntropyMnemonicLengthView [TARGET VIEW] (Line 45)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.IMAGE)
+  │      · button_data[selected_menu_num] == self.DICE
+  │
+  ├──▶ ToolsCalcFinalWordNumWordsView [TARGET VIEW] (Line 48)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.IMAGE)
+  │      · NOT (button_data[selected_menu_num] == self.DICE)
+  │      · button_data[selected_menu_num] == self.KEYBOARD
+  │
+  ├──▶ ToolsAddressExplorerSelectSourceView [TARGET VIEW] (Line 51)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.IMAGE)
+  │      · NOT (button_data[selected_menu_num] == self.DICE)
+  │      · NOT (button_data[selected_menu_num] == self.KEYBOARD)
+  │      · button_data[selected_menu_num] == self.ADDRESS_EXPLORER
+  │
+  └──▶ ScanAddressView [TARGET VIEW] (Line 55)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.IMAGE)
+         · NOT (button_data[selected_menu_num] == self.DICE)
+         · NOT (button_data[selected_menu_num] == self.KEYBOARD)
+         · NOT (button_data[selected_menu_num] == self.ADDRESS_EXPLORER)
+         · button_data[selected_menu_num] == self.VERIFY_ADDRESS
+
+  ToolsImageEntropyLivePreviewView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 89)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  └──▶ ToolsImageEntropyFinalImageView [TARGET VIEW] (Line 99)
+
+  ToolsImageEntropyFinalImageView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 141)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  └──▶ ToolsImageEntropyMnemonicLengthView [TARGET VIEW] (Line 143)
+
+  ToolsImageEntropyMnemonicLengthView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 161)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedWordsWarningView [TARGET VIEW] (Line 225)
+
+  ToolsDiceEntropyMnemonicLengthView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 255)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsDiceEntropyEntryView [TARGET VIEW] (Line 258)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == TWELVE
+  │
+  └──▶ ToolsDiceEntropyEntryView [TARGET VIEW] (Line 261)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == TWELVE)
+         · button_data[selected_menu_num] == TWENTY_FOUR
+
+  ToolsDiceEntropyEntryView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 279)
+  │    Conditions:
+  │      · ret == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedWordsWarningView [TARGET VIEW] (Line 288)
+
+  ToolsCalcFinalWordNumWordsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 311)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 315)
+
+  ToolsCalcFinalWordFinalizePromptView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 347)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsCalcFinalWordCoinFlipsView [TARGET VIEW] (Line 350)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.COIN_FLIPS
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 355)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · NOT (button_data[selected_menu_num] == self.COIN_FLIPS)
+  │      · button_data[selected_menu_num] == self.SELECT_WORD
+  │
+  └──▶ ToolsCalcFinalWordShowFinalWordView [TARGET VIEW] (Line 362)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.COIN_FLIPS)
+         · NOT (button_data[selected_menu_num] == self.SELECT_WORD)
+         · button_data[selected_menu_num] == self.ZEROS
+
+  ToolsCalcFinalWordCoinFlipsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 382)
+  │    Conditions:
+  │      · ret_val == RET_CODE__BACK_BUTTON
+  │
+  └──▶ ToolsCalcFinalWordShowFinalWordView [TARGET VIEW] (Line 385)
+       Conditions:
+         · NOT (ret_val == RET_CODE__BACK_BUTTON)
+
+  ToolsCalcFinalWordShowFinalWordView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 461)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ ToolsCalcFinalWordDoneView [TARGET VIEW] (Line 464)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · button_data[selected_menu_num] == self.NEXT
+
+  ToolsCalcFinalWordDoneView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 489)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedFinalizeView [TARGET VIEW] (Line 494)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.LOAD
+  │
+  └──▶ SeedDiscardView [TARGET VIEW] (Line 497)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.LOAD)
+         · button_data[selected_menu_num] == self.DISCARD
+
+  ToolsAddressExplorerSelectSourceView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 532)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ SeedExportXpubScriptTypeView [TARGET VIEW] (Line 541)
+  │    Conditions:
+  │      · len(seeds) > 0 and selected_menu_num < len(seeds)
+  │
+  ├──▶ ScanSeedQRView [TARGET VIEW] (Line 551)
+  │    Conditions:
+  │      · NOT (len(seeds) > 0 and selected_menu_num < len(seeds))
+  │      · button_data[selected_menu_num] == self.SCAN_SEED
+  │
+  ├──▶ ScanWalletDescriptorView [TARGET VIEW] (Line 555)
+  │    Conditions:
+  │      · NOT (len(seeds) > 0 and selected_menu_num < len(seeds))
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+  │      · button_data[selected_menu_num] == self.SCAN_DESCRIPTOR
+  │
+  ├──▶ SeedMnemonicEntryView [TARGET VIEW] (Line 560)
+  │    Conditions:
+  │      · NOT (len(seeds) > 0 and selected_menu_num < len(seeds))
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+  │      · NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR)
+  │      · button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD]
+  │
+  └──▶ SeedElectrumMnemonicStartView [TARGET VIEW] (Line 564)
+       Conditions:
+         · NOT (len(seeds) > 0 and selected_menu_num < len(seeds))
+         · NOT (button_data[selected_menu_num] == self.SCAN_SEED)
+         · NOT (button_data[selected_menu_num] == self.SCAN_DESCRIPTOR)
+         · NOT (button_data[selected_menu_num] in [self.TYPE_12WORD, self.TYPE_24WORD])
+         · button_data[selected_menu_num] == self.TYPE_ELECTRUM
+
+  ToolsAddressExplorerAddressTypeView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 658)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  └──▶ ToolsAddressExplorerAddressListView [TARGET VIEW] (Line 661)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · button_data[selected_menu_num] in [self.RECEIVE, self.CHANGE]
+
+  ToolsAddressExplorerAddressListView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 739)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ ToolsAddressExplorerAddressListView [TARGET VIEW] (Line 743)
+  │    Conditions:
+  │      · selected_menu_num == len(addresses)
+  │
+  └──▶ ToolsAddressExplorerAddressView [TARGET VIEW] (Line 749)
+
+  ToolsAddressExplorerAddressView [SOURCE VIEW]
+  │
+  └──▶ ToolsAddressExplorerAddressListView [TARGET VIEW] (Line 775)
+
+▶ view.py (20 edges)
+
+  MainMenuView [SOURCE VIEW]
+  │
+  ├──▶ PowerOptionsView [TARGET VIEW] (Line 207)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__POWER_BUTTON
+  │
+  ├──▶ ScanView [TARGET VIEW] (Line 211)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.SCAN
+  │
+  ├──▶ SeedsMenuView [TARGET VIEW] (Line 215)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN)
+  │      · button_data[selected_menu_num] == self.SEEDS
+  │
+  ├──▶ ToolsMenuView [TARGET VIEW] (Line 219)
+  │    Conditions:
+  │      · NOT (button_data[selected_menu_num] == self.SCAN)
+  │      · NOT (button_data[selected_menu_num] == self.SEEDS)
+  │      · button_data[selected_menu_num] == self.TOOLS
+  │
+  └──▶ SettingsMenuView [TARGET VIEW] (Line 223)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.SCAN)
+         · NOT (button_data[selected_menu_num] == self.SEEDS)
+         · NOT (button_data[selected_menu_num] == self.TOOLS)
+         · button_data[selected_menu_num] == self.SETTINGS
+
+  PowerOptionsView [SOURCE VIEW]
+  │
+  ├──▶ [BACK] [TARGET VIEW] (Line 241)
+  │    Conditions:
+  │      · selected_menu_num == RET_CODE__BACK_BUTTON
+  │
+  ├──▶ RestartView [TARGET VIEW] (Line 244)
+  │    Conditions:
+  │      · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+  │      · button_data[selected_menu_num] == self.RESET
+  │
+  └──▶ PowerOffView [TARGET VIEW] (Line 247)
+       Conditions:
+         · NOT (selected_menu_num == RET_CODE__BACK_BUTTON)
+         · NOT (button_data[selected_menu_num] == self.RESET)
+         · button_data[selected_menu_num] == self.POWER_OFF
+
+  PowerOffView [SOURCE VIEW]
+  │
+  └──▶ [BACK] [TARGET VIEW] (Line 287)
+
+  NotYetImplementedView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 308)
+
+  ErrorView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 332)
+
+  NetworkMismatchErrorView [SOURCE VIEW]
+  │
+  └──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 350)
+
+  UnhandledExceptionView [SOURCE VIEW]
+  │
+  ├──▶ CameraConnectionErrorView [TARGET VIEW] (Line 373)
+  │    Conditions:
+  │      · self.error[0] == CameraConnectionError.__name__
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 390)
+
+  CameraConnectionErrorView [SOURCE VIEW]
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 406)
+
+  OptionDisabledView [SOURCE VIEW]
+  │
+  ├──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 438)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.UPDATE_SETTING
+  │
+  └──▶ MainMenuView [TARGET VIEW] (Line 440)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.UPDATE_SETTING)
+
+  RemoveMicroSDWarningView [SOURCE VIEW]
+  │
+  ├──▶ MainMenuView [TARGET VIEW] (Line 463)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.CONTINUE
+  │      · NOT MicroSD.get_instance().is_inserted
+  │
+  ├──▶ RemoveMicroSDWarningView [TARGET VIEW] (Line 465)
+  │    Conditions:
+  │      · button_data[selected_menu_num] == self.CONTINUE
+  │      · MicroSD.get_instance().is_inserted
+  │
+  └──▶ SettingsEntryUpdateSelectionView [TARGET VIEW] (Line 469)
+       Conditions:
+         · NOT (button_data[selected_menu_num] == self.CONTINUE)
+         · button_data[selected_menu_num] == self.SETTINGS
+
+=== COVERAGE ===
+Total Edges:    268
+Tested Edges:   128
+Coverage:       47.8%
+Untested Edges: 140
+
+  [UNTESTED EDGES]
+  · AddressVerificationSigTypeView
+      └──▶ SeedAddressVerificationView
+      └──▶ SeedSelectSeedView
+      └──▶ [BACK]
+  · AddressVerificationStartView
+      └──▶ LoadMultisigWalletDescriptorView
+      └──▶ SeedAddressVerificationView
+  · ErrorView
+      └──▶ MainMenuView
+  · LoadMultisigWalletDescriptorView
+      └──▶ MainMenuView
+      └──▶ [BACK]
+  · LoadSeedView
+      └──▶ ScanSeedQRView
+      └──▶ ToolsMenuView
+      └──▶ [BACK]
+  · LocaleSelectionView
+      └──▶ SettingsMenuView
+  · MultisigWalletDescriptorView
+      └──▶ MainMenuView
+      └──▶ PSBTChangeDetailsView
+      └──▶ [BACK]
+  · OptionDisabledView
+      └──▶ MainMenuView
+      └──▶ SettingsEntryUpdateSelectionView
+  · PSBTAddressDetailsView
+      └──▶ PSBTAddressDetailsView
+      └──▶ PSBTFinalizeView
+      └──▶ PSBTOpReturnView
+      └──▶ [BACK]
+  · PSBTAddressVerificationFailedView
+      └──▶ MainMenuView
+  · PSBTChangeDetailsView
+      └──▶ LoadMultisigWalletDescriptorView
+      └──▶ MainMenuView
+      └──▶ NotYetImplementedView
+      └──▶ PSBTAddressVerificationFailedView
+      └──▶ [BACK]
+  · PSBTFinalizeView
+      └──▶ MainMenuView
+      └──▶ [BACK]
+  · PSBTMathView
+      └──▶ MainMenuView
+      └──▶ [BACK]
+  · PSBTNoChangeWarningView
+      └──▶ PSBTMathView
+      └──▶ [BACK]
+  · PSBTOpReturnView
+      └──▶ [BACK]
+  · PSBTOverviewView
+      └──▶ PSBTNoChangeWarningView
+      └──▶ PSBTUnsupportedScriptTypeWarningView
+      └──▶ [BACK]
+  · PSBTSelectSeedView
+      └──▶ SeedMnemonicEntryView
+      └──▶ [BACK]
+  · PSBTSigningErrorView
+      └──▶ MainMenuView
+      └──▶ [BACK]
+  · PSBTUnsupportedScriptTypeWarningView
+      └──▶ PSBTAddressDetailsView
+      └──▶ [BACK]
+  · PowerOffView
+      └──▶ [BACK]
+  · PowerOptionsView
+      └──▶ [BACK]
+  · RemoveMicroSDWarningView
+      └──▶ RemoveMicroSDWarningView
+  · ScanView
+      └──▶ MainMenuView
+      └──▶ NotYetImplementedView
+      └──▶ SeedAddPassphraseView
+      └──▶ [BACK]
+  · SeedAddressVerificationSuccessView
+      └──▶ MainMenuView
+  · SeedAddressVerificationView
+      └──▶ MainMenuView
+  · SeedBIP85InvalidChildIndexView
+      └──▶ SeedBIP85SelectChildIndexView
+  · SeedBIP85SelectChildIndexView
+      └──▶ SeedBIP85InvalidChildIndexView
+      └──▶ SeedWordsWarningView
+      └──▶ [BACK]
+  · SeedBIP85SelectNumWordsView
+      └──▶ SeedBIP85SelectChildIndexView
+      └──▶ [BACK]
+  · SeedBackupView
+      └──▶ SeedWordsWarningView
+      └──▶ [BACK]
+  · SeedDiscardView
+      └──▶ SeedFinalizeView
+      └──▶ SeedOptionsView
+  · SeedExportXpubCustomDerivationView
+      └──▶ ToolsAddressExplorerAddressTypeView
+      └──▶ [BACK]
+  · SeedExportXpubDetailsView
+      └──▶ [BACK]
+  · SeedExportXpubQRFormatView
+      └──▶ [BACK]
+  · SeedExportXpubScriptTypeView
+      └──▶ [BACK]
+  · SeedExportXpubSigTypeView
+      └──▶ [BACK]
+  · SeedExportXpubWarningView
+      └──▶ [BACK]
+  · SeedMnemonicEntryView
+      └──▶ ToolsCalcFinalWordFinalizePromptView
+      └──▶ ToolsCalcFinalWordShowFinalWordView
+      └──▶ [BACK]
+  · SeedOptionsView
+      └──▶ MainMenuView
+      └──▶ ScanPSBTView
+      └──▶ SeedAddressVerificationView
+      └──▶ SeedBIP85SelectNumWordsView
+  · SeedSelectSeedView
+      └──▶ SeedElectrumMnemonicStartView
+      └──▶ SeedSignMessageConfirmMessageView
+      └──▶ [BACK]
+  · SeedSignMessageConfirmAddressView
+      └──▶ NetworkMismatchErrorView
+      └──▶ [BACK]
+  · SeedSignMessageConfirmMessageView
+      └──▶ [BACK]
+  · SeedSignMessageStartView
+      └──▶ OptionDisabledView
+  · SeedTranscribeSeedQRConfirmInvalidQRView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRConfirmQRPromptView
+      └──▶ SeedOptionsView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRConfirmScanView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRConfirmWrongSeedView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRFormatView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRWarningView
+      └──▶ [BACK]
+  · SeedTranscribeSeedQRWholeQRView
+      └──▶ [BACK]
+  · SeedWordsBackupTestMistakeView
+      └──▶ SeedWordsBackupTestView
+      └──▶ SeedWordsView
+  · SeedWordsBackupTestPromptView
+      └──▶ SeedFinalizeView
+      └──▶ SeedOptionsView
+      └──▶ SeedWordsBackupTestView
+  · SeedWordsBackupTestSuccessView
+      └──▶ SeedFinalizeView
+      └──▶ SeedOptionsView
+  · SeedWordsBackupTestView
+      └──▶ SeedWordsBackupTestMistakeView
+      └──▶ SeedWordsBackupTestSuccessView
+      └──▶ SeedWordsBackupTestView
+  · SeedWordsView
+      └──▶ SeedWordsBackupTestPromptView
+      └──▶ SeedWordsView
+      └──▶ [BACK]
+  · SeedWordsWarningView
+      └──▶ SeedWordsView
+      └──▶ [BACK]
+  · SeedsMenuView
+      └──▶ [BACK]
+  · SettingsEntryUpdateSelectionView
+      └──▶ blocking_view
+      └──▶ unblocking_view
+  · SettingsMenuView
+      └──▶ MainMenuView
+      └──▶ VersionView
+  · ToolsAddressExplorerAddressListView
+      └──▶ [BACK]
+  · ToolsAddressExplorerAddressTypeView
+      └──▶ [BACK]
+  · ToolsAddressExplorerSelectSourceView
+      └──▶ SeedMnemonicEntryView
+      └──▶ [BACK]
+  · ToolsCalcFinalWordCoinFlipsView
+      └──▶ ToolsCalcFinalWordShowFinalWordView
+      └──▶ [BACK]
+  · ToolsCalcFinalWordDoneView
+      └──▶ SeedDiscardView
+      └──▶ SeedFinalizeView
+      └──▶ [BACK]
+  · ToolsCalcFinalWordFinalizePromptView
+      └──▶ SeedMnemonicEntryView
+      └──▶ ToolsCalcFinalWordCoinFlipsView
+      └──▶ ToolsCalcFinalWordShowFinalWordView
+      └──▶ [BACK]
+  · ToolsCalcFinalWordNumWordsView
+      └──▶ [BACK]
+  · ToolsCalcFinalWordShowFinalWordView
+      └──▶ ToolsCalcFinalWordDoneView
+      └──▶ [BACK]
+  · ToolsDiceEntropyEntryView
+      └──▶ SeedWordsWarningView
+      └──▶ [BACK]
+  · ToolsDiceEntropyMnemonicLengthView
+      └──▶ ToolsDiceEntropyEntryView
+      └──▶ [BACK]
+  · ToolsImageEntropyFinalImageView
+      └──▶ ToolsImageEntropyMnemonicLengthView
+      └──▶ [BACK]
+  · ToolsImageEntropyLivePreviewView
+      └──▶ [BACK]
+  · ToolsImageEntropyMnemonicLengthView
+      └──▶ SeedWordsWarningView
+      └──▶ [BACK]
+  · ToolsMenuView
+      └──▶ ToolsDiceEntropyMnemonicLengthView
+      └──▶ ToolsImageEntropyLivePreviewView
+      └──▶ [BACK]
+  · VersionView
+      └──▶ SettingsMenuView
+
+  [UNRESOLVED TEST PAIRS] (20)
+  · LoadSeedView
+      └──▶ SeedFinalizeView
+  · MyGoodButtonDataTestView
+      └──▶ MainMenuView
+  · PSBTSelectSeedView
+      └──▶ UnhandledExceptionView
+  · PowerOffView
+      └──▶ PowerOptionsView
+  · PowerOptionsView
+      └──▶ MainMenuView
+  · ScanView
+      └──▶ UnhandledExceptionView
+  · SeedElectrumMnemonicStartView
+      └──▶ SeedFinalizeView
+  · SeedMnemonicEntryView
+      └──▶ LoadSeedView
+      └──▶ SeedSelectSeedView
+  · SeedOptionsView
+      └──▶ SeedFinalizeView
+  · SeedSignMessageConfirmAddressView
+      └──▶ SeedSignMessageConfirmMessageView
+  · SeedTranscribeSeedQRConfirmInvalidQRView
+      └──▶ SeedTranscribeSeedQRZoomedInView
+  · SeedTranscribeSeedQRConfirmWrongSeedView
+      └──▶ SeedTranscribeSeedQRZoomedInView
+  · SettingsEntryUpdateSelectionView
+      └──▶ MainMenuView
+      └──▶ RemoveMicroSDWarningView
+  · ToolsAddressExplorerAddressTypeView
+      └──▶ MainMenuView
+      └──▶ SeedExportXpubScriptTypeView
+      └──▶ SeedOptionsView
+      └──▶ ToolsAddressExplorerSelectSourceView
+  · ToolsImageEntropyLivePreviewView
+      └──▶ UnhandledExceptionView
